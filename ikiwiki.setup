@@ -10,10 +10,9 @@
 # name of the wiki
 wikiname: Libravatar
 # contact email for wiki
-adminemail: francois@libravatar.org
+adminemail: info@libravatar.org
 # users who are wiki admins
 adminuser:
-  - http://openid.fmarier.org/francois
   - http://openid.libravatar.org/project
 # users who are banned from the wiki
 banned_users: []

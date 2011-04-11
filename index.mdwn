@@ -3,10 +3,14 @@ profile images tied to your email address or OpenID. Once you have an
 account with us, your photo will be displayed next to your posts and
 comments on sites which support Libravatar.
 
+# Technology
+
 Inspired by the [[elegant API|API]] pioneered by
 [Gravatar](http://www.gravatar.com), Libravatar takes a federated
 approach to the problem and allows domain owners to specify the server
 that should host images for their organisation.
+
+# Community
 
 Because it is entirely powerered by [Free and Open Source
 Software](http://www.gnu.org/licenses/agpl.html), you are more than
@@ -15,6 +19,8 @@ instance|Running your own]]. If you have a good idea, please come
 [talk](http://libravatar.onlinegroups.net)
 [to](http://identi.ca/libravatar)
 [us](irc://chat.freenode.net/%23libravatar)!
+
+# Freedom
 
 We value your privacy and freedom which is why we are committed to
 delivering our service [using](https://launchpad.net)

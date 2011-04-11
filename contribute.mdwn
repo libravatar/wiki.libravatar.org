@@ -1,0 +1,25 @@
+There are many ways to contribute to Libravatar. Here are just a few ideas:
+
+# Theming
+
+Are you a CSS / graphics guru? Do you have any ideas on how to improve the style of our [website](http://www.libravatar.org)?
+
+We would be delighted to have you on board! Make sure you [drop by](http://libravatar.onlinegroups.net).
+
+# Translating
+
+While it is our intention to have Libravatar speak your language, we are currently not able to accept translations at this time. What we need right now is someone to help [internationalize](http://docs.djangoproject.com/en/1.2/topics/i18n/) the application.
+
+# Developing plug-ins
+
+We want to see the Libravatar community grow and one of the best ways to do this is to expand the range of applications supporting Libravatar. Please consider writing a [[plug-in or extension|Plugins]] for your favourite web applications. There might already be a [[library|Libraries]] for the relevant programming language. Otherwise, you could write one!
+
+# Hosting a mirror
+
+Given that Libravatar is a community project without a big corporate sponsor, we need help serving images. If you can spare a bit of disk space and bandwidth, please [get in touch](mailto:mirrors@libravatar.org), we would love your help in building a world-wide mirror network.
+
+# Programming
+
+And of course, there is [plenty of work](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/view/head:/TODO) to be done on the main application. If you are a developer who wants to make a difference and work on a real Open Source project, we want to hear from you!
+
+Start by setting up your [[development environment]] and then [grab a bug](https://bugs.launchpad.net/libravatar) or start implementing an idea you have.

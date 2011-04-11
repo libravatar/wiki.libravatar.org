@@ -374,7 +374,7 @@ urlalias:
   - http://libravatar.branchable.com/
   - http://www.wiki.libravatar.org/
 # openid of primary site owner
-owner: http://openid.fmarier.org/francois
+owner: http://openid.libravatar.org/project
 # optional hostname of site this one was branched from
 #parent: ''
 # internal hostname of this site

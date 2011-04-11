@@ -1,1 +1,23 @@
-[Libravatar](http://www.libravatar.org) is a Free and Open Source software [project](https://launchpad.net/libravatar) aiming to provide a free [federated](http://www.libravatar.org/run_your_own) service for hosting profile images using an extended version of the [Gravatar](http://www.gravatar.com) API. 
+[Libravatar](http://www.libravatar.org) is a free service for hosting
+profile images tied to your email address or OpenID. Once you have an
+account with us, your photo will be displayed next to your posts and
+comments on sites which support Libravatar.
+
+Inspired by the [[elegant API|API]] pioneered by
+[Gravatar](http://www.gravatar.com), Libravatar takes a federated
+approach to the problem and allows domain owners to specify the server
+that should host images for their organisation.
+
+Because it is entirely powerered by [Free and Open Source
+Software](http://www.gnu.org/licenses/agpl.html), you are more than
+welcome to [[join the project|Contribute]] and [[run your own
+instance|Running your own]]. If you have a good idea, please come
+[talk](http://libravatar.onlinegroups.net)
+[to](http://identi.ca/libravatar)
+[us](irc://chat.freenode.net/%23libravatar)!
+
+We value your privacy and freedom which is why we are committed to
+delivering our service [using](https://launchpad.net)
+[a](http://www.onlinegroups.net)
+[freedom](http://identi.ca)-[respecting](http://awstats.sourceforge.net)
+[infrastructure](http://www.branchable.com).

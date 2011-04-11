@@ -1,0 +1,1 @@
+[Libravatar](http://www.libravatar.org) is a Free and Open Source software [project](https://launchpad.net/libravatar) aiming to provide a free [federated](http://www.libravatar.org/run_your_own) service for hosting profile images using an extended version of the [Gravatar](http://www.gravatar.com) API. 

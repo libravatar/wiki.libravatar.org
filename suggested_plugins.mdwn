@@ -11,7 +11,7 @@ The following [[plugins|libraries]] have been suggested:
 * Wikkid
 * [Thunderbird](https://addons.mozilla.org/en-US/thunderbird/addon/58034/)
 * [pfaces](https://projects.pekdon.net/projects/pfaces)
-* [GMail](https://chrome.google.com/extensions/detail/empehcjbkdjpjckbllcgekbkngdolcln?hl=en)
+* [GMail](http://socialgmail.monkeyalience.com/)
 * [GroupServer/OnlineGroups.net](http://groupserver.org/)
 * [gnus](http://julien.danjou.info/blog/index.html#Gnus_and_Gravatar_support)
 

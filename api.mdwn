@@ -124,4 +124,4 @@ Therefore, if you don't have an email address for some of your users but you do 
 
 # Testing tool
 
-We provide a [check tool](http://www.libravatar.org/tools/check)to help developers test their implementations and compare their results.
+We provide a [check tool](http://www.libravatar.org/tools/check) to help developers test their implementations and compare their results.

@@ -27,7 +27,7 @@ Once your instance is running on a publicly-accessible server (<tt>avatars.examp
 
 The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server whereas the second one (<tt>\_avatars-sec.\_tcp</tt>) is for an HTTPS server (if you have one).
 
-Note that these servers do not have to be running Libravatar themselves, but they do have to implement the same [[protocol/API|API]]</a>.
+Note that these servers do not have to be running [Libravatar](https://launchpad.net/libravatar) themselves, but they do have to implement the same [[protocol/API|API]]</a>.
 
 ## Subdomains
 

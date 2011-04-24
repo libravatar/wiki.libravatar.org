@@ -26,7 +26,9 @@ You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of 
 
 # Plugins
 
-There aren't currently any plugins to list here. Please [[suggest the ones|suggested plugins]] you'd like to have.
+There aren't many plugins available at the moment, but please [[suggest the ones|suggested plugins]] you'd like to have.
+
+* [Ikiwiki](http://ikiwiki.info) (part of core, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
 
 # Contribute!
 

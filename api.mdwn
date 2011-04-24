@@ -6,7 +6,7 @@ There are 5 steps for displaying Libravatar-hosted images into your application:
 
 1. Take a user's email address as entered by them.
 2. Convert the email address to lowercase.
-3. Compute the hash (using the MD5, SHA1 or SHA256 hash algorithms).
+3. Compute the hash (using the MD5 or SHA256 hash algorithms).
 4. Turn the image into a URL by prefixing it with the base URL <tt>http://cdn.libravatar.org/avatar/</tt>.
 5. Put the image into an <tt>img</tt> tag on your page.
 

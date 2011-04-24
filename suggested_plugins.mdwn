@@ -1,0 +1,20 @@
+The following [[plugins|libraries]] have been suggested:
+
+* StatusNet
+* Mahara
+* Launchpad
+* Wordpress
+* [Drupal](http://drupal.org/node/1045064)
+* [Django](https://code.google.com/p/django-gravatar/)
+* Moodle
+* Koha
+* Wikkid
+* [Thunderbird](https://addons.mozilla.org/en-US/thunderbird/addon/58034/)
+* [pfaces](https://projects.pekdon.net/projects/pfaces)
+* [GMail](https://chrome.google.com/extensions/detail/empehcjbkdjpjckbllcgekbkngdolcln?hl=en)
+* [GroupServer/OnlineGroups.net](http://groupserver.org/)
+* [gnus](http://julien.danjou.info/blog/index.html#Gnus_and_Gravatar_support)
+
+If you'd like to **vote** for one of these, add a "+" sign at the end of the line.
+
+Of course, the most effective way to vote for one is to write it yourself ;-) Feel free to [get in touch](http://libravatar.onlinegroups.net/groups/libravatar-devel) if you have any questions.

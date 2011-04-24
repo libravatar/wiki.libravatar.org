@@ -1,0 +1,127 @@
+You should probably just use one of the available [[libraries or plugins|libraries]], but here is a description of the API.
+
+# Simple API
+
+There are 5 steps for displaying Libravatar-hosted images into your application:
+
+1. Take a user's email address as entered by them.
+2. Convert the email address to lowercase.
+3. Compute the hash (using the MD5, SHA1 or SHA256 hash algorithms).
+4. Turn the image into a URL by prefixing it with the base URL <tt>http://cdn.libravatar.org/avatar/</tt>.
+5. Put the image into an <tt>img</tt> tag on your page.
+
+Here's an example in Python:
+
+    import hashlib
+    email = 'George@example.com'
+    hash = hashlib.md5(email.lower()).hexdigest()
+
+which gives us a hash of <tt>40f8d096a3777232204cb3f796c577b7</tt> and therefore the following image tag:
+
+![George@example.com](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7)
+
+## Picture size
+
+The default size for images is **80x80** pixels, however you can change it by providing an extra parameter to the URL:
+
+    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=100
+
+The <tt>s</tt> or <tt>size</tt> is the size (height and width are the same) of the image in pixels. Acceptable values range from **1** to **512**.
+
+## Default URL for missing images
+
+If you would like to specify a default "missing image" picture for email addresses which are not found in the Libravatar database, you may specify the URL of an image to redirect to:
+
+    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=http://example.com/nobody.jpg
+
+The <tt>d</tt> or <tt>default</tt> parameter defaults to the Libravatar logo, but a few other special values are available:
+
+* <tt>**404**</tt>: return a 404 error (file not found) instead of an image
+* <table><tr>
+  <td align="center">![mm](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=mm)
+  <br><tt>**mm**</tt></td>
+  <td align="center">![identicon](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=identicon)
+  <br><tt>**identicon**</tt></td>
+  <td align="center">![monsterid](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=monsterid)
+  <br><tt>**monsterid**</tt></td>
+  <td align="center">![wavatar](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=wavatar)
+  <br><tt>**wavatar**</tt></td>
+  <td align="center">![retro](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=retro)
+  <br><tt>**retro**</tt></td>
+  </tr></table>
+
+Note that if an image is not found in the Libravatar database and the hash algorithm used was **MD5**, then Libravatar will first redirect to Gravatar in case the image exists there. Then it will honour the <tt>default</tt> parameter.
+
+# For Gravatar users
+
+As you can see, our API is heavily based on the [Gravatar API](http://en.gravatar.com/site/implement/). If your application or website already supports [Gravatar](http://www.gravatar.com) switching to the basic Libravatar service is just a matter or changing the base URL:
+
+    http://www.gravatar.com/avatar => http://cdn.libravatar.org/avatar
+
+or if you are using the HTTPS version of the service:
+
+    https://secure.gravatar.com/avatar => https://seccdn.libravatar.org/avatar
+
+Note that Libravatar does **not** support the <tt>rating</tt> (or simply <tt>r</tt>) parameter since we require all images to be G-rated.
+
+# Federated servers
+
+In order to support domain name owners who choose to [[run their own instances|running your own]] of Libravatar, you should perform a DNS query to lookup the appropriate base URL for each domain.
+
+You will probably want to use an [[existing library|libraries]] for this, but here's how to do that DNS lookup on a UNIX command line:
+
+    $ dig SRV _avatars._tcp.example.com
+    
+    ; <<>> DiG 9.7.2-P3 <<>> SRV _avatars._tcp.example.com
+    ; (1 server found)
+    ;; global options: +cmd
+    ;; Got answer:
+    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14684
+    ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
+    
+    ;; QUESTION SECTION:
+    ;_avatars._tcp.example.com.	IN	SRV
+    
+    ;; ANSWER SECTION:
+    _avatars._tcp.example.com. 86400 IN	SRV 0 0 80 avatars.example.com.
+
+We also provide a [domain check tool](http://www.libravatar.org/tools/check_domain) to help in your testing.
+
+Note for advanced users: Libravatar clients only consider at servers listed in the highest SRV priority. They do however honour relative weights.
+
+# HTTPS support
+
+If your application is delivered over a secure (HTTPS) connection, you may want to use our HTTPS image servers to avoid triggering browser warnings about mixed HTTP/HTTPS content.
+
+To do so, simply use this base URL:
+
+    https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7
+
+When looking up the base URL to use via DNS, replace <tt>\_avatars._tcp.example.com</tt> with:
+
+    _avatars-sec._tcp.example.com
+
+# OpenID support
+
+In addition to email addresses, Libravatar allows users to associate photos to their OpenIDs.
+
+The same 5 steps apply:
+
+1. Take a user's OpenID URL as entered by them.
+2. Convert the **first two parts** of the URL to lowercase. e.g. HTTP://EXAMPLE.COM/id/Bob => http://example.com/id/Bob
+3. Compute the hash (using the **SHA256 hash algorithm only**).
+4. Turn the image into a URL by prefixing it with the Libravatar base URL.
+5. Put the image into an <tt>img</tt> tag on your page.
+
+Therefore, if you don't have an email address for some of your users but you do have OpenID URLs, here is sample Python code to produce a hash for them:
+
+    import hashlib
+    from urlparse import urlsplit, urlunsplit
+    openid = 'http://example.com/id/john'
+    url = urlsplit(openid)
+    lowercase_url = urlunsplit((url.scheme.lower(), url.netloc.lower(), url.path, url.query, url.fragment))
+    hash = hashlib.sha256(lowercase_url).hexdigest()
+
+# Testing tool
+
+We provide a [check tool](http://www.libravatar.org/tools/check)to help developers test their implementations and compare their results.

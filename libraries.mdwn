@@ -1,0 +1,27 @@
+If a library or plugin is not availble for your language or application, your best option at the moment is to use our [[simple API|API]]. Don't worry though, it's really not that much work!
+
+# Perl
+
+The [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/lib/Libravatar/URL.pm) module is part of the [Gravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) package (<tt>libgravatar-url-perl</tt> in [Debian](http://packages.debian.org/search?keywords=libgravatar-url-perl) and [Ubuntu](https://launchpad.net/ubuntu/+source/libgravatar-url-perl)) since version 1.03.
+
+    use Libravatar::URL;
+    my $avatar_url = libravatar_url(email => 'person@example.org');
+    print '<img src="' . $avatar_url . '">';
+
+As of version 1.04, you can also use OpenID URLs instead of email addresses:
+
+    my $avatar_url = libravatar_url(openid => 'https://example.com/id/person');
+
+# Ruby
+
+[Kang-min Liu](http://gugod.org) has created a [Libravatar Ruby gem](http://rubygems.org/gems/libravatar).
+
+    require 'libravatar'
+    avatar_url = Libravatar.new(:email => 'person@example.org')
+    print '<img src="', avatar_url, '">'
+
+You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
+
+# Contribute!
+
+Interested in writing a plugin for your favourite framework/CMS or a library for your favourite language? Please [get in touch](mailto:dev@libravatar.org), we would be more than happy to link to them from this page!

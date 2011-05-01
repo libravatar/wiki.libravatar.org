@@ -8,7 +8,7 @@ We would be delighted to have you on board! Make sure you [drop by](http://libra
 
 # Translating
 
-While it is our intention to have Libravatar speak your language, we are currently not able to accept translations at this time. What we need right now is someone to help [internationalize](http://docs.djangoproject.com/en/1.2/topics/i18n/) the application.
+You can now make Libravatar speak your language through an [easy web interface](https://translations.launchpad.net/libravatar/trunk). No coding required!
 
 # Developing plug-ins
 

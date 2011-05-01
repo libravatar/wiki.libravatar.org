@@ -1,3 +1,5 @@
+<img src="http://cdn.libravatar.org/img/nobody/300.jpg" align="right">
+
 [Libravatar](http://www.libravatar.org) is a free service for hosting
 profile images tied to your email address or OpenID. Once you have an
 account with us, your photo will be displayed next to your posts and

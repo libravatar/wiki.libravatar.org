@@ -1,4 +1,4 @@
-There are a few ways to get in communication with the Libravatar developers: IRC, the bug tracker, and the developers mailing list. 
+There are a few ways to get in touch with the Libravatar developers:
 
 # IRC
 
@@ -10,7 +10,9 @@ Please keep in mind that you may live in a different timezone than most of the d
 
 # Bug tracker
 
-If you have a question about a particular bug, or some feedback on it, the best thing to do is to comment on that bug itself. We use [Launchpad](https://bugs.launchpad.net/libravatar) as our bug tracker.
+If you have a question about a particular bug, or some feedback on it, the best thing to do is to comment on that bug itself.
+
+We use [Launchpad](https://bugs.launchpad.net/libravatar) as our bug tracker.
 
 # Mailing list
 

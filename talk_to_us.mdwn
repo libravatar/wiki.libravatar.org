@@ -1,0 +1,23 @@
+There are a few ways to get in communication with the Libravatar developers: IRC, the bug tracker, and the developers mailing list. 
+
+# IRC
+
+If you have an IRC client already, you can join [#libravatar](irc://chat.freenode.net/%23libravatar) on chat.freenode.net.
+
+Otherwise, you can use this [simple web interface](http://webchat.freenode.net/?channels=libravatar).
+
+Please keep in mind that you may live in a different timezone than most of the developers. So if you don't get a response, it's not because we're ignoring you, it's probably because we're sleeping :)
+
+# Bug tracker
+
+If you have a question about a particular bug, or some feedback on it, the best thing to do is to comment on that bug itself. We use [Launchpad](https://bugs.launchpad.net/libravatar) as our bug tracker.
+
+# Mailing list
+
+If you've got a proposal to discuss or prefer to write to us, you can join [our developers mailing list](http://libravatar.onlinegroups.net/groups/libravatar-devel).
+
+# Identica / Twitter
+
+Finally, you can also put short notices to our attention on [Identica](http://identi.ca/libravatar) or [Twitter](http://twitter.com/libravatar).
+
+Identica users are encouraged to [join our group](http://identi.ca/group/libravatar).

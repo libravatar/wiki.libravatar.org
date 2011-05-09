@@ -17,11 +17,7 @@ that should host images for their organisation.
 Because it is entirely powerered by [Free and Open Source
 Software](http://www.gnu.org/licenses/agpl.html), you are more than
 welcome to [[join the project|Contribute]] and [[run your own
-instance|Running your own]]. If you have a good idea, please come
-[talk](http://libravatar.onlinegroups.net)
-[to](http://identi.ca/libravatar)
-[us](irc://chat.freenode.net/%23libravatar)!
-
+instance|Running your own]]. If you have a good idea, please come [[talk to us]]!
 # Freedom
 
 We value your privacy and freedom which is why we are committed to

@@ -1,10 +1,12 @@
-There are many ways to contribute to Libravatar. Here are just a few ideas:
+There are many ways to contribute to Libravatar. Make sure you come and [[talk to us]]!
+
+Here are just a few ideas:
 
 # Theming
 
 Are you a CSS / graphics guru? Do you have any ideas on how to improve the style of our [website](http://www.libravatar.org)?
 
-We would be delighted to have you on board! Make sure you [drop by](http://libravatar.onlinegroups.net).
+We would be delighted to have you on board!
 
 # Translating
 

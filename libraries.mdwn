@@ -24,6 +24,14 @@ As of version 1.04, you can also use OpenID URLs instead of email addresses:
 
 You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
 
+## C\# 
+
+[Chris Forbes](http://www.ijw.co.nz/) is maintaining the [C# bindings](https://github.com/chrisforbes/libravatar-sharp).
+
+    using libravatarsharp;
+    var uri = AvatarUri.FromEmail( "someone@example.com" );
+
+
 # Plugins
 
 There aren't many plugins available at the moment, but please [[suggest the ones|suggested plugins]] you'd like to have.

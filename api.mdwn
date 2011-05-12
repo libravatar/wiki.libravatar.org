@@ -87,7 +87,7 @@ You will probably want to use an [[existing library|libraries]] for this, but he
 
 We also provide a [domain check tool](http://www.libravatar.org/tools/check_domain) to help in your testing.
 
-Note for advanced users:
+Notes for advanced users:
 
 * Libravatar clients only consider servers listed in the highest SRV priority.
 * They do however honour relative weights.

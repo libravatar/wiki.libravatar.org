@@ -29,6 +29,12 @@ The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server wherea
 
 Note that these servers do not have to be running [Libravatar](https://launchpad.net/libravatar) themselves, but they do have to implement the same [[protocol/API|API]]</a>.
 
+## TTL
+
+The time-to-live (cache expiry) should be set to **at least 1 day** (86400 seconds).
+
+If you choose a TTL smaller than 1 day, Libravatar clients are allowed (and encouraged) to ignore it and cache your entry for a day.
+
 ## Subdomains
 
 If you use full hostnames or subdomains in your email addresses, for example bob@foo.example.com and bob@bar.example.com, then you need to have a set of SRV records for each of them:

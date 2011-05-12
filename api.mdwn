@@ -87,7 +87,11 @@ You will probably want to use an [[existing library|libraries]] for this, but he
 
 We also provide a [domain check tool](http://www.libravatar.org/tools/check_domain) to help in your testing.
 
-Note for advanced users: Libravatar clients only consider at servers listed in the highest SRV priority. They do however honour relative weights.
+Note for advanced users:
+
+* Libravatar clients only consider servers listed in the highest SRV priority.
+* They do however honour relative weights.
+* SRV records are cached for at least 1 day (or more if the TTL is greater than 1 day).
 
 # HTTPS support
 

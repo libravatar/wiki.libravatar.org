@@ -112,7 +112,7 @@ In addition to email addresses, Libravatar allows users to associate photos to t
 The same 5 steps apply:
 
 1. Take a user's OpenID URL as entered by them.
-2. Convert the **first two parts** of the URL to lowercase. e.g. HTTP://EXAMPLE.COM/id/Bob => http://example.com/id/Bob
+2. Convert the **protocol and hostname parts** of the URL to lowercase. e.g. HTTP://EXAMPLE.COM/ID/Bob => http://example.com/ID/Bob
 3. Compute the hash (using the **SHA256 hash algorithm only**).
 4. Turn the image into a URL by prefixing it with the Libravatar base URL.
 5. Put the image into an <tt>img</tt> tag on your page.

@@ -2,6 +2,13 @@ If a library or plugin is not availble for your language or application, your be
 
 # Libraries
 
+## C\# 
+
+[Chris Forbes](http://www.ijw.co.nz/) is maintaining the [C# bindings](https://github.com/chrisforbes/libravatar-sharp).
+
+    using libravatarsharp;
+    var uri = AvatarUri.FromEmail( "someone@example.com" );
+
 ## Perl
 
 The [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/lib/Libravatar/URL.pm) module is part of the [Gravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) package (<tt>libgravatar-url-perl</tt> in [Debian](http://packages.debian.org/search?keywords=libgravatar-url-perl) and [Ubuntu](https://launchpad.net/ubuntu/+source/libgravatar-url-perl)) since version 1.03.
@@ -23,14 +30,6 @@ As of version 1.04, you can also use OpenID URLs instead of email addresses:
     print '<img src="', avatar_url, '">'
 
 You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
-
-## C\# 
-
-[Chris Forbes](http://www.ijw.co.nz/) is maintaining the [C# bindings](https://github.com/chrisforbes/libravatar-sharp).
-
-    using libravatarsharp;
-    var uri = AvatarUri.FromEmail( "someone@example.com" );
-
 
 # Plugins
 

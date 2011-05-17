@@ -1,0 +1,16 @@
+Here is a list of features currently available in Libravatar:
+
+* Profile images in **JPG** and **PNG** formats (1 MB limit)
+* Size of images on libravatar.org: from 1 to 512 pixels
+* Images served over **HTTP** and **HTTPS**
+* Support for legacy **MD5** email hashes as well as **SHA256**
+* Support for **OpenID URL hashes** (SHA256 only)
+* Automatic **redirection to Gravatar** (MD5 email hashes only)
+* Ability to provide your own default or "unknown person" image
+* **Federation** via DNS SRV records and the ability to serve images for your domain
+* Automatic **photo importers**: Gravatar, Identica
+* Available in more than one language: English and French
+* Freedom to leave: **account export** and **full deletion** of your data
+* Source code available under a **Free and Open Source Software** License
+
+Is something missing from this list? Let us know by [filing a bug](https://bugs.launchpad.net/libravatar/+filebug), or [[contributing|contribute]] a new feature yourself!

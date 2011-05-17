@@ -5,6 +5,8 @@ profile images tied to your email address or OpenID. Once you have an
 account with us, your photo will be displayed next to your posts and
 comments on sites which support Libravatar.
 
+* [[List of features|features]]
+
 # Technology
 
 Inspired by the elegant solution pioneered by [Gravatar](http://www.gravatar.com),

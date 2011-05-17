@@ -22,6 +22,6 @@ Given that Libravatar is a community project without a big corporate sponsor, we
 
 # Programming
 
-And of course, there is [plenty of work](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/view/head:/TODO) to be done on the main application. If you are a developer who wants to make a difference and work on a real Open Source project, we want to hear from you!
+And of course, there is plenty of work to be done on the main application. If you are a developer who wants to make a difference and work on a real Open Source project, we want to hear from you!
 
 Start by setting up your [[development environment]] and then [grab a bug](https://bugs.launchpad.net/libravatar) or start implementing an idea you have.

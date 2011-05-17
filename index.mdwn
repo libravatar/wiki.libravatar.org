@@ -7,17 +7,22 @@ comments on sites which support Libravatar.
 
 # Technology
 
-Inspired by the [[elegant API|API]] pioneered by
-[Gravatar](http://www.gravatar.com), Libravatar takes a federated
-approach to the problem and allows domain owners to specify the server
-that should host images for their organisation.
+Inspired by the elegant solution pioneered by [Gravatar](http://www.gravatar.com),
+Libravatar takes a federated approach to the problem and allows domain owners to
+specify the server that should host images for their organisation.
+
+* [[API documentation|api]]
+* [[Libraries and plugins|libraries]]
 
 # Community
 
 Because it is entirely powerered by [Free and Open Source
 Software](http://www.gnu.org/licenses/agpl.html), you are more than
-welcome to [[join the project|Contribute]] and [[run your own
-instance|Running your own]]. If you have a good idea, please come [[talk to us]]!
+welcome to join the project and [[run your own instance|Running your own]].
+
+* [[Ways to contribute|contribute]]
+* [[Getting in touch with us|talk to us]]
+
 # Freedom
 
 We value your privacy and freedom which is why we are committed to

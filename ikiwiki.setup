@@ -54,6 +54,7 @@ add_plugins:
   - testpagespec
   - version
   - theme
+  - gitpush
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -149,7 +150,8 @@ gitmaster_branch: master
 
 # gitpush plugin
 # git repository urls that changes are pushed to
-#git_push_to: []
+git_push_to:
+  - git@gitorious.org:libravatar/libravatar-wiki.git
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
@@ -267,9 +269,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, websetup,
-#    wmd)
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, websetup, wmd)
 ######################################################################
 
 # attachment plugin
@@ -291,10 +292,6 @@ comments_pagename: comment_
 #comments_allowauthor: 0
 # commit comments to the VCS
 comments_commit: 1
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors

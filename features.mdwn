@@ -2,7 +2,7 @@ Here is a list of features currently available in Libravatar:
 
 * Profile images in **JPG** and **PNG** formats (1 MB limit)
 * Size of images on libravatar.org: from 1 to 512 pixels
-* Images served over **HTTP** and **HTTPS**
+* Images served over HTTP and **HTTPS**, IPv4 and **IPv6**
 * Support for legacy **MD5** email hashes as well as **SHA256**
 * Support for **OpenID URL hashes** (SHA256 only)
 * Automatic **redirection to Gravatar** (MD5 email hashes only)

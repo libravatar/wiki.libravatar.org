@@ -2,24 +2,24 @@ Here is a list of features currently available in Libravatar and how it differs 
 
 <table border="1">
 <tr><th></th><th>Libravatar</th><th>Gravatar</th></tr>
-<tr><td>JPEG and PNG support</td><td>Yes</td><td>Yes</td></tr>
+<tr><td>JPEG and <b>PNG</b> support</td><td>Yes</td><td>Yes</td></tr>
 <tr><td>Upload size limit</td><td>1 MB</td><td>None</td></tr>
 <tr><td>Image size (in pixels)</td><td>1 to 512 (configurable)</td><td>1 to 512</td></tr>
-<tr><td>HTTPS support</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>IPv6 support</td><td>Yes</td><td>No</td></tr>
-<tr><td>Support email hashes</td><td>MD5 and SHA256</td><td><a href="http://en.gravatar.com/site/faq/#answer-2-1">MD5 only</a></td></tr>
-<tr><td>OpenID URL support</td><td>Yes</td><td>No</td></tr>
+<tr><td><b>HTTPS</b> support</td><td>Yes</td><td>Yes</td></tr>
+<tr><td><b>IPv6</b> support</td><td>Yes</td><td>-</td></tr>
+<tr><td>Support email hashes</td><td>MD5 and <b>SHA256</b></td><td><a href="http://en.gravatar.com/site/faq/#answer-2-1">MD5 only</a></td></tr>
+<tr><td><b>OpenID</b> URL support</td><td>Yes</td><td>-</td></tr>
 <tr><td>Redirection to Gravatar</td><td>Yes</td><td>Not needed :)</td></tr>
 <tr><td>Customisable default image</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>Image ratings</td><td>No</td><td>Yes</td></tr>
-<tr><td>Federation via DNS SRV records</td><td>Yes</td><td>No</td></tr>
-<tr><td>Automatic photo importers</td><td>[[Yes|photo importers]]</td><td>No</td></tr>
+<tr><td>MPAA-style image ratings</td><td>-</td><td>Yes</td></tr>
+<tr><td><b>Federation</b> via DNS SRV records</td><td>Yes</td><td>-</td></tr>
+<tr><td>Automatic photo <b>importers</b></td><td>[[Yes|photo importers]]</td><td>-</td></tr>
 <tr><td>Translated UI</td><td><a href="https://translations.launchpad.net/libravatar">Yes</a></td><td><a href="http://en.gravatar.com/site/translations/">Yes</a></td></tr>
-<tr><td>Account export</td><td>Yes</td><td>No</td></tr>
-<tr><td>Account deletion</td><td>Yes</td><td><a href="http://en.gravatar.com/site/faq/#answer-1-7">No</a></td></tr>
+<tr><td>Account <b>export</b></td><td>Yes</td><td>-</td></tr>
+<tr><td>Account <b>deletion</b></td><td>Yes</td><td><a href="http://en.gravatar.com/site/faq/#answer-1-7">No</a></td></tr>
 <tr><td>Libraries/plugins available</td><td>[[Some|libraries]]</td><td><a href="http://en.gravatar.com/site/implement/images/libraries/">Lots</a></td></tr>
-<tr><td>Free and Open Source Software</td><td><a href="http://www.gnu.org/licenses/agpl.html">Yes</a></td><td><a href="http://blog.gravatar.com/2010/05/31/gravatar-localization/#comment-8749">Not yet</a></td></tr>
-<tr><td>Distributed hosting</td><td>[[Community mirrors|run a mirror]]</td><td>Professional CDN</td></tr>
+<tr><td><b>Free and Open Source Software</b></td><td><a href="http://www.gnu.org/licenses/agpl.html">Yes</a></td><td><a href="http://blog.gravatar.com/2010/05/31/gravatar-localization/#comment-8749">Not yet</a></td></tr>
+<tr><td>Distributed service</td><td>[[Community mirrors|run a mirror]]</td><td>Professional CDN</td></tr>
 <tr><td>Corporate sponsor</td><td>None</td><td><a href="http://automattic.com/">Automattic</a></td></tr>
 </table>
 

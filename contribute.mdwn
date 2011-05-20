@@ -16,7 +16,7 @@ You can now make Libravatar speak your language through an [easy web interface](
 
 We want to see the Libravatar community grow and one of the best ways to do this is to expand the range of applications supporting Libravatar. Please consider writing a [[plug-in or extension|suggested plugins]] for your favourite web applications. There might already be a [[library|Libraries]] for the relevant programming language. Otherwise, you could write one!
 
-# Hosting a mirror
+# Hosting a [[mirror|run a mirror]]
 
 Given that Libravatar is a community project without a big corporate sponsor, we need help serving images. If you can spare a bit of disk space and bandwidth, please [get in touch](mailto:mirrors@libravatar.org), we would love your help in building a world-wide mirror network.
 

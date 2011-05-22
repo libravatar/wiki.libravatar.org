@@ -21,6 +21,19 @@ As of version 1.04, you can also use OpenID URLs instead of email addresses:
 
     my $avatar_url = libravatar_url(openid => 'https://example.com/id/person');
 
+## PHP
+
+[Melissa Draper](http://www.meldraweb.com/) maintains the [Services_Libravatar](https://launchpad.net/services-libravatar) PHP class. Here's an example of how it works:
+
+    require_once 'Services/Libravatar.php';
+    $libravatar = new Services_Libravatar();
+    $avatar_url = $libravatar->url('person@example.org');
+    print '<img src="' . $avatar_url . '">';
+
+or like this for OpenID-based avatars served over HTTPS:
+
+    $avatar_url = $libravatar->url('http://example.org/id/Person', array('https' => true));
+
 ## Ruby
 
 [Kang-min Liu](http://gugod.org) has created a [Libravatar Ruby gem](http://rubygems.org/gems/libravatar).

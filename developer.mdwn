@@ -1,0 +1,13 @@
+Depending on your interest and what programming languages you know, there are a few options to [[contribute]] to Libravatar:
+
+# Plugins
+
+We want to see the Libravatar community grow and one of the best ways to do this is to expand the range of applications supporting [Libravatar](http://www.libravatar.org) out of the box, or with the help of a plugin/extension.
+
+Please consider writing a patch, plugin or extension for your favourite web applications. There might already be a [[library|libraries]] for the relevant programming language. Otherwise, you could always write one!
+
+# Core Application
+
+And of course, there is plenty of work to be done on the [main application](https://launchpad.net/libravatar). If you are a developer who wants to make a difference and work on a real Open Source project, we want to hear from you!
+
+Start by setting up your [[development environment]] and then [grab a feature/bug](https://bugs.launchpad.net/libravatar) or start implementing an idea you have.

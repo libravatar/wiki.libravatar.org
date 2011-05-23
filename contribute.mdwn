@@ -1,27 +1,21 @@
 There are many ways to contribute to Libravatar. Make sure you come and [[talk to us]]!
 
-Here are just a few ideas:
+There are a few more specific pages for particular profiles of contributors:
 
-# Theming
+* [[CSS/Graphics ninja]]
+* [[Translator]]
+* [[Developer]]
 
-Are you a CSS / graphics guru? Do you have any ideas on how to improve the style of our [website](http://www.libravatar.org)?
-
-We would be delighted to have you on board!
-
-# Translating
-
-You can now make Libravatar speak your language through an [easy web interface](https://translations.launchpad.net/libravatar/trunk). No coding required!
-
-# Developing plug-ins
-
-We want to see the Libravatar community grow and one of the best ways to do this is to expand the range of applications supporting Libravatar. Please consider writing a [[plug-in or extension|suggested plugins]] for your favourite web applications. There might already be a [[library|Libraries]] for the relevant programming language. Otherwise, you could write one!
+as well as a few other ideas:
 
 # Hosting a [[mirror|run a mirror]]
 
-Given that Libravatar is a community project without a big corporate sponsor, we need help serving images. If you can spare a bit of disk space and bandwidth, please [get in touch](mailto:mirrors@libravatar.org), we would love your help in building a world-wide mirror network.
+Given that Libravatar is a community project without a big corporate sponsor, we need help serving images.
 
-# Programming
+If you can spare a bit of disk space and bandwidth, please [get in touch](mailto:mirrors@libravatar.org), we would love your help in building a world-wide mirror network.
 
-And of course, there is plenty of work to be done on the main application. If you are a developer who wants to make a difference and work on a real Open Source project, we want to hear from you!
+# Advocacy
 
-Start by setting up your [[development environment]] and then [grab a bug](https://bugs.launchpad.net/libravatar) or start implementing an idea you have.
+If you don't fit into of the other categories, you are still more than welcome to come and hang out on our [IRC channel](irc://chat.freenode.net/%23libravatar) ([web interface](http://webchat.freenode.net/?channels=libravatar)).
+
+And of course, feel free to submit feature requests for your favourite applications to add support for Libravatar.

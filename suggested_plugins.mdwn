@@ -3,11 +3,11 @@ The following [[plugins|libraries]] have been suggested:
 * StatusNet
 * Mahara
 * Launchpad
-* Wordpress
+* Wordpress (see [bug 780850](https://bugs.launchpad.net/libravatar/+bug/780850))
 * [Drupal](http://drupal.org/node/1045064)
 * [Django](https://code.google.com/p/django-gravatar/)
 * Moodle
-* Koha
+* Koha (see [bug 769801](https://bugs.launchpad.net/libravatar/+bug/769801))
 * Wikkid
 * [Thunderbird](https://addons.mozilla.org/en-US/thunderbird/addon/58034/)
 * [pfaces](https://projects.pekdon.net/projects/pfaces)
@@ -17,4 +17,6 @@ The following [[plugins|libraries]] have been suggested:
 
 If you'd like to **vote** for one of these, add a "+" sign at the end of the line.
 
-Of course, the most effective way to vote for one is to write it yourself ;-) Feel free to [get in touch](http://libravatar.onlinegroups.net/groups/libravatar-devel) if you have any questions.
+Of course, the most effective way to vote for one is to write it yourself ;-) We have a [blueprint](https://blueprints.launchpad.net/libravatar/+spec/plugins-development) to keep track of the plugin development that we know about.
+
+Feel free to [[talk to us]] if you have any questions.

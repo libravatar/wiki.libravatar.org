@@ -2,9 +2,9 @@ There are many ways to contribute to Libravatar. Make sure you come and [[talk t
 
 There are a few more specific pages for particular profiles of contributors:
 
-* [[CSS/Graphics ninja]]
-* [[Translator]]
+* [[Designer]]
 * [[Developer]]
+* [[Translator]]
 
 as well as a few other ideas:
 

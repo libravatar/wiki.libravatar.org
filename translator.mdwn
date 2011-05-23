@@ -1,0 +1,7 @@
+If you are fluent in another language than English, you can now make Libravatar speak your language through an [easy web interface](https://translations.launchpad.net/libravatar/trunk). No coding required!
+
+On the other hand, if your language of choice is English, please feel free to improve our grammer and fix our tpyos :) The best way to do that is to:
+
+1. [download the PO files](https://translations.launchpad.net/libravatar/trunk/+export)
+2. edit them, fixing what needs to be fixed
+3. attach the improved PO file to a [new bug report](https://bugs.launchpad.net/libravatar/trunk/+filebug)

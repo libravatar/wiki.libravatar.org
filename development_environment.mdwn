@@ -59,10 +59,16 @@ To create and initialize your chroot-based environment:
         cd /root
         bzr co lp:libravatar
 
+* create a config file for your environment:
+
+        cd /root/libravatar/libravatar
+        cp libravatar/settings.py.example libravatar/settings.py
+
+    (edit <tt>settings.py</tt> to use <tt>localavatar.org</tt> as the domain and contain the right database credentials)
+
 * build the packages:
 
         cd /root/libravatar
-        cp libravatar/settings.py.example libravatar/settings.py
         make package
 
 * install the packages:

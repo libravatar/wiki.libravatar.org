@@ -1,0 +1,9 @@
+Are you a CSS / graphics guru? Do you have any ideas on how to improve the style of our [website](http://www.libravatar.org)?
+
+We would be delighted to have you on board!
+
+The best place to start is to [[talk to us]] and then:
+
+1. grab a copy of the [HTML templates](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/templates/) and [CSS files](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/static/css/)
+2. make them look fresh and attractive (i.e. the hard creative bit)
+3. attach them to a [new bug report](https://bugs.launchpad.net/libravatar/+filebug)

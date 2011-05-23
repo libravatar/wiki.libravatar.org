@@ -27,8 +27,4 @@ welcome to join the project and [[run your own instance|Running your own]].
 
 # Freedom
 
-We value your privacy and freedom which is why we are committed to
-delivering our service [using](https://launchpad.net)
-[a](http://www.onlinegroups.net)
-[freedom](http://identi.ca)-[respecting](http://awstats.sourceforge.net)
-[infrastructure](http://www.branchable.com).
+We value your privacy and freedom which is why we are committed to delivering our service using a [[freedom-respecting infrastructure]].

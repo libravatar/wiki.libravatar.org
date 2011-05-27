@@ -3,7 +3,7 @@ Here is a list of features currently available in Libravatar and how it differs 
 <table border="1">
 <tr><th></th><th>Libravatar</th><th>Gravatar</th></tr>
 <tr><td>JPEG and <b>PNG</b> support</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>Upload size limit</td><td>1 MB</td><td>None</td></tr>
+<tr><td>Upload size limit</td><td>5 MB</td><td>None</td></tr>
 <tr><td>Image size (in pixels)</td><td>1 to 512 (configurable)</td><td>1 to 512</td></tr>
 <tr><td><b>HTTPS</b> support</td><td>Yes</td><td>Yes</td></tr>
 <tr><td><b>IPv6</b> support</td><td>Yes</td><td>-</td></tr>

@@ -12,6 +12,7 @@ Here is a list of features currently available in Libravatar and how it differs 
 <tr><td>Redirection to Gravatar</td><td>Yes</td><td>Not needed :)</td></tr>
 <tr><td>Customisable default image</td><td>Yes</td><td>Yes</td></tr>
 <tr><td>MPAA-style image ratings</td><td>-</td><td>Yes</td></tr>
+<tr><td>Text-based personal information</td><td>-</td><td>Yes</td></tr>
 <tr><td><b>Federation</b> via DNS SRV records</td><td>Yes</td><td>-</td></tr>
 <tr><td>Automatic photo <b>importers</b></td><td>[[Yes|photo importers]]</td><td>-</td></tr>
 <tr><td>Translated UI</td><td><a href="https://translations.launchpad.net/libravatar">Yes</a></td><td><a href="http://en.gravatar.com/site/translations/">Yes</a></td></tr>

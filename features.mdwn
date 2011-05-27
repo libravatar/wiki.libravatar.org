@@ -1,4 +1,4 @@
-Here is a list of features currently available in Libravatar and how it differs from [Gravatar](http://www.gravatar.com).
+Here is a list of features currently available in [Libravatar](http://www.libravatar.org) and how it differs from [Gravatar](http://www.gravatar.com).
 
 <table border="1">
 <tr><th></th><th>Libravatar</th><th>Gravatar</th></tr>

@@ -3,3 +3,5 @@ Some guidelines on how to produce a good patch:
 * Read about [writing a good patch](http://feeding.cloud.geek.nz/2009/06/writing-perfect-patch.html) and [keeping a clean source control history](http://feeding.cloud.geek.nz/2009/07/3-ways-to-improve-your-source-control.html).
 * Make sure you follow our [[coding guidelines]].
 * Run our test suite (<tt>make test</tt>) and fix any warnings/errors it reports.
+
+Once you ready, [[send us your patch|submitting a patch]]!

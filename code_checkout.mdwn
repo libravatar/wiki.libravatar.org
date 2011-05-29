@@ -1,0 +1,15 @@
+The main repository is using bzr, but that doesn't mean you have to use it since we provide mirrors of the repository in other version control systems.
+
+# Using [bzr](http://bazaar.canonical.com/)
+
+You can [browse the repository](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files) or create a local branch for yourself:
+
+    bzr branch lp:libravatar
+
+# Using [git](http://www.git-scm.com)
+
+You can [browse the code](https://gitorious.org/libravatar/libravatar/trees) on Gitorious and [clone the repository](https://gitorious.org/libravatar/libravatar/clone).
+
+Otherwise, just check the code out locally:
+
+    git clone git://gitorious.org/libravatar/libravatar.git

@@ -17,7 +17,7 @@ And of course, there is plenty of work to be done on the [main application](http
 0. Find a [[bug or a feature|easy development tasks]] that interests you
 1. Set up your [[development environment]]
 2. [[Check the code out|code checkout]]
-3. Read about the [[code layout]]
+3. Read about the [[code layout]] and [[coding guidelines]]
 4. [[Prepare your patch|patch guidelines]]
 5. [[Submit your patch|submitting a patch]]
 6. [Profit!](http://www.ohloh.net/p/libravatar/contributors)

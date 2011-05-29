@@ -4,3 +4,5 @@ There are two ways to submit your patch:
 2. Submit a bzr [merge request](https://help.launchpad.net/Code/Review#Proposing%20a%20merge)
 
 Of course, if you need any help, [[give us a shout|talk to us]]!
+
+(You may want to have a look at our [[patch guidelines]].)

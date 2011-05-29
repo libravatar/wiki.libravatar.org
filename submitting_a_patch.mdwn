@@ -1,6 +1,6 @@
 There are two ways to submit your patch:
 
 1. Attach it to the relevant bug on the [tracker](https://bugs.launchpad.net/libravatar) (create a [new bug](https://bugs.launchpad.net/libravatar/+filebug) if you need to)
-2. Submit a bzr [merge request](https://help.launchpad.net/Code/Review#Proposing a merge)
+2. Submit a bzr [merge request](https://help.launchpad.net/Code/Review#Proposing%20a%20merge)
 
 Of course, if you need any help, [[give us a shout|talk to us]]!

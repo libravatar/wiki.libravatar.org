@@ -13,3 +13,7 @@ You can [browse the code](https://gitorious.org/libravatar/libravatar/trees) on 
 Otherwise, just check the code out locally:
 
     git clone git://gitorious.org/libravatar/libravatar.git
+
+# Using other version control systems
+
+Is your favourite source control system not in our list? Well, if you can [[send us|talk to us]] instructions on how to convert a bzr repository to a *YourFavoriteVCS* repository, then we'll try to add it to the sync cronjob we have.

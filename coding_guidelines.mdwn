@@ -1,0 +1,5 @@
+The main Django application follows the usual the usual [PEP-8](http://www.python.org/dev/peps/pep-0008/) style.
+
+We also enforce some of this through [pylint](http://www.logilab.org/project/pylint) in the test suite (<tt>make test</tt>).
+
+(These guidelines are also included in the [HACKING](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/view/head:/HACKING) file distributed with Libravatar.)

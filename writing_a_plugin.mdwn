@@ -1,0 +1,20 @@
+Most of the time, writing a plugin or adding Libravatar support to an existing web application involves very little work.
+
+For example, have a look at how it was done for these two Perl applications:
+
+* [Ikiwiki](https://gitorious.org/~fmarier/ikiwiki/fmarier-sandbox/commits/libravatar-in-comments)
+* [Koha](https://gitorious.org/~fmarier/koha/francois-sandbox/commits/libravatar_support)
+
+As you can see, all of the hard bits are done in the [Libravatar::URL](http://search.cpan.org/~fmarier/Gravatar-URL-1.04/lib/Libravatar/URL.pm) CPAN module. Which brings us to the most important guideline...
+
+# Use an existing [[library|libraries]]
+
+If you try to do it all yourself inside the web application, it's likely that you will be missing a few corner cases (e.g. federation may not be fully working). As you can see from the [[API]], having a complete implementation is not just a matter of changing the base URL.
+
+What should you do if a library is not available for your target language? Well, why not [[write one|writing a library]]? We'll be more than happy to help you in the process. Just come and [[talk to us]].
+
+# Write a simple test page
+
+As part of the main Libravatar [source code repository](https://code.launchpad.net/~libravatar/libravatar/trunk), we have a few [test pages](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/contrib/) for some of the libraries that have been contributed.
+
+Once you have made a new library available, we'll be happy to include a small test case from you.

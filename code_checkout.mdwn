@@ -14,6 +14,14 @@ Otherwise, just check the code out locally:
 
     git clone git://gitorious.org/libravatar/libravatar.git
 
+# Using [mercurial](http://mercurial.selenic.com/)
+
+You can [browse the code](https://bitbucket.org/libravatar/libravatar/src) on Bitbucket and [fork the repository](https://bitbucket.org/libravatar/libravatar/fork).
+
+Otherwise, just clone the repo:
+
+    hg clone https://bitbucket.org/libravatar/libravatar
+
 # Using other version control systems
 
 Is your favourite source control system not in our list? Well, if you can [[send us|talk to us]] instructions on how to convert a bzr repository to a *YourFavoriteVCS* repository, then we'll try to add it to the sync cronjob we have.

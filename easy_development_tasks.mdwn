@@ -8,4 +8,4 @@ But if you are looking for an easy bug / feature to start with, you may want to:
 * Fix a [bite-sized bug](https://bugs.launchpad.net/libravatar/+bugs?field.tag=bite-sized)
 * Implement a new [photo importer](https://bugs.launchpad.net/libravatar/+bugs?field.tag=photoimporter)
 
-Of course, you can always [[talk to us]] if you have a better idea and need some guidance.
+Of course, you can always [[talk to us]] if you have a better idea or need some guidance.

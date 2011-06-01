@@ -34,6 +34,14 @@ or like this for OpenID-based avatars served over HTTPS:
 
     $avatar_url = $libravatar->url('http://example.org/id/Person', array('https' => true));
 
+## Python
+
+The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used like this:
+
+    from libravatar import libravatar_url
+    avatar_url = libravatar_url(email = 'person@example.org')
+    print '<img src="' + avatar_url + '">'
+
 ## Ruby
 
 [Kang-min Liu](http://gugod.org) has created a [Libravatar Ruby gem](http://rubygems.org/gems/libravatar).

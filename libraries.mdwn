@@ -4,12 +4,16 @@ If a library or plugin is not availble for your language or application, your be
 
 ## C\# 
 
+<img src="dotnet_logo.png" width="179" height="75" align="right">
+
 [Chris Forbes](http://www.ijw.co.nz/) is maintaining the [C# bindings](https://github.com/chrisforbes/libravatar-sharp).
 
     using libravatarsharp;
     var uri = AvatarUri.FromEmail( "someone@example.com" );
 
 ## Perl
+
+<img src="perl_logo.png" width="145" height="75" align="right">
 
 The [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/lib/Libravatar/URL.pm) module is part of the [Gravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) package (<tt>libgravatar-url-perl</tt> in [Debian](http://packages.debian.org/search?keywords=libgravatar-url-perl) and [Ubuntu](https://launchpad.net/ubuntu/+source/libgravatar-url-perl)) since version 1.03.
 
@@ -22,6 +26,8 @@ As of version 1.04, you can also use OpenID URLs instead of email addresses:
     my $avatar_url = libravatar_url(openid => 'https://example.com/id/person');
 
 ## PHP
+
+<img src="php_logo.png" width="145" height="75" align="right">
 
 [Melissa Draper](http://www.meldraweb.com/) maintains the [Services_Libravatar](https://launchpad.net/services-libravatar) PHP class. Here's an example of how it works:
 
@@ -36,6 +42,8 @@ or like this for OpenID-based avatars served over HTTPS:
 
 ## Python
 
+<img src="python_logo.png" width="75" height="75" align="right">
+
 The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used like this:
 
     from libravatar import libravatar_url
@@ -43,6 +51,8 @@ The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used 
     print '<img src="' + avatar_url + '">'
 
 ## Ruby
+
+<img src="ruby_logo.png" width="75" height="75" align="right">
 
 [Kang-min Liu](http://gugod.org) has created a [Libravatar Ruby gem](http://rubygems.org/gems/libravatar).
 

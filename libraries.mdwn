@@ -13,7 +13,7 @@ If a library or plugin is not availble for your language or application, your be
 
 ## Perl
 
-<img src="perl_logo.png" width="145" height="75" align="right">
+<img src="perl_logo.png" width="75" height="75" align="right">
 
 The [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/lib/Libravatar/URL.pm) module is part of the [Gravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) package (<tt>libgravatar-url-perl</tt> in [Debian](http://packages.debian.org/search?keywords=libgravatar-url-perl) and [Ubuntu](https://launchpad.net/ubuntu/+source/libgravatar-url-perl)) since version 1.03.
 

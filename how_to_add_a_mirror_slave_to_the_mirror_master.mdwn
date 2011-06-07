@@ -15,6 +15,8 @@ Do this on the **slave**:
         ln -s /var/lib/libravatar/slave/cert/seccdn.pem /etc/libravatar/
         ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
 
+3. uncomment <tt>enablersync</tt> in <tt>/etc/rssh.conf</tt>.
+
 Do this on the **master**:
 
 1. add the slave's ssh hostkey to known_keys:

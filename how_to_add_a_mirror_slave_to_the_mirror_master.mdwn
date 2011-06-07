@@ -2,27 +2,32 @@ This will be of interest only to admins who run a Libravatar master server using
 
 # Initial setup
 
-Do this on the slave:
+Do this on the **slave**:
 
 1. install the required packages on the slave:
-    apt-get install libravatar-{common,cdn-common,cdn,seccdn,slave}
-    apt-get install -f
-2. create symlinks for the SSL certificate:
-    ln -s /var/lib/libravatar/slave/cert/chain.pem /etc/libravatar/
-    ln -s /var/lib/libravatar/slave/cert/seccdn.pem /etc/libravatar/
-    ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
 
-Do this on the master:
+        apt-get install libravatar-{common,cdn-common,cdn,seccdn,slave}
+        apt-get install -f
+
+2. create symlinks for the SSL certificate:
+
+        ln -s /var/lib/libravatar/slave/cert/chain.pem /etc/libravatar/
+        ln -s /var/lib/libravatar/slave/cert/seccdn.pem /etc/libravatar/
+        ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
+
+Do this on the **master**:
 
 1. add the slave's ssh hostkey to known_keys:
-    sudo -u libravatar-master ssh libravatar-slave@mirror1.example.com
+
+        sudo -u libravatar-master ssh libravatar-slave@mirror1.example.com
+
 2. add the mirror hostname to <tt>/etc/default/libravatar-master</tt>
 
 Within about 15 minutes, you should see these files pop up on the slave:
 
-* /var/lib/libravatar/slave/cert/chain.pem
-* /var/lib/libravatar/slave/cert/seccdn.pem
-* /var/lib/libravatar/slave/cert/seccdn.crt
+* <tt>/var/lib/libravatar/slave/cert/chain.pem</tt>
+* <tt>/var/lib/libravatar/slave/cert/seccdn.pem</tt>
+* <tt>/var/lib/libravatar/slave/cert/seccdn.crt</tt>
 
 Then you can restart Apache on the slave to enable everything.
 

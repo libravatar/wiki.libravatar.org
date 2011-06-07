@@ -14,6 +14,7 @@ Here is a list of features currently available in [Libravatar](http://www.librav
 <tr><td>MPAA-style image ratings</td><td>-</td><td>Yes</td></tr>
 <tr><td>Text-based personal information</td><td>-</td><td>Yes</td></tr>
 <tr><td><b>Federation</b> via DNS SRV records</td><td>Yes</td><td>-</td></tr>
+<tr><td><b>LDAP</b> authentication</td><td>Yes</td><td>-</td></tr>
 <tr><td>Automatic photo <b>importers</b></td><td>[[Yes|photo importers]]</td><td>-</td></tr>
 <tr><td>Translated UI</td><td><a href="https://translations.launchpad.net/libravatar">Yes</a></td><td><a href="http://en.gravatar.com/site/translations/">Yes</a></td></tr>
 <tr><td>Account <b>export</b></td><td>Yes</td><td>-</td></tr>

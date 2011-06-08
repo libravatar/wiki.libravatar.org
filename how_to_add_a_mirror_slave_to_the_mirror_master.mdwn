@@ -16,6 +16,10 @@ Do this on the **slave**:
         ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
 
 3. uncomment <tt>enablersync</tt> in <tt>/etc/rssh.conf</tt>.
+4. (optional) make the awstats reports available:
+
+        ln -s /usr/share/awstats/icon/ /var/www/awstats-icon
+        ln -s /var/cache/awstats/ /var/www/stats
 
 Do this on the **master**:
 

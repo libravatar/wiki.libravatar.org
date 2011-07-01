@@ -50,4 +50,4 @@ If you're interested in the details of how third-party websites display Libravat
 <tr><td align="center">&lt;img src="http://cdn.libravatar.org/avatar/f52a1d3d8c39868fc92cf70828821635"&gt;</code></td></tr>
 </table>
 
-It's that simple. (Well actually, for most web applications it's even easier because they're just using one of the convenient [[libraries]] provided by the community.)
+It's pretty simple, but for most web applications it's even easier because they're just using one of the convenient [[libraries]] provided by the community.

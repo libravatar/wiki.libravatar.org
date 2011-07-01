@@ -10,11 +10,11 @@ Uploading your image everywhere is clearly a waste of time. What if there was a 
 
 So what you do is you [sign up on libravatar.org](https://www.libravatar.org/account/new), upload your photo and tell it what your email address it. That's it. That's all that needed.
 
-<img src="gitorious_fmarier.png" width="300" height="300"><img src="ohloh_fmarier.png" width="300" height="300">
+TODO: screenshot of profile page
 
 Once you've done that, a bunch of websites (where you've entered your email address) will start display your avatar next to your name.
 
-TODO: ohloh and gitorious screenshots
+<img src="gitorious_fmarier.png" width="300" height="300"><img src="ohloh_fmarier.png" width="300" height="300">
 
 # Freedom and federation
 

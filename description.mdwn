@@ -14,7 +14,11 @@ TODO: screenshot of profile page
 
 Once you've done that, a bunch of websites (where you've entered your email address) will start display your avatar next to your name.
 
-<img src="gitorious_fmarier.png" width="300" height="300"><img src="ohloh_fmarier.png" width="300" height="300">
+<table border="1"><tr>
+<td><img src="ohloh_fmarier.png" width="300" height="300"></td>
+<td><img src="gitorious_fmarier.png" width="300" height="300"></td>
+<td><img src="wordpress_fmarier.png" width="300" height="300"></td>
+</tr></table>
 
 # Freedom and federation
 

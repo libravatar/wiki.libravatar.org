@@ -8,7 +8,11 @@ Uploading your image everywhere is clearly a waste of time. What if there was a 
 
 # How to use it
 
-So what you do is you [sign up on libravatar.org](https://www.libravatar.org/account/new), upload your photo and tell it what your email address it. That's it. That's all that needed. Once you've done that, a bunch of websites (where you've entered your email address) will start display your avatar next to your name.
+So what you do is you [sign up on libravatar.org](https://www.libravatar.org/account/new), upload your photo and tell it what your email address it. That's it. That's all that needed.
+
+TODO: screenshot of profile page in Libravatar
+
+Once you've done that, a bunch of websites (where you've entered your email address) will start display your avatar next to your name.
 
 TODO: ohloh and gitorious screenshots
 
@@ -24,6 +28,8 @@ For example, if you're a business, you may want to integrate with existing syste
 
 We also support things like [OpenID](http://openid.net). Not only can you [login](https://www.libravatar.org/openid/login) without creating a username and password, but you can also associate a photo to your OpenID identifier just like you associate photos to your email addresses.
 
+TODO: screenshot of a photo associated to an OpenID
+
 There are lots of other things in the [pipeline](https://bugs.launchpad.net/libravatar/+bugs?field.importance=WISHLIST) and if you have a great idea why not [[tell us|talk to us]]?
 
 # How does it work?
@@ -35,4 +41,13 @@ The basic architecture is designed to be simple and scalable:
 1. Once the slow operations finish, the final image files are stored on disk with a filename corresponding to the email/OpenID address hash.
 1. These photos are then replicated to all of the [[mirrors]] which then serve them as static files directly to browsers.
 
-If you're interested in the details of how third-party websites display Libravatar photos, you can have a look at the [[API]]. The gist of it is that they get a base URL via a DNS lookup and then tack on the hash value of the user's email or OpenID address to form the final image. It's that simple. (Well actually, for most web applications it's even easier because they're just using one of the convenient [[libraries]] provided by the community.)
+TODO: insert diagram
+
+If you're interested in the details of how third-party websites display Libravatar photos, you can have a look at the [[API]]. The gist of it is that they get a base URL via a DNS lookup and then tack on the hashed value of the user's email or OpenID address to form the final image:
+
+<table border="1">
+<tr><td align="center"><img src="http://cdn.libravatar.org/avatar/f52a1d3d8c39868fc92cf70828821635"></td></tr>
+<tr><td align="center">&lt;img src="http://cdn.libravatar.org/avatar/f52a1d3d8c39868fc92cf70828821635"&gt;</code></td></tr>
+</table>
+
+It's that simple. (Well actually, for most web applications it's even easier because they're just using one of the convenient [[libraries]] provided by the community.)

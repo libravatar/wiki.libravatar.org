@@ -10,7 +10,7 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="1392.1058"
-   height="975.76141"
+   height="1005.1169"
    id="svg2"
    version="1.1"
    inkscape:version="0.48.1 r9760"
@@ -109,9 +109,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.38183766"
-     inkscape:cx="615.59061"
-     inkscape:cy="441.9465"
+     inkscape:zoom="0.76367532"
+     inkscape:cx="675.02026"
+     inkscape:cy="123.66496"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -132,7 +132,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -153,28 +153,42 @@
          y="222.51335"
          id="tspan3784"
          style="text-align:center;text-anchor:middle">photo upload</tspan></text>
-    <g
-       id="g3796"
-       transform="translate(78.327545,22.29933)">
-      <text
-         sodipodi:linespacing="125%"
-         id="text3766"
-         y="471.73065"
-         x="429.18765"
-         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
-         xml:space="preserve"><tspan
-           y="471.73065"
-           x="429.18765"
-           id="tspan3768"
-           sodipodi:role="line">Django</tspan></text>
-      <rect
-         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:10"
-         id="rect3794"
-         width="235.18518"
-         height="235.18518"
-         x="383.33334"
-         y="343.10291" />
-    </g>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3247"
+       y="874.67902"
+       x="487.42731"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       xml:space="preserve"><tspan
+         y="874.67902"
+         x="487.42731"
+         id="tspan3249"
+         sodipodi:role="line">Gearman</tspan></text>
+    <rect
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:10"
+       id="rect3251"
+       width="235.18518"
+       height="235.18518"
+       x="461.66089"
+       y="742.52588" />
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+       x="507.5152"
+       y="871.15363"
+       id="text3766"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3768"
+         x="507.5152"
+         y="871.15363" /></text>
+    <rect
+       y="742.52588"
+       x="461.66089"
+       height="235.18518"
+       width="235.18518"
+       id="rect3794"
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:10" />
     <text
        xml:space="preserve"
        style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
@@ -215,9 +229,14 @@
        id="path3824"
        inkscape:connector-curvature="0" />
     <path
+       style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)"
+       d="m 579.20944,630.9373 0,81.48148"
+       id="path3272"
+       inkscape:connector-curvature="0" />
+    <path
        inkscape:connector-curvature="0"
        id="path4484"
-       d="m 579.20944,253.81368 0,81.48148"
+       d="m 579.20944,261.67042 0,81.48148"
        style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend)" />
     <g
        id="g5002"
@@ -427,9 +446,10 @@
        inkscape:connector-curvature="0" />
     <path
        style="fill:none;stroke:#000000;stroke-width:2.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow2Lend-2)"
-       d="m 578.77999,641.19268 0,306.41294 -1094.70605,0 0,-83.80525"
+       d="m 432.1208,947.6056 -948.04686,0 0,-83.8052"
        id="path5688"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccc" />
     <path
        inkscape:connector-curvature="0"
        id="path7228"
@@ -440,5 +460,27 @@
        d="m -177.33511,947.60562 0,-86.42416"
        id="path5882"
        inkscape:connector-curvature="0" />
+    <g
+       id="g3796-9"
+       transform="translate(78.327545,27.231251)">
+      <text
+         sodipodi:linespacing="125%"
+         id="text3766-6"
+         y="471.73065"
+         x="429.18765"
+         style="font-size:40px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Bitstream Vera Sans"
+         xml:space="preserve"><tspan
+           y="471.73065"
+           x="429.18765"
+           id="tspan3768-2"
+           sodipodi:role="line">Django</tspan></text>
+      <rect
+         style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:10"
+         id="rect3794-1"
+         width="235.18518"
+         height="235.18518"
+         x="383.33334"
+         y="343.10291" />
+    </g>
   </g>
 </svg>

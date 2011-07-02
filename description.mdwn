@@ -2,17 +2,17 @@
 
 It's a piece of [free software](http://www.gnu.org/philosophy/free-sw.html) to do federated avatar hosting. What does that do and why should you care?
 
-Say you've got a profile image you like to use when you have an account software. Now, you want this photo to show up whenever you interact socially with a website. You want your blog comments, status updates, git commits or anything else you do publicly to be associated with that image.
+Say you've got a profile image you like to use when you have an account somewhere. You want this photo to show up whenever you interact socially with a website. In other words, you want your blog comments, status updates, git commits or anything else you do publicly to be associated with that image.
 
-Uploading your image everywhere is clearly a waste of time. What if there was a place where you could put it and where every website out there could access it easily? That's the idea behind [Gravatar](http://www.gravatar.com), the service that pioneered this idea and inspired Libravatar.
+Uploading your image everywhere is clearly a waste of time. What if there was a place where you could put it and where every website out there could access it easily? That's the idea behind [Gravatar](http://www.gravatar.com), the service that pioneered this approach and inspired Libravatar.
 
 # How to use it
 
-So what you do is you [sign up on libravatar.org](https://www.libravatar.org/account/new), upload your photo and tell it what your email address it. That's it. That's all that needed.
+All you have to do is [sign up on libravatar.org](https://www.libravatar.org/account/new), upload your photo and tell us what your email address is. That's all.
 
 <img src="profile_fmarier.png" width="624" height="565">
 
-Once you've done that, a bunch of websites (where you've entered your email address) will start display your avatar next to your name.
+Once you've done that, a bunch of websites (where you've entered your email address, usually as part of the registration process) will start displaying your avatar next to your name.
 
 <table border="1"><tr>
 <td><img src="ohloh_fmarier.png" width="300" height="300"></td>
@@ -22,15 +22,15 @@ Once you've done that, a bunch of websites (where you've entered your email addr
 
 # Freedom and federation
 
-How is Libravatar [[different|features]] from Gravatar though? The main difference is that while [Libravatar.org](https://www.libravatar.org) is an online avatar hosting service just like Gravatar, the [software](https://launchpad.net/libravatar) that powers it is also available for download under a [free software license](http://www.gnu.org/licenses/agpl.html).
+How is Libravatar [[different|features]] from Gravatar though? The main difference is that while [Libravatar.org](https://www.libravatar.org) is an online avatar hosting service just like Gravatar, the [software](https://launchpad.net/libravatar) that powers the former is also available for download under a [free software license](http://www.gnu.org/licenses/agpl.html).
 
-Why would you want to [[run your own]] instance? Our belief is that centralised approaches don't put users in control. If you own your own domain name, you control how mail is delivered to your domain. You should also be able to control how avatars are served to other websites.
+Why would you want to [[run your own|running your own]] instance? Our belief is that centralised approaches don't put users in control. If you own your own domain name, you control how mail is delivered to your domain. You should also be able to control how avatars are served to other websites.
 
-For example, if you're a business, you may want to integrate with existing systems (e.g. a staff directory) and delegate authentication to what you're already using (LDAP?). Plus, you can choose what happens when images are not found (display your company logo?).
+For example, if you own a business, you may want to integrate with existing systems (e.g. a staff directory) and delegate authentication to what you're already using (LDAP?). Plus, you can choose what happens when email addresses are not found (display your company logo?).
 
 # What else?
 
-We also support things like [OpenID](http://openid.net). Not only can you [login](https://www.libravatar.org/openid/login) without creating a username and password, but you can also associate a photo to your OpenID identifier just like you associate photos to your email addresses.
+Libravatar also supports things like [OpenID](http://openid.net). Not only can you [login](https://www.libravatar.org/openid/login) without creating a username and password, but you can also assign a photo to your OpenID identifier just like you assign photos to your email addresses.
 
 <img src="openid_fmarier.png" width="340" height="117">
 
@@ -38,16 +38,16 @@ There are lots of other things in the [pipeline](https://bugs.launchpad.net/libr
 
 # How does it work?
 
-The basic architecture is designed to be simple and scalable:
+The basic architecture is meant to be simple and scalable:
 
 1. Users log into a dynamic [Django](http://www.djangoproject.com)-based site where they upload their photos and confirm their email or OpenID addresses.
-1. Uploaded photos are cropped, resized and optimised one after using [Gearman](http://gearman.org) to ensure that the server is not overloaded.
-1. Once the slow operations finish, the final image files are stored on disk with a filename corresponding to the email/OpenID address hash.
-1. These photos are then replicated to all of the [[mirrors]] which then serve them as static files directly to browsers.
+1. Uploaded photos are cropped, resized and optimised one after the one using [Gearman](http://gearman.org) to ensure that the server is not overloaded.
+1. Once the slow operations finish, the final image files are stored on disk with a filename corresponding to the email/OpenID address hashes.
+1. These photos are then replicated to all of the [[mirrors]] which serve them as static files directly to end-user browsers.
 
-<img src="architecture.png" width="900" height="631">
+<img src="architecture.png" width="900" height="650">
 
-If you're interested in the details of how third-party websites display Libravatar photos, you can have a look at the [[API]]. The gist of it is that they get a base URL via a DNS lookup and then tack on the hashed value of the user's email or OpenID address to form the final image:
+If you're interested in the details of how third-party websites display Libravatar photos, have a look at [[our API|api]]. The gist of it is that clients get a base URL via a DNS lookup and then tack on the hashed value of the user's email or OpenID address to form the final image:
 
 <table border="1">
 <tr><td align="center"><img src="http://cdn.libravatar.org/avatar/f52a1d3d8c39868fc92cf70828821635"></td></tr>

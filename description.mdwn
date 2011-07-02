@@ -45,7 +45,7 @@ The basic architecture is designed to be simple and scalable:
 1. Once the slow operations finish, the final image files are stored on disk with a filename corresponding to the email/OpenID address hash.
 1. These photos are then replicated to all of the [[mirrors]] which then serve them as static files directly to browsers.
 
-TODO: insert diagram
+<img src="architecture.png" width="900" height="631">
 
 If you're interested in the details of how third-party websites display Libravatar photos, you can have a look at the [[API]]. The gist of it is that they get a base URL via a DNS lookup and then tack on the hashed value of the user's email or OpenID address to form the final image:
 

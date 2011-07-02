@@ -20,6 +20,7 @@ Here is a list of features currently available in [Libravatar](http://www.librav
 <tr><td>Translated UI</td><td><a href="https://translations.launchpad.net/libravatar">Yes</a></td><td><a href="http://en.gravatar.com/site/translations/">Yes</a></td></tr>
 <tr><td>Account <b>export</b></td><td>Yes</td><td>-</td></tr>
 <tr><td>Account <b>deletion</b></td><td>Yes</td><td><a href="http://en.gravatar.com/site/faq/#answer-1-7">No</a></td></tr>
+<tr><td>XMLRPC API</td><td>-</td><td>Yes</td></tr>
 <tr><td>Libraries/plugins available</td><td>[[Some|libraries]]</td><td><a href="http://en.gravatar.com/site/implement/images/libraries/">Lots</a></td></tr>
 <tr><td><b>Free and Open Source Software</b></td><td><a href="http://www.gnu.org/licenses/agpl.html">Yes</a></td><td><a href="http://blog.gravatar.com/2010/05/31/gravatar-localization/#comment-8749">Not yet</a></td></tr>
 <tr><td>Distributed service</td><td>[[Community mirrors|run a mirror]]</td><td>Professional CDN</td></tr>

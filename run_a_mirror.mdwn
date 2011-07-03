@@ -1,4 +1,10 @@
-Libravatar's images are automatically served by a network of mirrors (through [DNS round-robin](http://en.wikipedia.org/wiki/Round-robin_DNS)). To get the latest list of mirrors on a UNIX machine, run:
+Libravatar's images are automatically served by a network of mirrors (through [DNS round-robin](http://en.wikipedia.org/wiki/Round-robin_DNS)).
+
+Thanks to [Kai Hendry](https://twitter.com/kaihendry) for [the idea](http://natalian.org/archives/2010/08/06/Debian_powered_Web_applications/). We're hoping to implement GeoDNS once we have a few mirrors outside of Europe.
+
+# List of mirrors
+
+To get the latest list of mirrors on a UNIX machine, run:
 
     dig cdn.libravatar.org
 

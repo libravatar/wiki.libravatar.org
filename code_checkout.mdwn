@@ -12,6 +12,8 @@ You can [browse the repository](http://bazaar.launchpad.net/~libravatar/libravat
 
 <img src="git_logo.png" width="64" height="64" align="right">
 
+**WARNING: the git mirror is currently not syncing. Please [[talk to us]] if you can help fix it.**
+
 You can [browse the code](https://gitorious.org/libravatar/libravatar/trees) on Gitorious and [clone the repository](https://gitorious.org/libravatar/libravatar/clone).
 
 Otherwise, just check the code out locally:

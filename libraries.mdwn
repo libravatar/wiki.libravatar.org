@@ -62,6 +62,7 @@ The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used 
 
 You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
 
+<a name="plugins"></a>
 # Plugins
 
 There aren't many plugins available at the moment, but please [[suggest the ones|suggested plugins]] you'd like to have.

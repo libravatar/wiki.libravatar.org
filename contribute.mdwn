@@ -16,6 +16,10 @@ If you can spare a bit of disk space and bandwidth, please [get in touch](mailto
 
 # Advocacy
 
-If you don't fit into of the other categories, you are still more than welcome to come and hang out on our [IRC channel](irc://chat.freenode.net/%23libravatar) ([web interface](http://webchat.freenode.net/?channels=libravatar)).
+If you don't fit into of the other categories, you are still more than welcome to join us:
 
-And of course, feel free to submit feature requests for your favourite applications to add support for Libravatar.
+* come and hang out on our [IRC channel](irc://chat.freenode.net/%23libravatar) ([web interface](http://webchat.freenode.net/?channels=libravatar)).
+* subscribe to our [mailing list](http://libravatar.onlinegroups.net/groups/libravatar-devel)
+* blog about Libravatar
+
+And of course, feel free to [submit feature requests](https://bugs.launchpad.net/libravatar/+filebug) against your favourite applications to add support for Libravatar.

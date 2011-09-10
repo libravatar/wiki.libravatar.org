@@ -4,6 +4,10 @@ If you are fluent in another language than English, you can now make Libravatar 
 
 There is [documentation](https://help.launchpad.net/Translations/StartingToTranslate) available to help you, but please [[get in touch with us|talk to us]] if you run into problems.
 
+## Transifex
+
+If you already use Transifex to translate other projects, you can also find a [Libravatar project](https://www.transifex.net/projects/p/libravatar/) on there and submit your translations that way. We do however prefer that new translators use the Launchpad system.
+
 # English speakers
 
 On the other hand, if your language of choice is English, please feel free to improve our grammer and fix our tpyos :) The best way to do that is to:

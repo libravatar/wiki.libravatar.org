@@ -2,7 +2,7 @@
 
 If you are fluent in another language than English, you can now make Libravatar speak your language through an [easy web interface](https://translations.launchpad.net/libravatar/trunk). No coding required!
 
-There is [documentation](https://help.launchpad.net/Translations/StartingToTranslate) available to help you.
+There is [documentation](https://help.launchpad.net/Translations/StartingToTranslate) available to help you, but please [[get in touch with us|talk to us]] if you run into problems.
 
 # English speakers
 

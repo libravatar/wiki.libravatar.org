@@ -5,7 +5,7 @@ The following [[plugins|libraries]] have been suggested:
 * Launchpad
 * [Drupal](http://drupal.org/node/1045064)
 * [Django](https://code.google.com/p/django-gravatar/)
-* Moodle
+* [Moodle](http://tracker.moodle.org/browse/MDL-29584)
 * Wikkid
 * [Thunderbird](https://addons.mozilla.org/en-US/thunderbird/addon/58034/)
 * [pfaces](https://projects.pekdon.net/projects/pfaces)

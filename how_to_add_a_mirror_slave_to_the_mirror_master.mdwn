@@ -6,7 +6,7 @@ Do this on the **slave**:
 
 1. install the required packages on the slave:
 
-        apt-get install libravatar-{common,cdn-common,cdn,seccdn,slave}
+        dpkg -i libravatar-{common,cdn-common,cdn,seccdn,slave}*.deb
         apt-get install -f
 
 2. create symlinks for the SSL certificate:

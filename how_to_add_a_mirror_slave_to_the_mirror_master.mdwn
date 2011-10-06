@@ -4,6 +4,7 @@ This will be of interest only to admins who run a Libravatar master server using
 
 Do this on the **slave**:
 
+1. make sure NTP is installed and running
 1. install the required packages on the slave:
 
         dpkg -i libravatar-{common,cdn-common,cdn,seccdn,slave}*.deb

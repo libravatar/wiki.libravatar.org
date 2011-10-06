@@ -17,8 +17,9 @@ Do this on the **slave**:
         ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
 
 3. uncomment <tt>allowrsync</tt> in <tt>/etc/rssh.conf</tt>.
-4. (optional) make the awstats reports available:
+4. (optional) make the statistical reports available:
 
+        apt-get install awstats
         ln -s /usr/share/awstats/icon/ /var/www/awstats-icon
         ln -s /var/cache/awstats/ /var/www/stats
 

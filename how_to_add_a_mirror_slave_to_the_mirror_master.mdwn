@@ -12,7 +12,7 @@ Do this on the **slave**:
 
 2. create symlinks for the SSL certificate:
 
-        ln -s /var/lib/libravatar/slave/cert/chain.pem /etc/libravatar/
+        ln -s /var/lib/libravatar/slave/cert/seccdn-chain.pem /etc/libravatar/
         ln -s /var/lib/libravatar/slave/cert/seccdn.pem /etc/libravatar/
         ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
 

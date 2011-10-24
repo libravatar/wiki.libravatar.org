@@ -14,7 +14,7 @@ Here's an example in Python:
 
     import hashlib
     email = 'George@example.com'
-    hash = hashlib.md5(email.lower()).hexdigest()
+    hash = hashlib.md5(email.strip().lower()).hexdigest()
 
 which gives us a hash of <tt>40f8d096a3777232204cb3f796c577b7</tt> and therefore the following image tag:
 
@@ -113,7 +113,7 @@ In addition to email addresses, Libravatar allows users to associate photos to t
 The same 5 steps apply:
 
 1. Take a user's OpenID URL as entered by them.
-2. Convert the **protocol and hostname parts** of the URL to lowercase. e.g. HTTP://EXAMPLE.COM/ID/Bob => http://example.com/ID/Bob
+2. Convert the **protocol and hostname parts** of the URL to lowercase. e.g. HTTP://UserName:Password@EXAMPLE.COM/ID/Bob => http://UserName:Password@example.com/ID/Bob
 3. Compute the hash (using the **SHA256 hash algorithm only**).
 4. Turn the image into a URL by prefixing it with the Libravatar base URL.
 5. Put the image into an <tt>img</tt> tag on your page.
@@ -122,9 +122,15 @@ Therefore, if you don't have an email address for some of your users but you do 
 
     import hashlib
     from urlparse import urlsplit, urlunsplit
+
     openid = 'http://example.com/id/john'
-    url = urlsplit(openid)
-    lowercase_url = urlunsplit((url.scheme.lower(), url.netloc.lower(), url.path, url.query, url.fragment))
+    url = urlsplit(openid.strip())
+    if url.username:
+        password = url.password or ''
+        netloc = url.username + ':' + password + '@' + url.hostname
+    else:
+        netloc = url.hostname
+    lowercase_url = urlunsplit((url.scheme.lower(), netloc, url.path, url.query, url.fragment))
     hash = hashlib.sha256(lowercase_url).hexdigest()
 
 # Testing tool

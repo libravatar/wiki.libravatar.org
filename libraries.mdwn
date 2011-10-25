@@ -1,6 +1,8 @@
-If a library or plugin is not availble for your language or application, your best option at the moment is to use our [[simple API|API]]. Don't worry though, it's really not that much work!
+[[!toc  levels=2]]
 
 # Libraries
+
+If a library or plugin is not availble for your language or application, your best option at the moment is to use our [[simple API|API]]. Don't worry though, it's really not that much work!
 
 ## C\# 
 

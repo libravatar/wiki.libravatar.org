@@ -95,7 +95,7 @@ The [txLibravatar](http://pypi.python.org/pypi/txLibravatar) module can be used 
             request.finish()
     
         def render_GET(self, request):
-            d = libravatar_url(email = 'fmarier@gmail.com')
+            d = libravatar_url(email = 'person@example.com')
             d.addCallback(self.print_response, request)
             return server.NOT_DONE_YET
     

@@ -74,6 +74,32 @@ The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used 
 
 You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
 
+## Twisted
+
+<img src="twisted_logo.png" width="71" height="75" align="right">
+
+The [txLibravatar](http://pypi.python.org/pypi/txLibravatar) module can be used like this:
+
+    from twisted.internet import reactor
+    from twisted.web import server, resource
+    from txlibravatar import libravatar_url
+    
+    class TestResource(resource.Resource):
+        isLeaf = True
+    
+        def print_response(self, result, request):
+            request.setHeader("content-type", "text/html")
+            request.write('<img src="' + result + '">')
+            request.finish()
+    
+        def render_GET(self, request):
+            d = libravatar_url(email = 'fmarier@gmail.com')
+            d.addCallback(self.print_response, request)
+            return server.NOT_DONE_YET
+    
+    reactor.listenTCP(3000, server.Site(TestResource()))
+    reactor.run()
+
 <a name="plugins"></a>
 # Plugins
 

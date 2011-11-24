@@ -13,6 +13,7 @@ The following [[plugins|libraries]] have been suggested:
 * [GroupServer/OnlineGroups.net](http://groupserver.org/)
 * [gnus](http://julien.danjou.info/blog/index.html#Gnus_and_Gravatar_support)
 * [Redmine](http://www.redmine.org) - [Feature #9112](http://www.redmine.org/issues/9112)
+* LCA's zookeepr or web CMS, for conference schedules
 
 If you'd like to **vote** for one of these, add a "+" sign at the end of the line.
 

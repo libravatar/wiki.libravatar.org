@@ -29,3 +29,7 @@ welcome to join the project and [[run your own instance|Running your own]].
 # Freedom
 
 We value your privacy and freedom which is why we are committed to delivering our service using a [[freedom-respecting infrastructure]].
+
+----
+
+The contents of this wiki is licensed your choice of the [GNU Affero GPL version 3 or later](http://gnu.org/licenses/agpl.html), or the [Creative Commons Attribution-Share Alike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/).

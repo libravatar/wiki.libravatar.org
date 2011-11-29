@@ -1,6 +1,6 @@
 <img src="http://cdn.libravatar.org/nobody/300.png" align="right">
 
-[Libravatar](http://www.libravatar.org) is a free service for hosting
+[Libravatar](https://www.libravatar.org) is a free service for hosting
 profile images tied to your email address or OpenID. Once you have an
 account with us, your photo will be displayed next to your posts and
 comments on sites which support Libravatar.
@@ -32,4 +32,4 @@ We value your privacy and freedom which is why we are committed to delivering ou
 
 ----
 
-The contents of this wiki is licensed your choice of the [GNU Affero GPL version 3 or later](http://gnu.org/licenses/agpl.html), or the [Creative Commons Attribution-Share Alike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/).
+The contents of this wiki is licensed your choice of the [GNU Affero GPL version 3 or later](http://gnu.org/licenses/agpl.html), or the [Creative Commons Attribution-ShareAlike 3.0 Unported license](https://creativecommons.org/licenses/by-sa/3.0/).

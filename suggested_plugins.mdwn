@@ -14,6 +14,8 @@ The following [[plugins|libraries]] have been suggested:
 * [gnus](http://julien.danjou.info/blog/index.html#Gnus_and_Gravatar_support)
 * [Redmine](http://www.redmine.org) - [Feature #9112](http://www.redmine.org/issues/9112)
 * [Gitorious](https://issues.gitorious.org/issues/62)
+* Pidgin
+* BuddyCloud
 
 If you'd like to **vote** for one of these, add a "+" sign at the end of the line.
 

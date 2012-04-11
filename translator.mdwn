@@ -15,3 +15,7 @@ On the other hand, if your language of choice is English, please feel free to im
 1. [download the PO files](https://translations.launchpad.net/libravatar/trunk/+export)
 2. edit them, fixing what needs to be fixed
 3. attach the improved PO file to a [new bug report](https://bugs.launchpad.net/libravatar/trunk/+filebug)
+
+# Technical information
+
+* [[How to add a new translation]]

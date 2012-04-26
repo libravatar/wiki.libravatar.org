@@ -43,7 +43,7 @@ As of version 1.04, you can also use OpenID URLs instead of email addresses:
 
 <img src="php_logo.png" width="145" height="75" align="right">
 
-[Melissa Draper](http://www.meldraweb.com/) maintains the [Services_Libravatar](http://pear.php.net/package/Services_Libravatar/) PHP class. Here's an example of how it works:
+[Melissa Draper](http://www.meldraweb.com/) maintains the [Services_Libravatar](http://pear.php.net/package/Services_Libravatar/) PEAR module. Here's an example of how it works:
 
     require_once 'Services/Libravatar.php';
     $libravatar = new Services_Libravatar();

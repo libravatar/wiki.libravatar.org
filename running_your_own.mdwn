@@ -2,17 +2,17 @@ Libravatar was designed so that domain owners can choose to host themselves the 
 
 # System requirements
 
-You can find the latest system requirements in the [installation instructions](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/view/head:/INSTALL) that come with the software, but Libravatar has been confirmed to work on [Debian 6](http://www.debian.org/releases/squeeze/) (squeeze).
+You can find the latest system requirements in the [installation instructions](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 6](http://www.debian.org/releases/squeeze/) (squeeze).
 
 # Getting the code
 
-We are not currently doing regular releases of the code, but you can easily get the latest copy from our [Bazaar repository](https://code.launchpad.net/libravatar):
+We are not currently doing regular releases of the code, but you can easily get the latest copy from our [git repository](https://gitorious.org/libravatar/libravatar):
 
-    bzr branch lp:libravatar
+    git clone git://gitorious.org/libravatar/libravatar.git
 
 # Installation
 
-Once you've got a copy of the code, follow the instructions in the [INSTALL](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/view/head:/INSTALL) file.
+Once you've got a copy of the code, follow the instructions in the [INSTALL](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) file.
 
 # Configuration
 

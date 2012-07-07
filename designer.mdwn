@@ -4,6 +4,6 @@ We would be delighted to have you on board!
 
 The best place to start is to [[talk to us]] and then:
 
-1. grab a copy of the [HTML templates](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/templates/) and [CSS files](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/static/css/)
+1. grab a copy of the [HTML templates](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/templates) and [CSS files](https://gitorious.org/libravatar/libravatar/trees/master/static/css)
 2. make them look fresh and attractive (i.e. the hard creative bit)
 3. attach them to a [new bug report](https://bugs.launchpad.net/libravatar/+filebug)

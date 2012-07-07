@@ -15,6 +15,6 @@ What should you do if a library is not available for your target language? Well,
 
 # Write a simple test page
 
-As part of the main Libravatar [source code repository](https://code.launchpad.net/~libravatar/libravatar/trunk), we have a few [test pages](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/contrib/) for some of the libraries that have been contributed.
+As part of the main Libravatar [source code repository](https://gitorious.org/libravatar/libravatar), we have a few [test pages](https://gitorious.org/libravatar/libravatar/trees/master/contrib) for some of the libraries that have been contributed.
 
 Once you have made a new library available, we'll be happy to include a small test case from you.

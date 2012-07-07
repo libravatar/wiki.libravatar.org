@@ -1,18 +1,18 @@
 Libravatar is a fairly simple [Django](http://www.djangoproject.org) application.
 
-Here's what you'll find in the [main repository](https://code.launchpad.net/~libravatar/libravatar/trunk):
+Here's what you'll find in the [main repository](https://gitorious.org/libravatar/libravatar):
 
-* [config/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/config/): [Apache](http://httpd.apache.org/) configuration files
-* [contrib/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/contrib/): contributed code related to the project but not needed by the main application
-* [debian/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/debian/): installation scripts and cron jobs
-* [libravatar/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/): [Gearman](http://gearman.org/) workers and Django configuration
- * [libravatar/account/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/account/): main application (logged in)
- * [libravatar/locale/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/locale/): [translations](https://translations.launchpad.net/libravatar/trunk/+translations)
- * [libravatar/public/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/public/): public-facing website (logged out)
- * [libravatar/schemas/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/schemas/): XML schema used for account exports
- * [libravatar/templates/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/templates/): HTML templates
- * [libravatar/tools/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/libravatar/tools/): helpful interactive tools
-* [static/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/static/): CSS stylesheets, Javascripts and images need by the Django application
- * [static/cdn/](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files/head:/static/cdn/): images needed by the avatar CDNs
+* [config/](https://gitorious.org/libravatar/libravatar/trees/master/config): [Apache](http://httpd.apache.org/) configuration files
+* [contrib/](https://gitorious.org/libravatar/libravatar/trees/master/contrib): contributed code related to the project but not needed by the main application
+* [debian/](https://gitorious.org/libravatar/libravatar/trees/master/debian): installation scripts and cron jobs
+* [libravatar/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar): [Gearman](http://gearman.org/) workers and Django configuration
+ * [libravatar/account/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/account): main application (logged in)
+ * [libravatar/locale/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/locale): [translations](https://translations.launchpad.net/libravatar/trunk/+translations)
+ * [libravatar/public/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/public): public-facing website (logged out)
+ * [libravatar/schemas/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/schemas): XML schema used for account exports
+ * [libravatar/templates/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/templates): HTML templates
+ * [libravatar/tools/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/tools): helpful interactive tools
+* [static/](https://gitorious.org/libravatar/libravatar/trees/master/static): CSS stylesheets, Javascripts and images need by the Django application
+ * [static/cdn/](https://gitorious.org/libravatar/libravatar/trees/master/static/cdn): images needed by the avatar CDNs
 
 As far as getting your head around the Django-specific code, have a look at the [excellent manual](https://docs.djangoproject.com/en/1.2/) they provide.

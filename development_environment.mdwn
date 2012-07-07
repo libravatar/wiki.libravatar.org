@@ -52,12 +52,12 @@ To create and initialize your chroot-based environment:
 
 * install the required packages in the chroot:
 
-        apt-get install bzr make debhelper yui-compressor python-django python-psycopg2 python-gearman.libgearman python-imaging python-openid python-dns pylint
+        apt-get install git make debhelper yui-compressor python-django python-psycopg2 python-gearman.libgearman python-imaging python-openid python-dns pylint
 
 * get a copy of the repo:
 
         cd /root
-        bzr co lp:libravatar
+        git clone git://gitorious.org/libravatar/libravatar.git
 
 * create a config file for your environment:
 
@@ -113,10 +113,10 @@ The next time you want to get inside the chroot to do some work, simply do the f
 
 If you want to update the Libravatar codebase you are working from, do this:
 
-* update the bzr branch:
+* update the branch:
 
         cd /root/libravatar
-        bzr up
+        git pull
 
 * get rid of old packages:
 

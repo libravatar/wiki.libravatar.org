@@ -1,4 +1,4 @@
-The main repository is using bzr, but that doesn't mean you have to use it since we provide mirrors of the repository in other version control systems.
+The main repository is using git, but that doesn't mean you have to use it since we provide mirrors of the repository in other version control systems.
 
 # Using [bzr](http://bazaar.canonical.com/)
 
@@ -12,13 +12,13 @@ You can [browse the repository](http://bazaar.launchpad.net/~libravatar/libravat
 
 <img src="git_logo.png" width="64" height="64" align="right">
 
-**WARNING: the git mirror is currently not syncing. Please [[talk to us]] if you can help fix it.**
-
 You can [browse the code](https://gitorious.org/libravatar/libravatar/trees) on Gitorious and [clone the repository](https://gitorious.org/libravatar/libravatar/clone).
 
 Otherwise, just check the code out locally:
 
     git clone git://gitorious.org/libravatar/libravatar.git
+
+A mirror of it is also available on [Github](https://github.com/libravatar/libravatar).
 
 # Using [mercurial](http://mercurial.selenic.com/)
 
@@ -32,4 +32,4 @@ Otherwise, just clone the repo:
 
 # Using other version control systems
 
-Is your favourite source control system not in our list? Well, if you can [[send us|talk to us]] instructions on how to convert a bzr repository to a *YourFavoriteVCS* repository, then we'll try to add it to the sync cronjob we have.
+Is your favourite source control system not in our list? Well, if you can [[send us|talk to us]] instructions on how to convert a git repository to a *YourFavoriteVCS* repository, then we'll try to add it to the sync cronjob we have.

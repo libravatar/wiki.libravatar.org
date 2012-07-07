@@ -16,7 +16,7 @@ We use [Launchpad](https://bugs.launchpad.net/libravatar) as our bug tracker.
 
 # Mailing list
 
-If you've got a proposal to discuss or prefer to write to us, you can join [our developers mailing list](http://libravatar.onlinegroups.net/groups/libravatar-devel).
+If you've got a proposal to discuss or prefer to write to us, you can join [our developers mailing list](https://launchpad.net/~libravatar-fans#mailing-lists).
 
 # Identica / Twitter
 

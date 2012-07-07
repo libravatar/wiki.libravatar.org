@@ -2,7 +2,7 @@ Depending on your interest and what programming languages you know, there are a 
 
 # Plugins / Libraries
 
-We want to see the Libravatar community grow and one of the best ways to do this is to expand the range of applications supporting [Libravatar](http://www.libravatar.org) out of the box, or with the help of a plugin/extension.
+We want to see the Libravatar community grow and one of the best ways to do this is to expand the range of applications supporting [Libravatar](https://www.libravatar.org) out of the box, or with the help of a plugin/extension.
 
 Please consider writing a patch, plugin or extension for your favourite web applications. There might already be a [[library|libraries]] for the relevant programming language. Otherwise, you could always write one!
 

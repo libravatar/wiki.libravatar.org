@@ -40,7 +40,7 @@ Given a new slave with an IP address of 192.0.2.10, then you can put this in you
 
     192.0.2.10    cdn.libravatar.org seccdn.libravatar.org
 
-and then lookup images using the [test tool](http://www.libravatar.org/tools/check).
+and then lookup images using the [test tool](https://www.libravatar.org/tools/check).
 
 Once it works, add the new slave to the round-robin A (and hopefully AAAA) records in your zone.
 

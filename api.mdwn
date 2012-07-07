@@ -85,7 +85,7 @@ You will probably want to use an [[existing library|libraries]] for this, but he
     ;; ANSWER SECTION:
     _avatars._tcp.example.com. 86400 IN	SRV 0 0 80 avatars.example.com.
 
-We also provide a [domain check tool](http://www.libravatar.org/tools/check_domain) to help in your testing.
+We also provide a [domain check tool](https://www.libravatar.org/tools/check_domain) to help in your testing.
 
 Notes for advanced users / library authors:
 
@@ -135,4 +135,4 @@ Therefore, if you don't have an email address for some of your users but you do 
 
 # Testing tool
 
-We provide a [check tool](http://www.libravatar.org/tools/check) to help developers test their implementations and compare their results.
+We provide a [check tool](https://www.libravatar.org/tools/check) to help developers test their implementations and compare their results.

@@ -1,4 +1,4 @@
-Are you a CSS / graphics guru? Do you have any ideas on how to improve the style of our [website](http://www.libravatar.org)?
+Are you a CSS / graphics guru? Do you have any ideas on how to improve the style of our [website](https://www.libravatar.org)?
 
 We would be delighted to have you on board!
 

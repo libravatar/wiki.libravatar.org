@@ -92,6 +92,7 @@ The [txLibravatar](http://pypi.python.org/pypi/txLibravatar) module can be used 
 There aren't many plugins available at the moment, but please [[suggest the ones|suggested plugins]] you'd like to have.
 
 * [Foswiki](http://foswiki.org/Extensions/AvatarPlugin)
+* [Friendica](https://github.com/friendica/friendica-addons/tree/master/libravatar)
 * [Ikiwiki](http://ikiwiki.info) (part of core, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
 * [Koha](http://www.koha-community.org) (part of core starting in 3.6, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
 * [Wordpress](http://wordpress.org/extend/plugins/libravatar/)

@@ -16,7 +16,6 @@ The following [[plugins|libraries]] have been suggested:
 * [Gitorious](https://issues.gitorious.org/issues/62)
 * Pidgin
 * BuddyCloud
-* [Friendica](https://github.com/friendica/friendica) - [Klaus is onto it](http://friendica.dszdw.net/display/klaus/6377)
 
 If you'd like to **vote** for one of these, add a "+" sign at the end of the line.
 

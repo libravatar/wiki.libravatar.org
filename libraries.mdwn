@@ -95,6 +95,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * [Friendica](https://github.com/friendica/friendica-addons/tree/master/libravatar)
 * [Ikiwiki](http://ikiwiki.info) (part of core, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
 * [Koha](http://www.koha-community.org) (part of core starting in 3.6, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
+* [MediaWiki](http://www.mediawiki.org/wiki/Extension:Libravatar)
 * [Wordpress](http://wordpress.org/extend/plugins/libravatar/)
 * [Zookeepr](http://zookeepr.org/) (part of core, starting with LCA 2013)
 

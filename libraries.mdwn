@@ -43,16 +43,16 @@ As of version 1.04, you can also use OpenID URLs instead of email addresses:
 
 <img src="php_logo.png" width="145" height="75" align="right">
 
-[Melissa Draper](http://www.meldraweb.com/) maintains the [Services_Libravatar](http://pear.php.net/package/Services_Libravatar/) PEAR module. Here's an example of how it works:
+[Melissa Draper](http://www.meldraweb.com/) maintains the [Services_Libravatar](http://pear.php.net/package/Services_Libravatar/) PEAR package. Here's an example of how it works:
 
     require_once 'Services/Libravatar.php';
     $libravatar = new Services_Libravatar();
-    $avatar_url = $libravatar->url('person@example.org');
-    print '<img src="' . $avatar_url . '">';
+    $avatar_url = $libravatar->getUrl('person@example.org');
+    print '<img src="' . htmlspecialchars($avatar_url) . '" alt="avatar"/>';
 
 or like this for OpenID-based avatars served over HTTPS:
 
-    $avatar_url = $libravatar->url('http://example.org/id/Person', array('https' => true));
+    $avatar_url = $libravatar->getUrl('http://example.org/id/Person', array('https' => true));
 
 ## Python
 

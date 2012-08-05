@@ -3,8 +3,8 @@ Here is a list of features currently available in [Libravatar](https://www.libra
 <table border="1">
 <tr><th></th><th>Libravatar</th><th>Gravatar</th></tr>
 <tr><td>JPEG and <b>PNG</b> support</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>Upload size limit</td><td>5 MB</td><td>None</td></tr>
-<tr><td>Image size (in pixels)</td><td>1 to 512 (configurable)</td><td>1 to 512</td></tr>
+<tr><td>Upload size limit</td><td>10 MB</td><td>None</td></tr>
+<tr><td>Image size (in pixels)</td><td>1 to 512 (configurable)</td><td>1 to <a href="http://blog.gravatar.com/2012/07/30/retina/">2048</a></td></tr>
 <tr><td><b>HTTPS</b> support</td><td>Yes</td><td>Yes</td></tr>
 <tr><td><b>IPv6</b> support</td><td>Yes</td><td>-</td></tr>
 <tr><td>Support email hashes</td><td>MD5 and <b>SHA256</b></td><td><a href="http://en.gravatar.com/site/faq/#answer-2-1">MD5 only</a></td></tr>

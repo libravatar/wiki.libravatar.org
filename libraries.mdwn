@@ -17,7 +17,7 @@ If a library or plugin is not availble for your language or application, your be
 
 <img src="nodejs_logo.png" width="219" height="75" align="right">
 
-There is a [Libravatar node.js module](http://search.npmjs.org/#/libravatar) that can be used in the follow way:
+There is a [Libravatar node.js module](https://npmjs.org/package/libravatar) that can be used in the follow way:
 
     var libravatar = require('libravatar');
     libravatar.url(email='person@example.com', openid=null, { size: 96, default: 'mm' }, https=false,

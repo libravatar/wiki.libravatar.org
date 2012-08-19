@@ -1,5 +1,17 @@
 Libravatar was designed so that domain owners can choose to host themselves the profile pictures for their domain. For example, an organisation may want to have control over the pictures use for their employees.
 
+Currently exist two libravatar image server implementations:
+
+[[!table class="border" data="""
+Name                                                | Description                           | Administration    | Programming language | Default modes
+libravatar                                          | The software that runs libravatar.org | web-based         | Python               | 404, mm, identicon, monsterid, wavatar, retro
+[Surrogator](https://sourceforge.net/p/surrogator/) | very simple avatar server             | command line only | PHP                  | 404, mm
+"""]]
+
+The following instructions are about the official libravatar.org software.
+
+
+
 # System requirements
 
 You can find the latest system requirements in the [installation instructions](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 6](http://www.debian.org/releases/squeeze/) (squeeze).

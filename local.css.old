@@ -1,0 +1,10 @@
+/* ikiwiki local style sheet */
+
+/* Add local styling here, instead of modifying style.css. */
+table.border {
+    border-collapse: collapse;
+}
+table.border td, table.border th {
+    border: 1px solid black;
+    padding: 2px 4px;
+}

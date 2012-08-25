@@ -1,31 +1,31 @@
 Here is a list of features currently available in [Libravatar](https://www.libravatar.org) and how it differs from [Gravatar](http://www.gravatar.com).
 
-<table border="1">
-<tr><th></th><th>Libravatar</th><th>Gravatar</th></tr>
-<tr><td>JPEG and <b>PNG</b> support</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>Upload size limit</td><td>10 MB</td><td>None</td></tr>
-<tr><td>Image size (in pixels)</td><td>1 to 512 (configurable)</td><td>1 to <a href="http://blog.gravatar.com/2012/07/30/retina/">2048</a></td></tr>
-<tr><td><b>HTTPS</b> support</td><td>Yes</td><td>Yes</td></tr>
-<tr><td><b>IPv6</b> support</td><td>Yes</td><td>-</td></tr>
-<tr><td>Support email hashes</td><td>MD5 and <b>SHA256</b></td><td><a href="http://en.gravatar.com/site/faq/#answer-2-1">MD5 only</a></td></tr>
-<tr><td><b>OpenID</b> URL support</td><td>Yes</td><td>-</td></tr>
-<tr><td>Redirection to Gravatar</td><td>Yes</td><td>Not needed :)</td></tr>
-<tr><td>Customisable default image</td><td>Yes</td><td>Yes</td></tr>
-<tr><td>MPAA-style image ratings</td><td>-</td><td>Yes</td></tr>
-<tr><td>Text-based personal information</td><td>-</td><td>Yes</td></tr>
-<tr><td><b>Federation</b> via DNS SRV records</td><td>Yes</td><td>-</td></tr>
-<tr><td><b>BrowserID</b> authentication</td><td>Yes</td><td>-</td></tr>
-<tr><td><b>LDAP</b> authentication</td><td>Yes</td><td>-</td></tr>
-<tr><td><b>OpenID</b> authentication</td><td>Yes</td><td>-</td></tr>
-<tr><td>Automatic photo <b>importers</b></td><td>[[Yes|photo importers]]</td><td>-</td></tr>
-<tr><td>Translated UI</td><td><a href="https://translations.launchpad.net/libravatar">Yes</a></td><td><a href="http://en.gravatar.com/site/translations/">Yes</a></td></tr>
-<tr><td>Account <b>export</b></td><td>Yes</td><td>-</td></tr>
-<tr><td>Account <b>deletion</b></td><td>Yes</td><td><a href="http://en.gravatar.com/site/faq/#answer-1-7">No</a></td></tr>
-<tr><td>XMLRPC API</td><td>-</td><td>Yes</td></tr>
-<tr><td>Libraries/plugins available</td><td>[[Some|libraries]]</td><td><a href="http://en.gravatar.com/site/implement/images/libraries/">Lots</a></td></tr>
-<tr><td><b>Free and Open Source Software</b></td><td><a href="http://www.gnu.org/licenses/agpl.html">Yes</a></td><td><a href="http://blog.gravatar.com/2010/05/31/gravatar-localization/#comment-8749">Not yet</a></td></tr>
-<tr><td>Distributed service</td><td>[[Community mirrors|run a mirror]]</td><td>Professional CDN</td></tr>
-<tr><td>Corporate sponsor</td><td>None</td><td><a href="http://automattic.com/">Automattic</a></td></tr>
-</table>
+[[!table class="border" data="""
+                                  | Libravatar                                           | Gravatar
+JPEG and **PNG** support          | Yes                                                  | Yes
+Upload size limit                 | 10 MB                                                | None
+Image size (in pixels)            | 1 to 512 (configurable)                              | [2048](http://blog.gravatar.com/2012/07/30/retina/)
+**HTTPS** support                 | Yes                                                  | Yes
+**IPv6** support                  | Yes                                                  | &mdash;
+Supported email hashes            | MD5 and **SHA256**                                   | [MD5 only](http://en.gravatar.com/site/faq/#answer-2-1)
+**OpenID** URL support            | Yes                                                  | &mdash;
+Redirection to Gravatar           | Yes                                                  | Not needed :)
+Customizable default image        | Yes                                                  | Yes
+MPAA-style image ratings          | G-rated only                                         | Yes
+Text-based profile information    | &mdash;                                              | Yes
+**Federation** via DNS SRV records| Yes                                                  | &mdash;
+**Persona** authentication        | Yes                                                  | &mdash;
+**LDAP** authentication           | Yes                                                  | &mdash;
+**OpenID** authentication         | Yes                                                  | &mdash;
+Automatic photo **importers**     | [[Yes|photo importers]]                              | &mdash;
+Translated user interface         | [Yes](https://translations.launchpad.net/libravatar) | [Yes](http://en.gravatar.com/site/translations/)
+Account **export**                | Yes                                                  | &mdash;
+Account **deletion**              | Yes                                                  | [No](http://en.gravatar.com/site/faq/#answer-1-7)
+XMLRPC API                        | &mdash;                                              | Yes
+Libraries/plugins available       | [[Some|libraries]]                                   | [Lots](http://en.gravatar.com/site/implement/images/libraries/)
+**Free and Open Source software** | [Yes](http://www.gnu.org/licenses/agpl.html)         | [No](http://blog.gravatar.com/2010/05/31/gravatar-localization/#comment-8749)
+Distributed service               | [[Community mirrors|run a mirror]]                   | Commercial CDN
+Corporate owner                   | &mdash;                                              | [Automattic](http://automattic.com/)
+"""]]
 
 Is something missing from this list? Let us know by [filing a bug](https://bugs.launchpad.net/libravatar/+filebug), or [[contributing|contribute]] a new feature yourself!

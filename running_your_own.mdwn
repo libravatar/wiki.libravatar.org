@@ -3,9 +3,9 @@ Libravatar was designed so that domain owners can choose to host themselves the 
 Currently exist two libravatar image server implementations:
 
 [[!table class="border" data="""
-Name                                                | Description                           | Administration    | Programming language | Default modes
-libravatar                                          | The software that runs libravatar.org | web-based         | Python               | 404, mm, identicon, monsterid, wavatar, retro
-[Surrogator](https://sourceforge.net/p/surrogator/) | very simple avatar server             | command line only | PHP                  | 404, mm
+Name                                                | Description                           | Administration    | Programming language | Support for   | Default modes
+libravatar                                          | The software that runs libravatar.org | web-based         | Python               | Email, OpenID | 404, mm, identicon, monsterid, wavatar, retro
+[Surrogator](https://sourceforge.net/p/surrogator/) | very simple avatar server             | command line only | PHP                  | Email, OpenID | 404, mm
 """]]
 
 The following instructions are about the official libravatar.org software.

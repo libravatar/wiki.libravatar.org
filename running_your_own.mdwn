@@ -64,4 +64,4 @@ You may however use weights to spread the load across more than one avatar serve
 
 ## Testing
 
-Once you have these records, have a look at the [domain check tool](https://www.libravatar.org/tools/check_domain) to make sure eveprything is working.
+Once you have these records, have a look at the [domain check tool](https://www.libravatar.org/tools/check_domain) to make sure everything is working.

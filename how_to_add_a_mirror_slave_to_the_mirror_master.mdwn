@@ -10,11 +10,11 @@ Do this on the **slave**:
         dpkg -i libravatar-{common,cdn-common,cdn,seccdn,slave}*.deb
         apt-get install -f
 
-2. create symlinks for the SSL certificate:
+2. copy the SSL certificate into place:
 
-        ln -s /var/lib/libravatar/slave/cert/seccdn-chain.pem /etc/libravatar/
-        ln -s /var/lib/libravatar/slave/cert/seccdn.pem /etc/libravatar/
-        ln -s /var/lib/libravatar/slave/cert/seccdn.crt /etc/libravatar/
+        cp seccdn-chain.pem /etc/libravatar/
+        cp seccdn.pem /etc/libravatar/
+        cp seccdn.crt /etc/libravatar/
 
 3. uncomment <tt>allowrsync</tt> in <tt>/etc/rssh.conf</tt>.
 
@@ -31,8 +31,6 @@ Within about 15 minutes, you should see these files pop up on the slave:
 * <tt>/var/lib/libravatar/slave/cert/chain.pem</tt>
 * <tt>/var/lib/libravatar/slave/cert/seccdn.pem</tt>
 * <tt>/var/lib/libravatar/slave/cert/seccdn.crt</tt>
-
-Then you can restart Apache on the slave to enable everything.
 
 # Testing the new mirror
 

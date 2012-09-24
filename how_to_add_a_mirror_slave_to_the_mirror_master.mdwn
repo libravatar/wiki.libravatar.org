@@ -16,15 +16,9 @@ Do this on the **slave**:
         cp seccdn.pem /etc/libravatar/
         cp seccdn.crt /etc/libravatar/
 
-3. uncomment <tt>allowrsync</tt> in <tt>/etc/rssh.conf</tt>.
-
 Do this on the **master**:
 
-1. add the slave's ssh hostkey to known_keys:
-
-        sudo -u libravatar-master ssh libravatar-slave@mirror1.example.com
-
-2. add the mirror hostname to <tt>/etc/default/libravatar-master</tt>
+1. add the slave's ssh pubkey to `/var/lib/libravatar/master/.ssh/authorized_keys`:
 
 Within about 15 minutes, you should see these files pop up on the slave:
 

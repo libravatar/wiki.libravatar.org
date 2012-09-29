@@ -56,6 +56,10 @@ and then lookup images using the [test tool](https://www.libravatar.org/tools/ch
 
         namecoind name_update d/libravatar "`xargs echo < config/dns.json`"
 
+# Basic monitoring
+
+At the very least, add something like <http://ismyblogworking.com/1.cdn.libravatar.org/working.html> to your feed reader.
+
 # Enabling stats on the slave (optional)
 
 1. install awstats:

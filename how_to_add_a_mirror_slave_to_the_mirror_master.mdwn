@@ -16,6 +16,15 @@ Do this on the **slave**:
         cp seccdn.pem /etc/libravatar/
         cp seccdn.crt /etc/libravatar/
 
+3. make sure cron errors go somewhere by adding this to `/etc/aliases`:
+
+        libravatar-slave: root
+
+4. update the postfix config:
+
+        newaliases
+        /etc/init.d/postfix reload
+
 Do this on the **master**:
 
 1. add the slave's ssh pubkey to `/var/lib/libravatar/master/.ssh/authorized_keys`:

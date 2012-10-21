@@ -56,6 +56,13 @@ and then lookup images using the [test tool](https://www.libravatar.org/tools/ch
 
         namecoind name_update d/libravatar "`xargs echo < config/dns.json`"
 
+
+# SSL testing
+
+Once the DNS zone has been updated, use the [SSL Labs tool](https://www.ssllabs.com/ssltest/analyze.html?d=seccdn.libravatar.org&hideResults=on) to make sure that the SSL config for the new mirror matches the other ones. In particular, it is important that the new mirror does not require the use of [SNI](https://en.wikipedia.org/wiki/Server_Name_Indication) since it's not supported on [old operating systems](https://en.wikipedia.org/wiki/Windows_XP).
+
+If there are any problems, simply take the new mirror out of the `seccdn` CNAME group. The bandwidth requirements for HTTP are much bigger, so it's fine to have fewer mirrors doing HTTPS.
+
 # Basic monitoring
 
 At the very least, add something like <http://ismyblogworking.com/1.cdn.libravatar.org/working.html> to your feed reader.

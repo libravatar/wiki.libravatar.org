@@ -13,6 +13,7 @@ Do this on the **slave**:
 
 1. install the required packages on the slave:
 
+        apt-get update
         apt-get install libravatar-{common,cdn-common,cdn,seccdn,slave}
 
 2. copy the SSL certificate into place:

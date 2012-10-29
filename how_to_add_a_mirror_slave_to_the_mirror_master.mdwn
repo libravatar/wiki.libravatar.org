@@ -5,10 +5,15 @@ This will be of interest only to admins who run a Libravatar master server using
 Do this on the **slave**:
 
 1. make sure NTP is installed and running
+1. add the Libravatar apt repository:
+
+        echo "deb http://apt.libravatar.org/ squeeze main" >> /etc/apt/sources.list
+        gpg --keyserver pgp.net.nz --recv 007c98d1
+        gpg -a --export 007c98d1 | apt-key add -
+
 1. install the required packages on the slave:
 
-        dpkg -i libravatar-{common,cdn-common,cdn,seccdn,slave}*.deb
-        apt-get install -f
+        apt-get install libravatar-{common,cdn-common,cdn,seccdn,slave}
 
 2. copy the SSL certificate into place:
 

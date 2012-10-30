@@ -24,7 +24,7 @@ Do this on the **slave**:
 
 3. make sure cron errors go somewhere by adding this to `/etc/aliases`:
 
-        libravatar-slave: root
+        libravatar-slave: mirrors@libravatar.org
 
 4. update the postfix config:
 

@@ -3,6 +3,7 @@ Here is a list of features currently available in [Libravatar](https://www.libra
 [[!table class="border" data="""
                                   | Libravatar                                           | Gravatar
 JPEG and **PNG** support          | Yes                                                  | Yes
+GIF support                       | Yes                                                  | No
 Upload size limit                 | 10 MB                                                | None
 Image size (in pixels)            | 1 to 512 (configurable)                              | [2048](http://blog.gravatar.com/2012/07/30/retina/)
 **HTTPS** support                 | Yes                                                  | Yes

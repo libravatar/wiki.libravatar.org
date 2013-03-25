@@ -64,6 +64,11 @@ The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used 
     avatar_url = libravatar_url(email = 'person@example.org')
     print '<img src="' + avatar_url + '">'
 
+## Qt5
+
+The source code for [Rawatar](http://pusling.com/blog/?p=329) can be found on [git.kde.org](http://quickgit.kde.org/?p=scratch%2Fsune%2Frawatar.git)
+
+
 ## Ruby
 
 <img src="ruby_logo.png" width="75" height="75" align="right">

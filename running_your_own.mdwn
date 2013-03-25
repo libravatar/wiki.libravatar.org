@@ -1,36 +1,41 @@
 Libravatar was designed so that domain owners can choose to host themselves the profile pictures for their domain. For example, an organisation may want to have control over the pictures use for their employees.
 
+# Server implementations
+
 Currently exist two libravatar image server implementations:
 
 [[!table class="border" data="""
 Name                                                | Description                           | Administration    | Programming language | Support for   | Default modes
 libravatar                                          | The software that runs libravatar.org | web-based         | Python               | Email, OpenID | 404, mm, identicon, monsterid, wavatar, retro
 [Surrogator](https://sourceforge.net/p/surrogator/) | very simple avatar server             | command line only | PHP                  | Email, OpenID | 404, mm
+[Simple Libravatar service](http://pusling.com/blog/?p=274) | Static files                  | command line only | Shell script         | Email         | none (always returns a static image)
 """]]
 
+
+
+# libravatar.org
 The following instructions are about the official libravatar.org software.
 
 
-
-# System requirements
+## System requirements
 
 You can find the latest system requirements in the [installation instructions](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 6](http://www.debian.org/releases/squeeze/) (squeeze).
 
-# Getting the code
+## Getting the code
 
 We are not currently doing regular releases of the code, but you can easily get the latest copy from our [git repository](https://gitorious.org/libravatar/libravatar):
 
     git clone git://gitorious.org/libravatar/libravatar.git
 
-# Installation
+## Installation
 
 Once you've got a copy of the code, follow the instructions in the [INSTALL](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) file.
 
-# Configuration
+## Configuration
 
 A number of options can be customised in the libravatar/settings.py file. If there's anything that's unclear in there, please [file a bug](https://bugs.launchpad.net/libravatar/+filebug) against the project so that we know how to improve the documentation.
 
-# DNS setup
+## DNS setup
 
 Once your instance is running on a publicly-accessible server (<tt>avatars.example.com</tt> in this example), add the following records to your DNS zone file:
 
@@ -41,13 +46,13 @@ The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server wherea
 
 Note that these servers do not have to be running [Libravatar](https://launchpad.net/libravatar) themselves, but they do have to implement the same [[protocol/API|API]]</a>.
 
-## TTL
+### TTL
 
 The time-to-live (cache expiry) should be set to **at least 1 day** (86400 seconds).
 
 If you choose a TTL smaller than 1 day, Libravatar clients are allowed (and encouraged) to ignore it and cache your entry for a day.
 
-## Subdomains
+### Subdomains
 
 If you use full hostnames or subdomains in your email addresses, for example bob@foo.example.com and bob@bar.example.com, then you need to have a set of SRV records for each of them:
 
@@ -56,12 +61,12 @@ If you use full hostnames or subdomains in your email addresses, for example bob
     _avatars._tcp.bar.example.com.     IN SRV 0 0 80  avatars.example.com
     _avatars-sec._tcp.bar.example.com. IN SRV 0 0 443 avatars.example.com
 
-## SRV weights and priorities (optional)
+### SRV weights and priorities (optional)
 
 All SRV entries should have the same priority. Lower priority ones will be ignored by Libravatar clients.
 
 You may however use weights to spread the load across more than one avatar server.
 
-## Testing
+### Testing
 
 Once you have these records, have a look at the [domain check tool](https://www.libravatar.org/tools/check_domain) to make sure everything is working.

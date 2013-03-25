@@ -13,6 +13,8 @@ If a library or plugin is not availble for your language or application, your be
     using libravatarsharp;
     var uri = AvatarUri.FromEmail( "someone@example.com" );
 
+(!) The library does not support federation.
+
 ## node.js
 
 <img src="nodejs_logo.png" width="219" height="75" align="right">

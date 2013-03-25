@@ -16,6 +16,7 @@ specify the server that should host images for their organisation.
 
 * [[API documentation|api]]
 * [[Libraries and plugins|libraries]]
+* [[Server software|running your own]]
 
 # Community
 

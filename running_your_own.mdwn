@@ -2,7 +2,7 @@ Libravatar was designed so that domain owners can choose to host themselves the 
 
 # Server implementations
 
-Currently exist two libravatar image server implementations:
+There currently exist the following Libravatar image server implementations:
 
 [[!table class="border" data="""
 Name                                                | Description                           | Administration    | Programming language | Support for   | Default modes

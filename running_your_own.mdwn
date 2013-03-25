@@ -8,7 +8,7 @@ Currently exist two libravatar image server implementations:
 Name                                                | Description                           | Administration    | Programming language | Support for   | Default modes
 libravatar                                          | The software that runs libravatar.org | web-based         | Python               | Email, OpenID | 404, mm, identicon, monsterid, wavatar, retro
 [Surrogator](https://sourceforge.net/p/surrogator/) | very simple avatar server             | command line only | PHP                  | Email, OpenID | 404, mm
-[Simple Libravatar service](http://pusling.com/blog/?p=274) | Static files                  | command line only | Shell script         | Email         | none (always returns a static image)
+[Simple Libravatar service](http://pusling.com/blog/?p=274) | Quick hack to serve static files | command line only | Shell script         | Email         | none (always returns a static image)
 """]]
 
 

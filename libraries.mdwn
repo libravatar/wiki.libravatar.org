@@ -104,6 +104,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * [Koha](http://www.koha-community.org) (part of core starting in 3.6, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
 * [MediaWiki](http://www.mediawiki.org/wiki/Extension:Libravatar)
 * [Mojolicious](https://metacpan.org/release/Mojolicious-Plugin-Libravatar)
+* [Pidgin](https://code.google.com/p/pidgin-libravatar/)
 * [Weblate](http://weblate.org/) (part of core starting in 1.5)
 * [Wordpress](http://wordpress.org/extend/plugins/libravatar/)
 * [Zookeepr](http://zookeepr.org/) (part of core, starting with PyCon AU 2012)

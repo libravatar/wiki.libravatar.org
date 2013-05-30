@@ -105,6 +105,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * [MediaWiki](http://www.mediawiki.org/wiki/Extension:Libravatar)
 * [Mojolicious](https://metacpan.org/release/Mojolicious-Plugin-Libravatar)
 * [Pidgin](https://code.google.com/p/pidgin-libravatar/)
+* [Symfony](https://github.com/julienfastre/LibravatarBundle)
 * [Weblate](http://weblate.org/) (part of core starting in 1.5)
 * [WordPress](http://wordpress.org/extend/plugins/libravatar/)
 * [Zookeepr](http://zookeepr.org/) (part of core, starting with PyCon AU 2012)

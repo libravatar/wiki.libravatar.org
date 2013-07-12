@@ -4,6 +4,8 @@ Here is a description of François' chroot-based development. These instructions
 
 You must do the following **in your host environment**:
 
+* Install app according to [[INSTALL.md | https://bazaar.launchpad.net/~libravatar/libravatar/trunk/view/head:/INSTALL.md]]
+
 * install a database server:
 
         apt-get install postgresql

@@ -22,8 +22,6 @@ If you've got a proposal to discuss or prefer to write to us, you can join [our 
 
 Finally, you can also put short notices to our attention on [Identica](http://identi.ca/libravatar) or [Twitter](http://twitter.com/libravatar).
 
-Identica users are encouraged to [join our group](http://identi.ca/group/libravatar).
-
 # Email
 
 And if you need to email us: [dev@libravatar.org](mailto:dev@libravatar.org)

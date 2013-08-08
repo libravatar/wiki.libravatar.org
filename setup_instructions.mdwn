@@ -1,0 +1,287 @@
+Here are some notes on how to setup the main `libravatar.org` server after
+you've installed Debian and the usual server packages.
+
+# Basic setup
+
+* Install rssh and uncomment `allowrsync` in `/etc/rssh.conf`
+* Setup appropriate mail aliases
+ * Add these to `/etc/aliases`
+
+      root: francois
+      francois: francois@libravatar.org
+      www-data: root
+      libravatar-master: root
+
+ * Run `newaliases` to update `/etc/aliases.db`
+
+* Copy the local logcheck rules from the old server
+
+# Firewall
+
+* In `/etc/network/iptables`, put the following:
+
+     # Set default policies
+     *filter
+     :INPUT DROP [0:0]
+     :FORWARD DROP [0:0]
+     :OUTPUT DROP [0:0]
+     
+     # Allow unlimited outbound traffic
+     -A OUTPUT -j ACCEPT
+     
+     # Annoying attack bots
+     -A INPUT -s xxx.xxx.xxx.xxx/xx -j DROP
+     
+     # Accept all other traffic
+     -A INPUT -j ACCEPT
+     
+     COMMIT
+
+* Enable the rules using `iptables-apply`
+* In `/etc/network/ip6tables`, put the following:
+
+     # Set default policies
+     *filter
+     :INPUT DROP [0:0]
+     :FORWARD DROP [0:0]
+     :OUTPUT DROP [0:0]
+     
+     # Allow unlimited outbound traffic
+     -A OUTPUT -j ACCEPT
+     
+     # Allow unlimited traffic on the loopback interface
+     -A INPUT -i lo -j ACCEPT
+     
+     # TODO: ban attackers!
+     
+     # Accept all other traffic
+     -A INPUT -j ACCEPT
+     
+     COMMIT
+
+* Enable the rules using `ip6tables-apply`
+* Set something like this in `/etc/network/interfaces`:
+
+     auto eth0
+     iface eth0 inet static
+         address x.x.x.x
+         netmask 255.255.255.0
+         gateway x.x.x.x
+         pre-up iptables-restore /etc/network/iptables
+     iface eth0 inet6 static
+         address x::x
+         netmask 64
+         gateway x::x
+         pre-up ip6tables-restore /etc/network/ip6tables
+
+# Database
+
+* Install Postgres:
+ * In `/etc/postgresql/*/main/pg_hba.conf`, change all local connections to `trust`
+ * In `/etc/postgresql/*/main/postgresql.conf`, set these:
+
+      log_min\_duration\_statement =  400 
+      ssl = false
+
+ * Create postgres users:
+
+      sudo -u postgres createuser -s francois
+      createuser -s root
+      createuser -S -R -D dude
+
+* Install pgbouncer and turn it on in `/etc/default/pgbouncer`
+ * Put the following in `/etc/pgbouncer/pgbouncer.ini`:
+
+      [databases]
+      libravatar = dbname=libravatar
+      
+      [pgbouncer]
+      admin_users = postgres
+
+ * Put the following in `/etc/pgbouncer/userlist.txt`:
+
+      "djangouser" ""
+      "postgres" ""
+
+# Web server
+
+* Setup some Apache vhosts:
+ * `/etc/apache2/sites-enabled/000-default`:
+ 
+      <VirtualHost *:80>
+        RewriteEngine On
+        RewriteRule ^ https://www.libravatar.org [redirect=301,last]
+      </VirtualHost>
+
+ * `/etc/apache2/sites-enabled/default-ssl`:
+
+      <VirtualHost *:443>
+          SSLEngine on
+          SSLProtocol TLSv1
+          SSLHonorCipherOrder On
+          SSLCipherSuite RC4-SHA:HIGH:!kEDH
+      
+          SSLCertificateFile /etc/libravatar/www.crt
+          SSLCertificateKeyFile /etc/libravatar/www.pem
+          SSLCertificateChainFile /etc/libravatar/www-chain.pem
+      
+          RewriteEngine On
+          RewriteRule ^ https://www.libravatar.org [redirect=301,last]
+      </VirtualHost>
+
+ * `/etc/apache2/sites-enables/stats`:
+ 
+       <VirtualHost *:443>
+          ServerName stats.libravatar.org
+          ServerAdmin webmaster@libravatar.org
+          DocumentRoot /var/cache/awstats
+          Alias /awstats-icon/ /usr/share/awstats/icon/
+          Alias /favicon.ico /usr/share/libravatar/libravatar/favicon.ico
+      
+          SSLEngine on
+          SSLProtocol TLSv1
+          SSLHonorCipherOrder On
+          SSLCipherSuite RC4-SHA:HIGH:!kEDH
+        
+          SSLCertificateFile /etc/apache2/ssl/stats.libravatar.org.crt
+          SSLCertificateKeyFile /etc/apache2/ssl/stats.libravatar.org.pem
+          SSLCertificateChainFile /etc/apache2/ssl/cacert-chain.pem
+        
+          Header add Strict-Transport-Security: "max-age=15768000"
+        
+          <Location />
+              AuthType Basic
+              AuthName "Libravatar Stats"
+              AuthUserFile /etc/apache2/stats.passwd
+              Require valid-user
+              Order allow,deny
+              allow from all
+          </Location>
+      </VirtualHost>
+
+ * Copy all SSL certs in `/etc/libravatar/` from the old server
+ * Set the following in `/etc/apache2/conf.d/security`:
+ 
+      <Directory />
+        AllowOverride None
+        Order Deny,Allow
+        Deny from all
+      </Directory>
+      ServerTokens Prod
+      ServerSignature Off
+
+* Install `awstats` and add this to `/etc/awstats/awstats.conf.local`:
+
+      SiteDomain="libravatar.org"
+      LogType=W
+      LogFormat=1
+
+# Backups
+
+* Add this script to `/usr/local/sbin/libravatar_backups`:
+
+     #!/bin/sh
+     
+     DUMP_DIR="/var/backups/libravatar"
+     
+     # Perform fresh backup
+     DUMP_FILE="$DUMP_DIR/`date +%Y%m%dT%H%M%S`.pg"
+     pg_dump -Fc libravatar > $DUMP_FILE
+     chmod 600 $DUMP_FILE
+     
+     # Purge old backups
+     find $DUMP_DIR -ctime +7 -delete
+
+* Create an empty `/var/backups/libravatar` directory
+* Add my duplicity backup script to `/home/francois/.backup/`
+* Create this cronjob in `/etc/cron.d/libravatar_backups`:
+
+     # Local DB backups
+     4 1,13 * * *       root    ionice -c3 nice -n10 /usr/local/sbin/libravatar_backups
+     
+     # Full backups to Amazon S3
+     6 14 * * *      root    /home/francois/.backup/backup-husavik
+     6 23 * * 3      root    /home/francois/.backup/backup-husavik --full
+
+# Install application
+
+* Install Libravatar packages
+ * Add the Libravatar repository to `/etc/apt/sources.list`:
+
+      deb http://apt.libravatar.org/ wheezy main
+
+ * Then install server packages:
+ 
+      apt-get update
+      apt-get install libravatar{,-common,-cdn,-cdn-common,-www,-master}
+
+ * Use `6432` for the database port number, otherwise accept all of the defaults
+
+* Install `gearman-job-server`
+ * Set gearman to listen on `localhost` instead of `127.0.0.1` in
+   `/etc/default/gearman-job-server` (to work-around [this bug](http://feeding.cloud.geek.nz/posts/debugging-gearman-configuration/#Gearman_bug))
+
+# Git mirrors
+
+* Setup the Github and Bitbucket mirrors
+ * Add this script in `/usr/local/bin/git-mirror`:
+
+      #!/bin/bash
+      
+      DIR=/home/francois/git-mirrors
+      cd $DIR/gitorious
+      git fetch --quiet origin 2> /dev/null
+      git reset --quiet --hard origin/master
+      git push --quiet github master 2> /dev/null
+      exit 0
+
+ * Add this script in `/usr/local/bin/hg-mirror`:
+
+      #!/bin/bash
+      DIR=/home/francois/git-mirrors
+      cd $DIR/gitorious
+      git fetch --quiet origin 2> /dev/null
+      git reset --quiet --hard origin/master
+      cd $DIR
+      hg --quiet convert gitorious libravatar-hg
+      cd $DIR/libravatar-hg
+      hg --quiet update
+      hg --quiet push ssh://bitbucket.org/libravatar/libravatar 2> /dev/null
+      exit 0
+
+ * Add this to `/home/francois/.ssh/config`:
+
+      Host gitorious.org
+	    AddressFamily inet
+      Host bitbucket.org
+      	User hg
+      	IdentityFile ~/.ssh/repository_mirrors
+      Host github.com
+      	User git
+      	IdentityFile ~/.ssh/repository_mirrors
+      	AddressFamily inet
+
+ * Copy `repository_mirrors` ssh key from old server into `/home/francois/.ssh/`
+ * Create directory for mercurial mirror: `mkdir -p /home/francois/git-mirrors/libravatar-hg`
+ * Prepare directory for git repository:
+
+      cd /home/francois/git-mirrors/
+      git clone git://gitorious.org/libravatar/libravatar.git gitorious
+      git remote add github git@github.com:libravatar/libravatar.git      
+
+ * Create the following cron jobs in `/etc/cron.d/libravatar_git-mirrors`:
+
+      50 * * * *      francois        /usr/local/bin/git-mirror
+      55 * * * *      francois        /usr/local/bin/hg-mirror
+
+
+# From the old server
+
+If migrating from one server to another:
+
+* Setup the database
+ * Get a DB dump from the previous server: `pg_dump -Fc libravatar > libravatar.pg`
+ * Create a new database: `createdb -O djangouser -E utf8 libravatar`
+ * Restore the database: `pg_restore -d libravatar < libravatar.pg`
+
+* Copy the contents of `/var/lib/libravatar/` from the old server

@@ -3,5 +3,4 @@ The Libravatar project is proud to support other [free-as-in-freedom](http://aut
 * [Branchable](http://www.branchable.com) ([blog](http://blog.libravatar.org) and [wiki](http://wiki.libravatar.org))
 * [Gitorious](http://gitorious.org) ([code mirror](http://gitorious.org/libravatar))
 * [Identica](http://identi.ca) ([micro-blogging](http://identi.ca/libravatar))
-* [Launchpad](https://launchpad.net) ([bug tracker](https://bugs.launchpad.net/libravatar), [translations](https://translations.launchpad.net/libravatar), [code hosting](https://code.launchpad.net/libravatar))
-* [Online Groups](http://www.onlinegroups.net) ([mailing lists](http://libravatar.onlinegroups.net))
+* [Launchpad](https://launchpad.net) ([bug tracker](https://bugs.launchpad.net/libravatar), [translations](https://translations.launchpad.net/libravatar), [code hosting](https://code.launchpad.net/libravatar) and [mailing list](https://launchpad.net/~libravatar-fans))

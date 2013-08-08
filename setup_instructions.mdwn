@@ -80,7 +80,7 @@ you've installed Debian and the usual server packages.
   * In `/etc/postgresql/*/main/pg_hba.conf`, change all local connections to `trust`
   * In `/etc/postgresql/*/main/postgresql.conf`, set these:
 
-        log_min\_duration\_statement =  400 
+        log_min_duration_statement =  400
         ssl = false
 
   * Create postgres users:
@@ -109,8 +109,8 @@ you've installed Debian and the usual server packages.
   * `/etc/apache2/sites-enabled/000-default`:
  
         <VirtualHost *:80>
-          RewriteEngine On
-          RewriteRule ^ https://www.libravatar.org [redirect=301,last]
+            RewriteEngine On
+            RewriteRule ^ https://www.libravatar.org [redirect=301,last]
         </VirtualHost>
 
   * `/etc/apache2/sites-enabled/default-ssl`:
@@ -222,56 +222,55 @@ you've installed Debian and the usual server packages.
 
 # Git mirrors
 
-* Setup the Github and Bitbucket mirrors
-  * Add this script in `/usr/local/bin/git-mirror`:
+* Add this script in `/usr/local/bin/git-mirror`:
 
-        #!/bin/bash
-        
-        DIR=/home/francois/git-mirrors
-        cd $DIR/gitorious
-        git fetch --quiet origin 2> /dev/null
-        git reset --quiet --hard origin/master
-        git push --quiet github master 2> /dev/null
-        exit 0
+      #!/bin/bash
+      
+      DIR=/home/francois/git-mirrors
+      cd $DIR/gitorious
+      git fetch --quiet origin 2> /dev/null
+      git reset --quiet --hard origin/master
+      git push --quiet github master 2> /dev/null
+      exit 0
 
-  * Add this script in `/usr/local/bin/hg-mirror`:
+* Add this script in `/usr/local/bin/hg-mirror`:
 
-        #!/bin/bash
-        DIR=/home/francois/git-mirrors
-        cd $DIR/gitorious
-        git fetch --quiet origin 2> /dev/null
-        git reset --quiet --hard origin/master
-        cd $DIR
-        hg --quiet convert gitorious libravatar-hg
-        cd $DIR/libravatar-hg
-        hg --quiet update
-        hg --quiet push ssh://bitbucket.org/libravatar/libravatar 2> /dev/null
-        exit 0
+      #!/bin/bash
+      DIR=/home/francois/git-mirrors
+      cd $DIR/gitorious
+      git fetch --quiet origin 2> /dev/null
+      git reset --quiet --hard origin/master
+      cd $DIR
+      hg --quiet convert gitorious libravatar-hg
+      cd $DIR/libravatar-hg
+      hg --quiet update
+      hg --quiet push ssh://bitbucket.org/libravatar/libravatar 2> /dev/null
+      exit 0
 
-  * Add this to `/home/francois/.ssh/config`:
+* Add this to `/home/francois/.ssh/config`:
 
-        Host gitorious.org
-          AddressFamily inet
-        Host bitbucket.org
-          User hg
-          IdentityFile ~/.ssh/repository_mirrors
-        Host github.com
-          User git
-          IdentityFile ~/.ssh/repository_mirrors
-          AddressFamily inet
+      Host gitorious.org
+        AddressFamily inet
+      Host bitbucket.org
+        User hg
+        IdentityFile ~/.ssh/repository_mirrors
+      Host github.com
+        User git
+        IdentityFile ~/.ssh/repository_mirrors
+        AddressFamily inet
 
-  * Copy `repository_mirrors` ssh key from old server into `/home/francois/.ssh/`
-  * Create directory for mercurial mirror: `mkdir -p /home/francois/git-mirrors/libravatar-hg`
-  * Prepare directory for git repository:
+* Copy `repository_mirrors` ssh key from old server into `/home/francois/.ssh/`
+* Create directory for mercurial mirror: `mkdir -p /home/francois/git-mirrors/libravatar-hg`
+* Prepare directory for git repository:
 
-        cd /home/francois/git-mirrors/
-        git clone git://gitorious.org/libravatar/libravatar.git gitorious
-        git remote add github git@github.com:libravatar/libravatar.git      
+      cd /home/francois/git-mirrors/
+      git clone git://gitorious.org/libravatar/libravatar.git gitorious
+      git remote add github git@github.com:libravatar/libravatar.git
 
-  * Create the following cron jobs in `/etc/cron.d/libravatar_git-mirrors`:
+* Create the following cron jobs in `/etc/cron.d/libravatar_git-mirrors`:
 
-        50 * * * *      francois        /usr/local/bin/git-mirror
-        55 * * * *      francois        /usr/local/bin/hg-mirror
+      50 * * * *      francois        /usr/local/bin/git-mirror
+      55 * * * *      francois        /usr/local/bin/hg-mirror
 
 
 # From the old server
@@ -279,8 +278,16 @@ you've installed Debian and the usual server packages.
 If migrating from one server to another:
 
 * Setup the database
-  * Get a DB dump from the previous server: `pg_dump -Fc libravatar > libravatar.pg`
-  * Create a new database: `createdb -O djangouser -E utf8 libravatar`
-  * Restore the database: `pg_restore -d libravatar < libravatar.pg`
+  * Get a DB dump from the old server:
+
+        pg_dump -Fc libravatar > libravatar.pg
+
+  * Create a new database:
+
+        createdb -O djangouser -E utf8 libravatar
+
+  * Restore the database:
+
+        pg_restore -d libravatar < libravatar.pg
 
 * Copy the contents of `/var/lib/libravatar/` from the old server

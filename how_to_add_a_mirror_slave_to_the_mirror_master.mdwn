@@ -33,7 +33,7 @@ Do this on the **slave**:
 
 Do this on the **master**:
 
-1. add the slave's ssh pubkey (in `/var/lib/libravatar/slave/.ssh/id_rsa.pub`) to `/var/lib/libravatar/master/.ssh/authorized_keys`:
+1. add the slave's ssh pubkey (in `/var/lib/libravatar/slave/.ssh/id_rsa.pub`) to `/var/lib/libravatar/master/.ssh/authorized_keys`.
 
 Within about 15 minutes, you should see these files pop up on the slave:
 

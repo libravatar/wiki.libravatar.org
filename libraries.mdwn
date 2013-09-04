@@ -108,7 +108,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * [Symfony](https://github.com/julienfastre/LibravatarBundle)
 * [Trac](https://pypi.python.org/pypi/tracvatar/)
 * [Weblate](http://weblate.org/) (part of core starting in 1.5)
-* [WordPress](http://wordpress.org/extend/plugins/libravatar/)
+* Wordpress: [Libravatar](http://wordpress.org/extend/plugins/libravatar/) and [Libravatar Replace](http://wordpress.org/plugins/libravatar-replace/)
 * [Zookeepr](http://zookeepr.org/) (part of core, starting with PyCon AU 2012)
 
 # Contribute!

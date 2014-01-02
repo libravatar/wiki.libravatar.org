@@ -94,8 +94,8 @@ At the very least, add something like <http://ismyblogworking.com/1.cdn.libravat
 
 1. install the deployment package:
 
-      apt-get install libravatar-deployment
+       apt-get install libravatar-deployment
 
 2. add your ssh user to the `libravatar-deployment` group:
 
-      adduser francois libravatar-deployment
+       adduser francois libravatar-deployment

@@ -89,3 +89,13 @@ At the very least, add something like <http://ismyblogworking.com/1.cdn.libravat
 
        ln -s /usr/share/awstats/icon/ /var/www/awstats-icon
        ln -s /var/cache/awstats/ /var/www/stats
+
+# Enable automated deployments (optional)
+
+1. install the deployment package:
+
+      apt-get install libravatar-deployment
+
+2. add your ssh user to the `libravatar-deployment` group:
+
+      adduser francois libravatar-deployment

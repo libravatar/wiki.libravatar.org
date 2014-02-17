@@ -13,6 +13,7 @@ you've installed Debian and the usual server packages.
         libravatar-master: root
 
   * Run `newaliases` to update `/etc/aliases.db`
+  * Test the aliases by running `mail root`
 
 * Copy the local logcheck rules from the old server
 

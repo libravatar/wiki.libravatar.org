@@ -1,12 +1,4 @@
-The main repository is using git, but that doesn't mean you have to use it since we provide mirrors of the repository in other version control systems.
-
-# Using [bzr](http://bazaar.canonical.com/)
-
-<img src="bzr_logo.png" width="64" height="64" align="right">
-
-You can [browse the repository](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files) or create a local branch for yourself:
-
-    bzr branch lp:libravatar
+The main repository is using **git**, but that doesn't mean you have to use it since we provide mirrors of the repository in other version control systems.
 
 # Using [git](http://www.git-scm.com)
 
@@ -19,6 +11,14 @@ Otherwise, just check the code out locally:
     git clone git://gitorious.org/libravatar/libravatar.git
 
 A mirror of it is also available on [Github](https://github.com/libravatar/libravatar).
+
+# Using [bzr](http://bazaar.canonical.com/)
+
+<img src="bzr_logo.png" width="64" height="64" align="right">
+
+You can [browse the repository](http://bazaar.launchpad.net/~libravatar/libravatar/trunk/files) or create a local branch for yourself:
+
+    bzr branch lp:libravatar
 
 # Using [mercurial](http://mercurial.selenic.com/)
 

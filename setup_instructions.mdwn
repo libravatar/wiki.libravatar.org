@@ -108,13 +108,14 @@ you've installed Debian and the usual server packages.
 
 * Generate a new certificate:
 
-      openssl genrsa -out www.libravatar.org.pem 2048
+      openssl genrsa -out www.pem 2048
 
 * Create a certificate signing request:
 
-      openssl req -new -key www.libravatar.org.pem -subj "/CN=www.libravatar.org" -out www.libravatar.org.csr
+      openssl req -new -key www.pem -subj "/CN=www.libravatar.org" -out www.csr
 
-* Login into <https://startssl.com> to submit the CSR and download the signed certificate.
+* Login into <https://startssl.com> to submit the CSR and download the signed certificate as `www.crt`.
+* Copy `www.pem` and `www.crt` into `/etc/libravatar/`.
 
 # Web server
 

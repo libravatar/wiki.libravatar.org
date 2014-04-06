@@ -99,10 +99,22 @@ you've installed Debian and the usual server packages.
         [pgbouncer]
         admin_users = postgres
 
- * Put the following in `/etc/pgbouncer/userlist.txt`:
+* Put the following in `/etc/pgbouncer/userlist.txt`:
 
         "djangouser" ""
         "postgres" ""
+
+# TLS certificate
+
+* Generate a new certificate:
+
+      openssl genrsa -out www.libravatar.org.pem 2048
+
+* Create a certificate signing request:
+
+      openssl req -new -key www.libravatar.org.pem -subj "/CN=www.libravatar.org" -out www.libravatar.org.csr
+
+* Login into <https://startssl.com> to submit the CSR and download the signed certificate.
 
 # Web server
 

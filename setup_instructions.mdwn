@@ -101,8 +101,8 @@ you've installed Debian and the usual server packages.
 
 * Put the following in `/etc/pgbouncer/userlist.txt`:
 
-        "djangouser" ""
-        "postgres" ""
+      "djangouser" ""
+      "postgres" ""
 
 # TLS certificate
 

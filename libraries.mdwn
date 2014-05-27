@@ -98,7 +98,7 @@ The [txLibravatar](http://pypi.python.org/pypi/txLibravatar) module can be used 
 
 There aren't many plugins available at the moment, but please [[suggest the ones|suggested plugins]] you'd like to have.
 
-* [Claws Mail](http://git.claws-mail.org/?p=claws.git;a=blob;f=src/plugins/libravatar/README)
+* [Claws Mail](http://www.claws-mail.org/plugin.php?plugin=libravatar) (since version 3.10)
 * [Foswiki](http://foswiki.org/Extensions/AvatarPlugin)
 * [Friendica](https://github.com/friendica/friendica-addons/tree/master/libravatar)
 * [Ikiwiki](http://ikiwiki.info) (part of core, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)

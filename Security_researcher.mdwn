@@ -1,0 +1,3 @@
+If you are a security researcher and would like to test Libravatar, please [[get in touch|talk to us]] so that we can discuss scope.
+
+If you have already found a security vulnerability and would like to share it with us, please see our [[disclosure policy|security]].

@@ -5,6 +5,7 @@ There are a few more specific pages for particular profiles of contributors:
 * [[Designer]]
 * [[Developer]]
 * [[Translator]]
+* [[Security researcher]]
 
 as well as a few other ideas:
 

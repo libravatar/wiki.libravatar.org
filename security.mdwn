@@ -8,6 +8,8 @@ Alternatively, you can talk to us at [security@libravatar.org](mailto:security@l
 
 We will do our best to respond to you within 24-48 hours.
 
+Also, please let us know if you are under any kind of publication deadline.
+
 # Security Hall of fame
 
 *Report a security bug you discovered and get your name added here!*

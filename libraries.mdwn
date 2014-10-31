@@ -115,3 +115,6 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 # Contribute!
 
 Interested in writing a plugin for your favourite framework/CMS or a library for your favourite language? Please [[get in touch|talk to us]], we would be more than happy to link to them from this page!
+
+
+[exeter cleaners](https://www.maid2clean.co.uk/domestic-cleaning/exeter/)

@@ -54,7 +54,7 @@ To create and initialize your chroot-based environment:
 
 * install the required packages in the chroot:
 
-      apt-get install git make debhelper yui-compressor python-django python-psycopg2 python-gearman.libgearman python-imaging python-openid python-dns pylint
+      apt-get install git make debhelper yui-compressor python-django python-psycopg2 python-gearman.libgearman python-imaging python-openid python-dns pylint pep8 pyflakes
 
 * get a copy of the repo:
 

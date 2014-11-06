@@ -8,20 +8,20 @@ You must do the following **in your host environment**:
 
 * install a database server:
 
-        apt-get install postgresql
+      apt-get install postgresql
 
 * create a user and a database:
 
-        sudo -u postgres createuser -D -P -R -S djangouser
-        sudo -u postgres createdb -O djangouser libravatar
+      sudo -u postgres createuser -D -P -R -S djangouser
+      sudo -u postgres createdb -O djangouser libravatar
 
 * stop Apache (if running):
 
-        sudo /etc/init.d/apache2 stop
+      sudo /etc/init.d/apache2 stop
 
 * put the following in your <tt>/etc/hosts</tt>:
 
-        127.0.0.1 www.localavatar.org cdn.localavatar.org seccdn.localavatar.org
+      127.0.0.1 www.localavatar.org cdn.localavatar.org seccdn.localavatar.org
 
 # Initial setup
 
@@ -29,69 +29,69 @@ To create and initialize your chroot-based environment:
 
 * create a new chroot:
 
-        mkdir /var/chroot/squeeze-amd64
-        debootstrap squeeze /var/chroot/squeeze-amd64 http://ftp.us.debian.org/debian
+      mkdir /var/chroot/squeeze-amd64
+      debootstrap squeeze /var/chroot/squeeze-amd64 http://ftp.us.debian.org/debian
 
 * add this line to <tt>/etc/fstab</tt>:
 
-        proc  /var/chroot/squeeze-amd64/proc  proc  defaults  0  0
+      proc  /var/chroot/squeeze-amd64/proc  proc  defaults  0  0
 
 * mount the necessary filesystems:
 
-        mount -a 
+      mount -a
 
 * install the schroot package and put this in your /etc/schroot/schroot.conf:
 
-        [squeeze]
-        description=Debian Squeeze amd64 (squeeze)
-        directory=/var/chroot/squeeze-amd64
-        root-groups=root
-        personality=linux
+      [squeeze]
+      description=Debian Squeeze amd64 (squeeze)
+      directory=/var/chroot/squeeze-amd64
+      root-groups=root
+      personality=linux
 
 * enter the chroot as root:
 
-        sudo schroot -c squeeze
+      sudo schroot -c squeeze
 
 * install the required packages in the chroot:
 
-        apt-get install git make debhelper yui-compressor python-django python-psycopg2 python-gearman.libgearman python-imaging python-openid python-dns pylint
+      apt-get install git make debhelper yui-compressor python-django python-psycopg2 python-gearman.libgearman python-imaging python-openid python-dns pylint
 
 * get a copy of the repo:
 
-        cd /root
-        git clone git://gitorious.org/libravatar/libravatar.git
+      cd /root
+      git clone git://gitorious.org/libravatar/libravatar.git
 
 * create a config file for your environment:
 
-        cd /root/libravatar/libravatar
-        cp libravatar/settings.py.example libravatar/settings.py
+      cd /root/libravatar/libravatar
+      cp libravatar/settings.py.example libravatar/settings.py
 
     (edit <tt>settings.py</tt> to use <tt>localavatar.org</tt> as the domain and contain the right database credentials)
 
 * build the packages:
 
-        cd /root/libravatar
-        make package
+      cd /root/libravatar
+      make package
 
 * install the packages:
 
-        cd /root
-        dpkg -i libravatar-{common,cdn,seccdn,www}*deb
-        apt-get install -f
+      cd /root
+      dpkg -i libravatar-{common,cdn,seccdn,www}*deb
+      apt-get install -f
 
     (use <tt>localavatar.org</tt> as the domain name and <tt>localhost</tt> as the db hostname)
 
 * create a self-signed SSL certificate:
 
-        make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/libravatar/seccdn.pem
-        cp /etc/libravatar/seccdn.{pem,crt}
-        cp /etc/libravatar/{seccdn,chain}.pem
+      make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/libravatar/seccdn.pem
+      cp /etc/libravatar/seccdn.{pem,crt}
+      cp /etc/libravatar/{seccdn,chain}.pem
 
     (use <tt>seccdn.localavatar.org</tt> as the common name)
 
 * start Apache:
 
-        /etc/init.d/apache2 start
+      /etc/init.d/apache2 start
 
 # Entering the chroot to work
 
@@ -99,16 +99,16 @@ The next time you want to get inside the chroot to do some work, simply do the f
 
 * stop Apache on the main host:
 
-        sudo /etc/init.d/apache2 stop
+      sudo /etc/init.d/apache2 stop
 
 * enter the chroot as root:
 
-        sudo schroot -c squeeze
+      sudo schroot -c squeeze
 
 * start apache and gearman in the chroot guest:
 
-        /etc/init.d/apache2 start
-        /etc/init.d/gearman-job-server start
+      /etc/init.d/apache2 start
+      /etc/init.d/gearman-job-server start
 
 
 # Updating the codebase
@@ -117,22 +117,22 @@ If you want to update the Libravatar codebase you are working from, do this:
 
 * update the branch:
 
-        cd /root/libravatar
-        git pull
+      cd /root/libravatar
+      git pull
 
 * get rid of old packages:
 
-        cd /root
-        rm -f libravatar*.deb
+      cd /root
+      rm -f libravatar*.deb
 
 * build and install new packages:
 
-        cd /root/libravatar
-        make package
+      cd /root/libravatar
+      make package
 
-        cd /root
-        dpkg -i libravatar-{common,cdn,seccdn,www}*deb
+      cd /root
+      dpkg -i libravatar-{common,cdn,seccdn,www}*deb
 
 * restart apache:
 
-        /etc/init.d/apache2 restart
+      /etc/init.d/apache2 restart

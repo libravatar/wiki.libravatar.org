@@ -13,8 +13,8 @@ There are 5 steps for displaying Libravatar-hosted images into your application:
 Here's an example in Python:
 
     import hashlib
-    email = 'George@example.com'
-    hash = hashlib.md5(email.encode('utf-8').strip().lower()).hexdigest()
+    email = 'George@example.com'.encode('utf-8')
+    hash = hashlib.md5(email.strip().lower()).hexdigest()
 
 which gives us a hash of <tt>40f8d096a3777232204cb3f796c577b7</tt> and therefore the following image tag:
 

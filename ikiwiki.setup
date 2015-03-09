@@ -10,7 +10,7 @@
 # name of the wiki
 wikiname: Libravatar Wiki
 # contact email for wiki
-adminemail: info@libravatar.org
+adminemail: dev@libravatar.org
 # users who are wiki admins
 adminuser:
 - http://openid.libravatar.org/project
@@ -24,6 +24,8 @@ destdir: /home/b-libravatar/public_html
 url: http://wiki.libravatar.org
 # url to the ikiwiki.cgi
 cgiurl: http://wiki.libravatar.org/ikiwiki.cgi
+# do not adjust cgiurl if CGI is accessed via different URL
+reverse_proxy: 0
 # filename of cgi wrapper to generate
 cgi_wrapper: /var/www/b-libravatar/ikiwiki.cgi
 # mode for cgi_wrapper (can safely be made suid)
@@ -61,6 +63,10 @@ add_plugins:
 - version
 - theme
 - gitpush
+- flattr
+- autoindex
+- txt
+- date
 # plugins to disable
 disable_plugins: []
 # additional directory to search for template files
@@ -82,7 +88,7 @@ discussion: 1
 # name of Discussion pages
 discussionpage: Discussion
 # generate HTML5?
-html5: 0
+html5: 1
 # only send cookies over SSL connections?
 sslcookie: 0
 # extension to use for new pages
@@ -106,8 +112,7 @@ hardlink: 1
 # extra library and plugin directory
 libdir: /home/b-libravatar/.ikiwiki
 # environment variables
-ENV:
-  TMPDIR: /home/b-libravatar/tmp
+#ENV: ''
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -121,20 +126,22 @@ allow_symlinks_before_srcdir: 0
 # cookie control
 cookiejar:
   file: /home/b-libravatar/.ikiwiki/cookies
+# set custom user agent string for outbound HTTP requests e.g. when fetching aggregated RSS feeds
+useragent: ikiwiki/3.20141017
 
 ######################################################################
 # core plugins
 #   (branchable, editpage, git, gitpush, htmlscrubber, ikiwikihosting,
-#    inline, link, meta, parentlinks)
+#    inline, link, meta, parentlinks, templatebody)
 ######################################################################
 
 # branchable plugin
 # Allow anyone to branch, check out, and copy this site?
-branchable: 1
+branchable: 0
 # Allow anyone to git push verified changes to this site?
 #anonpush: 0
 # Display "Branchable" link on action bar?
-branchable_action: 1
+branchable_action: 0
 
 # git plugin
 # git hook to generate
@@ -160,7 +167,7 @@ gitmaster_branch: master
 # gitpush plugin
 # git repository urls that changes are pushed to
 git_push_to:
-- git@gitorious.org:libravatar/libravatar-wiki.git
+- git@github.com:libravatar/wiki.libravatar.org.git
 
 # htmlscrubber plugin
 # PageSpec specifying pages not to scrub
@@ -211,7 +218,7 @@ pingurl: []
 #blogspam_pagespec: postcomment(*)
 # options to send to blogspam server
 #blogspam_options: blacklist=1.2.3.4,blacklist=8.7.6.5,max-links=10
-# blogspam server XML-RPC url
+# blogspam server JSON url
 #blogspam_server: ''
 
 # httpauth plugin
@@ -230,9 +237,9 @@ pingurl: []
 
 # openid plugin
 # url pattern of openid realm (default is cgiurl)
-#openid_realm: http://*.branchable.com/
+openid_realm: http://*.branchable.com/
 # url to ikiwiki cgi to use for openid authentication (default is cgiurl)
-#openid_cgiurl: http://libravatar.branchable.com/ikiwiki.cgi
+#openid_cgiurl: ''
 
 # passwordauth plugin
 # a password that must be entered when signing up for an account
@@ -304,8 +311,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -329,11 +336,7 @@ comments_pagename: comment_
 # commit comments to the VCS
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
-#comments_allowformats: mdwn txt
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
+comments_allowformats: ''
 
 # mirrorlist plugin
 # list of mirrors
@@ -351,7 +354,7 @@ repositories:
 # path to the omega cgi program
 omega_cgi: /usr/lib/cgi-bin/omega/omega
 # use google site search rather than internal xapian index?
-google_search: 1
+google_search: 0
 
 # theme plugin
 # name of theme to enable
@@ -444,7 +447,7 @@ autoindex_commit: 1
 
 # flattr plugin
 # userid or user name to use by default for Flattr buttons
-#flattr_userid: joeyh
+flattr_userid: fmarier
 
 # parked plugin
 # An optional message explaining why this site is parked.
@@ -476,7 +479,7 @@ recentchangesnum: 100
 # parent page tags are located under
 #tagbase: tag
 # autocreate new tag pages?
-#tag_autocreate: 1
+tag_autocreate: 1
 # commit autocreated tag pages
 tag_autocreate_commit: 1
 

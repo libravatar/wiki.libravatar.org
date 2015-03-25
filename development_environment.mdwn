@@ -59,7 +59,7 @@ To create and initialize your chroot-based environment:
 * get a copy of the repo:
 
       cd /root
-      git clone git://gitorious.org/libravatar/libravatar.git
+      git clone https://git.nzoss.org.nz/libravatar/libravatar.git
 
 * create a config file for your environment:
 

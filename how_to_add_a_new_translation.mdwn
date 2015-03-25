@@ -1,8 +1,8 @@
 Here is the current list of steps required to add a new po-based translation to the Libravatar codebase:
 
 1. get the po file from the [Launchpad repo](https://code.launchpad.net/~libravatar/libravatar/libravatar-po)
-2. add the po file under [po/libravatar](https://gitorious.org/libravatar/libravatar/trees/master/po/libravatar)
-3. create a new directory under [libravatar/locale/](https://gitorious.org/libravatar/libravatar/trees/master/libravatar/locale) add the appropriate symlink pointing to the above po file
-4. add the language to the <tt>LANGUAGES</tt> array in [libravatar/settings.py.example](https://gitorious.org/libravatar/libravatar/blobs/master/libravatar/settings.py.example) and the local <tt>settings.py</tt>
-5. add the language code to the for loop in the <tt>pofiles</tt> target of the [Makefile](https://gitorious.org/libravatar/libravatar/blobs/master/Makefile)
+2. add the po file under [po/libravatar](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/po/libravatar)
+3. create a new directory under [libravatar/locale/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/locale) add the appropriate symlink pointing to the above po file
+4. add the language to the <tt>LANGUAGES</tt> array in [libravatar/settings.py.example](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/libravatar/settings.py.example) and the local <tt>settings.py</tt>
+5. add the language code to the for loop in the <tt>pofiles</tt> target of the [Makefile](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/Makefile)
 6. run the <tt>make pofiles</tt> command and commit changes to the <tt>en</tt> translation (i.e. the POT file)

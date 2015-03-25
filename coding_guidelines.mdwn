@@ -2,4 +2,4 @@ The main Django application follows the usual the usual [PEP-8](http://www.pytho
 
 We also enforce some of this through [pylint](http://www.logilab.org/project/pylint) in the test suite (<tt>make test</tt>).
 
-(These guidelines are also included in the [HACKING.md](https://gitorious.org/libravatar/libravatar/blobs/master/HACKING.md) file distributed with Libravatar.)
+(These guidelines are also included in the [HACKING.md](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/HACKING.md) file distributed with Libravatar.)

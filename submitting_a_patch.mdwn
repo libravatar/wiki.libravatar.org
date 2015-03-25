@@ -1,7 +1,7 @@
 There are three ways to submit your patch:
 
 1. Attach it to the relevant bug on the [tracker](https://bugs.launchpad.net/libravatar) (create a [new bug](https://bugs.launchpad.net/libravatar/+filebug) if you need to)
-2. Submit a [merge request](https://gitorious.org/libravatar/libravatar/merge_requests) on [Gitorious](https://gitorious.org/libravatar/libravatar)
+2. Submit a [merge request](https://git.nzoss.org.nz/libravatar/libravatar/merge_requests) on [Gitlab](https://git.nzoss.org.nz/libravatar/libravatar)
 3. Submit a [pull request](https://help.github.com/articles/using-pull-requests) on [Github](https://github.com/libravatar/libravatar)
 
 Of course, if you need any help, [[give us a shout|talk to us]]!

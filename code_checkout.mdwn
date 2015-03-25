@@ -4,11 +4,11 @@ The main repository is using **git**, but that doesn't mean you have to use it s
 
 <img src="git_logo.png" width="64" height="64" align="right">
 
-You can [browse the code](https://gitorious.org/libravatar/libravatar/trees) on Gitorious and [clone the repository](https://gitorious.org/libravatar/libravatar/clone).
+You can [browse the code](https://bazaar.launchpad.net/~libravatar/libravatar/master/files) on Launchpad and [fork the repository](https://git.nzoss.org.nz/libravatar/libravatar/fork/new) on Gitlab.
 
 Otherwise, just check the code out locally:
 
-    git clone git://gitorious.org/libravatar/libravatar.git
+    git clone https://git.nzoss.org.nz/libravatar/libravatar.git
 
 A mirror of it is also available on [Github](https://github.com/libravatar/libravatar).
 

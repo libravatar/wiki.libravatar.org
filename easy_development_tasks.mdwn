@@ -1,7 +1,7 @@
 There are two places where we keep track of things to do in the project:
 
 * [Bug tracker](https://bugs.launchpad.net/libravatar): for bugs and suggested features in the code
-* [TODO file](https://gitorious.org/libravatar/libravatar/blobs/master/TODO.md): for project-wide or sysadmin tasks
+* [TODO file](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/TODO.md): for project-wide or sysadmin tasks
 
 But if you are looking for an easy bug / feature to start with, you may want to:
 

@@ -19,17 +19,17 @@ The following instructions are about the official libravatar.org software.
 
 ## System requirements
 
-You can find the latest system requirements in the [installation instructions](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 6](http://www.debian.org/releases/squeeze/) (squeeze).
+You can find the latest system requirements in the [installation instructions](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 6](http://www.debian.org/releases/squeeze/) (squeeze).
 
 ## Getting the code
 
-We are not currently doing regular releases of the code, but you can easily get the latest copy from our [git repository](https://gitorious.org/libravatar/libravatar):
+We are not currently doing regular releases of the code, but you can easily get the latest copy from our [git repository](https://git.nzoss.org.nz/libravatar/libravatar):
 
-    git clone git://gitorious.org/libravatar/libravatar.git
+    git clone https://git.nzoss.org.nz/libravatar/libravatar.git
 
 ## Installation
 
-Once you've got a copy of the code, follow the instructions in the [INSTALL](https://gitorious.org/libravatar/libravatar/blobs/master/INSTALL.md) file.
+Once you've got a copy of the code, follow the instructions in the [INSTALL](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/INSTALL.md) file.
 
 ## Configuration
 

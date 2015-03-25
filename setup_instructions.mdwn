@@ -241,7 +241,7 @@ you've installed Debian and the usual server packages.
       #!/bin/bash
       
       DIR=/home/francois/git-mirrors
-      cd $DIR/gitorious
+      cd $DIR/git
       git fetch --quiet origin 2> /dev/null
       git reset --quiet --hard origin/master
       git push --quiet github master 2> /dev/null
@@ -251,11 +251,11 @@ you've installed Debian and the usual server packages.
 
       #!/bin/bash
       DIR=/home/francois/git-mirrors
-      cd $DIR/gitorious
+      cd $DIR/git
       git fetch --quiet origin 2> /dev/null
       git reset --quiet --hard origin/master
       cd $DIR
-      hg --quiet convert gitorious libravatar-hg
+      hg --quiet convert git libravatar-hg
       cd $DIR/libravatar-hg
       hg --quiet update
       hg --quiet push ssh://bitbucket.org/libravatar/libravatar 2> /dev/null
@@ -263,8 +263,6 @@ you've installed Debian and the usual server packages.
 
 * Add this to `/home/francois/.ssh/config`:
 
-      Host gitorious.org
-        AddressFamily inet
       Host bitbucket.org
         User hg
         IdentityFile ~/.ssh/repository_mirrors
@@ -278,7 +276,8 @@ you've installed Debian and the usual server packages.
 * Prepare directory for git repository:
 
       cd /home/francois/git-mirrors/
-      git clone git://gitorious.org/libravatar/libravatar.git gitorious
+      git clone https://git.nzoss.org.nz/libravatar/libravatar.git git
+      cd git
       git remote add github git@github.com:libravatar/libravatar.git
 
 * Create the following cron jobs in `/etc/cron.d/libravatar_git-mirrors`:

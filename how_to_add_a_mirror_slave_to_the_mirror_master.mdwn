@@ -60,7 +60,7 @@ and then lookup images using the [test tool](https://www.libravatar.org/tools/ch
        cdn      AAAA 10   dead::beef
        seccdn   AAAA 10   dead::beef
 
-2. Add the same records to the [JSON zone file](https://gitorious.org/libravatar/libravatar/blobs/master/config/dns.json) and then use <tt>namecoind</tt> to update the <tt>libravatar.bit</tt> zone:
+2. Add the same records to the [JSON zone file](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/config/dns.json) and then use <tt>namecoind</tt> to update the <tt>libravatar.bit</tt> zone:
 
        namecoind name_update d/libravatar "`xargs echo < config/dns.json`"
 

@@ -102,6 +102,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * [Foswiki](http://foswiki.org/Extensions/AvatarPlugin)
 * [Friendica](https://github.com/friendica/friendica-addons/tree/master/libravatar)
 * [Ikiwiki](http://ikiwiki.info) (part of core, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
+* [KDE PIM](https://community.kde.org/KDE_PIM) (part of core)
 * [Koha](http://www.koha-community.org) (part of core starting in 3.6, automatically enabled if [Libravatar::URL](http://search.cpan.org/dist/Gravatar-URL/) is installed)
 * [MediaWiki](http://www.mediawiki.org/wiki/Extension:Libravatar)
 * [Mojolicious](https://metacpan.org/release/Mojolicious-Plugin-Libravatar)

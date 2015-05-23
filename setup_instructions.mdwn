@@ -3,6 +3,7 @@ you've installed Debian and the usual server packages.
 
 # Basic setup
 
+* Install Debian and [http://feeding.cloud.geek.nz/posts/usual-server-setup/ tweak a few things]
 * Install rssh and uncomment `allowrsync` in `/etc/rssh.conf`
 * Setup appropriate mail aliases
   * Add these to `/etc/aliases`
@@ -15,7 +16,13 @@ you've installed Debian and the usual server packages.
   * Run `newaliases` to update `/etc/aliases.db`
   * Test the aliases by running `mail root`
 
-* Copy the local logcheck rules from the old server
+* Copy the local logcheck rules from the old server and add the following to `/etc/logcheck/logcheck.logfiles`:
+
+      /var/log/libravatar/error-cdn.log
+      /var/log/libravatar/error-seccdn.log
+      /var/log/libravatar/error-www.log
+      /var/log/libravatar/workers.log
+      /var/log/postgresql/postgresql-8.4-main.log
 
 # Firewall
 

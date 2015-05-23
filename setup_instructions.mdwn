@@ -95,7 +95,7 @@ you've installed Debian and the usual server packages.
 
         sudo -u postgres createuser -s francois
         createuser -s root
-        createuser -S -R -D dude
+        createuser -S -R -D djangouser
 
 * Install pgbouncer and turn it on in `/etc/default/pgbouncer`
   * Put the following in `/etc/pgbouncer/pgbouncer.ini`:

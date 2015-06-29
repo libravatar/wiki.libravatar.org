@@ -18,7 +18,7 @@ for HTTPS IPv6 mirrors.
 
 If you have a server with some spare disk space and bandwidth, please consider supporting the project by running a mirror.
 
-At the moment, it consists of installing a Debian package which takes care of setting up Apache and receives regular updates via rsync.
+At the moment, it consists of installing a Debian package which takes care of setting up Apache and receives regular updates via rsync. You can take a look at the "initial setup" step in the technical information below.
 
 Please contact [[mirrors@libravatar.org]] for details.
 

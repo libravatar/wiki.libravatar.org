@@ -19,6 +19,9 @@ If a library or plugin is not availble for your language or application, your be
 
 The [Libravatar](http://www.rel4tion.org/projects/libravatar/) library is maintained by fr33domlover and is available on [hackage](https://hackage.haskell.org/package/libravatar).
 
+    import Network.Libravatar
+    myUrl = avatarUrl (Right "http://example.com/id/john") True Nothing (Just 100)
+
 ## node.js
 
 <img src="nodejs_logo.png" width="219" height="75" align="right">

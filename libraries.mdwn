@@ -34,6 +34,8 @@ There is a [Libravatar node.js module](https://npmjs.org/package/libravatar) tha
         console.log('<img src="' + avatar_url + '">');
       });
 
+You can also use the [ember-cli module](https://www.npmjs.com/package/ember-cli-libravatar).
+
 ## Perl
 
 <img src="perl_logo.png" width="75" height="75" align="right">

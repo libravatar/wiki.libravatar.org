@@ -12,6 +12,6 @@ Also, please let us know if you are under any kind of publication deadline.
 
 # Security Hall of fame
 
-*Report a security bug you discovered and get your name added here!*
+*We would like to thank the following people who have helped make Libravatar more secure by reporting security issues to us.*
 
 * [Ahmed Adel Abdelfattah](https://www.facebook.com/00SystemError00) ([@00SystemError00](https://twitter.com/00SystemError00)): missing SPF records on `libravatar.org` and `libravatar.com`

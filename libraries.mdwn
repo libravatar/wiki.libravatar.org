@@ -119,6 +119,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * [Mojolicious](https://metacpan.org/release/Mojolicious-Plugin-Libravatar)
 * [Pidgin](https://code.google.com/p/pidgin-libravatar/)
 * [Symfony](https://github.com/julienfastre/LibravatarBundle)
+* [Toc Messenger](https://github.com/lewisl9029/toc) (part of core)
 * [Trac](https://pypi.python.org/pypi/tracvatar/)
 * [Weblate](http://weblate.org/) (part of core starting in 1.5)
 * Wordpress: [Libravatar](http://wordpress.org/extend/plugins/libravatar/) and [Libravatar Replace](http://wordpress.org/plugins/libravatar-replace/)

@@ -107,8 +107,7 @@ At the very least, add something like <http://ismyblogworking.com/1.cdn.libravat
        <Directory /var/www/html/>
               Options Indexes FollowSymLinks MultiViews
               AllowOverride None
-              Order allow,deny
-              allow from all
+              Require all granted
        </Directory>
 
 # Enable automated deployments (optional)

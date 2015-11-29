@@ -7,7 +7,7 @@ Do this on the **slave**:
 1. make sure NTP is installed and running
 1. add the Libravatar apt repository:
 
-       echo "deb http://apt.libravatar.org/ wheezy main" >> /etc/apt/sources.list
+       echo "deb http://apt.libravatar.org/ jessie main" >> /etc/apt/sources.list
        gpg --keyserver pgp.net.nz --recv 007c98d1
        gpg -a --export 007c98d1 | apt-key add -
 
@@ -89,8 +89,21 @@ At the very least, add something like <http://ismyblogworking.com/1.cdn.libravat
 
 3. make the reports available:
 
-       ln -s /usr/share/awstats/icon/ /var/www/awstats-icon
-       ln -s /var/cache/awstats/ /var/www/stats
+       ln -s /usr/share/awstats/icon/ /var/www/html/awstats-icon
+       ln -s /var/cache/awstats/ /var/www/html/stats
+
+4. serve that directory using Apache by putting the following in `/etc/apache/sites-enabled/000-default.conf`:
+
+       <Directory />
+              Options FollowSymLinks
+              AllowOverride None
+       </Directory>
+       <Directory /var/www/html/>
+              Options Indexes FollowSymLinks MultiViews
+              AllowOverride None
+              Order allow,deny
+              allow from all
+       </Directory>
 
 # Enable automated deployments (optional)
 

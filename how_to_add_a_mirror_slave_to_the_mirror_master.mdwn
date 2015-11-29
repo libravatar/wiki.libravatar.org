@@ -31,6 +31,12 @@ Do this on the **slave**:
        newaliases
        /etc/init.d/postfix reload
 
+5. if running fcheck on the slave, add this to `/etc/fcheck/fcheck.local.cfg`:
+
+       Exclusion      = /etc/libravatar/seccdn-chain.pem
+       Exclusion      = /etc/libravatar/seccdn.crt
+       Exclusion      = /etc/libravatar/seccdn.pem
+
 Do this on the **master**:
 
 1. add the slave's ssh pubkey (in `/var/lib/libravatar/slave/.ssh/id_rsa.pub`) to `/var/lib/libravatar/master/.ssh/authorized_keys` using an entry that looks like this:

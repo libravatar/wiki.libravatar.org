@@ -2,7 +2,7 @@ You should probably just use one of the available [[libraries or plugins|librari
 
 # Simple API
 
-There are 5 steps for displaying Libravatar-hosted images into your application:
+There are 4 steps for displaying Libravatar-hosted images into your application:
 
 
 1. Create a hash from the user's email address:
@@ -14,6 +14,8 @@ There are 5 steps for displaying Libravatar-hosted images into your application:
 3. Create a URL like `http://BASEURL/avatar/HASH`.
 4. Put the URL into an `img` tag on your page.
 
+
+## Python example
 Here's an example in Python:
 
     import hashlib
@@ -22,7 +24,13 @@ Here's an example in Python:
 
 which gives us a hash of <tt>40f8d096a3777232204cb3f796c577b7</tt> and therefore the following image tag:
 
+    <img src="http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7" alt="avatar of george@example.com"/>
+
+It will render as follows:
 ![George@example.com](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7)
+
+
+# Options
 
 ## Picture size
 
@@ -72,22 +80,18 @@ Note that Libravatar does **not** support the <tt>rating</tt> (or simply <tt>r</
 
 In order to support domain name owners who choose to [[run their own instances|running your own]] of Libravatar, you must perform a DNS query to lookup the appropriate base URL for each domain (the domain is extracted from email addresses or OpenID URLs).
 
+DNS host names:
+
+* HTTP
+  * `SRV _avatars._tcp.EMAILDOMAIN`
+* HTTPS
+  * `SRV _avatars-sec._tcp._tcp.EMAILDOMAIN`
+
+
 You will probably want to use an [[existing library|libraries]] for this, but here's how to do that DNS lookup on a UNIX command line:
 
-    $ dig SRV _avatars._tcp.example.com
-    
-    ; <<>> DiG 9.7.2-P3 <<>> SRV _avatars._tcp.example.com
-    ; (1 server found)
-    ;; global options: +cmd
-    ;; Got answer:
-    ;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 14684
-    ;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 0
-    
-    ;; QUESTION SECTION:
-    ;_avatars._tcp.example.com.	IN	SRV
-    
-    ;; ANSWER SECTION:
-    _avatars._tcp.example.com. 86400 IN	SRV 0 0 80 avatars.example.com.
+    $ dig +short SRV _avatars._tcp.example.com
+    0 0 80 avatars.example.com.
 
 We also provide a [domain check tool](https://www.libravatar.org/tools/check_domain) to help in your testing.
 

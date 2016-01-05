@@ -4,11 +4,15 @@ You should probably just use one of the available [[libraries or plugins|librari
 
 There are 5 steps for displaying Libravatar-hosted images into your application:
 
-1. Take a user's email address as entered by them.
-2. Convert the email address to lowercase.
-3. Compute the hash (using the MD5 or SHA256 hash algorithms).
-4. Turn the image into a URL by prefixing it with the base URL <tt>http://cdn.libravatar.org/avatar/</tt>.
-5. Put the image into an <tt>img</tt> tag on your page.
+
+1. Create a hash from the user's email address:
+   a. Lowercase the email address.
+   b. Compute a MD5 or SHA256 hash of it.
+2. Discover the avatar server base URL:
+   a. Use DNS-based server discovery as described in *Federated Servers*.
+   b. If no server was found, fall back to `cdn.libravatar.org` (or `seccdn.libravatar.org` for HTTPS).
+3. Create a URL like `http://BASEURL/avatar/HASH`.
+4. Put the URL into an `img` tag on your page.
 
 Here's an example in Python:
 

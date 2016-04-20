@@ -14,6 +14,7 @@ adminemail: admin@branchable.com
 # users who are wiki admins
 adminuser:
 - http://openid.libravatar.org/project
+- dev@libravatar.org
 # users who are banned from the wiki
 banned_users: []
 # where the source of the wiki is located

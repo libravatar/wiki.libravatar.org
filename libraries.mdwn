@@ -112,7 +112,7 @@ The [go-libravatar](https://strk.kbt.io/projects/go/libravatar) module can be us
 
     import "strk.kbt.io/projects/go/libravatar"
     avt := libravatar.New()
-    avatar_url := avt.FromEmail(:person@example.com")
+    avatar_url := avt.FromEmail("person@example.com")
     
 
 <a name="plugins"></a>

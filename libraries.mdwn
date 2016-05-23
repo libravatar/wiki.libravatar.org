@@ -104,6 +104,17 @@ The [txLibravatar](http://pypi.python.org/pypi/txLibravatar) module can be used 
     d = libravatar_url(email = 'person@example.com')
     d.addCallback(lambda x: print '<img src="' + x + '">')
 
+## Go
+
+<img src="https://blog.golang.org/gopher/gopher.png" width="71" align="right">
+
+The [go-libravatar](https://strk.kbt.io/projects/go/libravatar) module can be used like this:
+
+    import "strk.kbt.io/projects/go/libravatar"
+    avt := libravatar.New()
+    avatar_url := avt.FromEmail(:person@example.com")
+    
+
 <a name="plugins"></a>
 # Plugins
 

@@ -22,6 +22,7 @@ You can donate money to help us cover the project hosting-related overheads:
 * [Gratipay](https://gratipay.com/libravatar/)
 * [Bountysource](https://salt.bountysource.com/checkout/amount?team=libravatar)
 * [Flattr](https://flattr.com/thing/311293/Libravatar)
+* [Liberapay](https://liberapay.com/Libravatar/)
 
 # Advocacy
 

@@ -1,9 +1,11 @@
 <img src="https://seccdn.libravatar.org/nobody/256.png" align="right" width="256" height="256">
 
-[Libravatar](https://www.libravatar.org) is a free service for hosting
-profile images tied to your email address or OpenID. Once you have an
-account with us, your photo will be displayed next to your posts and
-comments on sites which support Libravatar.
+[Libravatar](https://www.libravatar.org) (*Libre Avatar*) is a free service
+and an [[open specification|api]] for hosting profile images tied to email or OpenID
+addresses.
+
+In order to have your photo displayed next to your posts and comments on sites which support
+Libravatar you can either create an account with us or [[run your own service|running your own]].
 
 * [[What is Libravatar?|description]]
 * [[Features]]

@@ -4,8 +4,9 @@
 and an [[open specification|api]] for hosting profile images tied to email or OpenID
 addresses.
 
-In order to have your photo displayed next to your posts and comments on sites which support
-Libravatar you can either create an account with us or [[run your own service|running your own]].
+In order to have your photo displayed next to your posts and comments on [[sites which support
+Libravatar|sites]] you can either create an account with us or [[run your own node|running your own]]
+of the federated avatar network.
 
 * [[What is Libravatar?|description]]
 * [[Features]]

@@ -1,1 +1,5 @@
-Websites known to support Libravatar (please add yours!)
+Websites known to support Libravatar (please add yours!):
+
+* [Debian Bug tracker](https://www.debian.org/Bugs/)
+* [git.kernel.org](https://git.kernel.org/cgit/)
+* [Mozilla Reps](https://reps.mozilla.org/)

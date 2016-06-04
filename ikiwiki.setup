@@ -16,7 +16,8 @@ adminuser:
 - http://openid.libravatar.org/project
 - dev@libravatar.org
 # users who are banned from the wiki
-banned_users: []
+banned_users:
+- Pubbee1942
 # where the source of the wiki is located
 srcdir: /home/b-libravatar/source
 # where to build the wiki
@@ -72,6 +73,7 @@ add_plugins:
 # plugins to disable
 disable_plugins:
 - recentchanges
+- passwordauth
 # additional directory to search for template files
 templatedir: /usr/share/ikiwiki/templates
 # base wiki source location

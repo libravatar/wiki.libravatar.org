@@ -68,8 +68,10 @@ add_plugins:
 - autoindex
 - txt
 - date
+- moderatedcomments
 # plugins to disable
-disable_plugins: []
+disable_plugins:
+- recentchanges
 # additional directory to search for template files
 templatedir: /usr/share/ikiwiki/templates
 # base wiki source location
@@ -115,7 +117,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-libravatar/.ikiwiki
 # environment variables
-ENV: {}
+#ENV: ''
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -198,7 +200,7 @@ created: 1302472515
 # disable IPv6?
 ipv6_disabled: 0
 # redirect from http to https?
-redirect_to_https: 0
+redirect_to_https: 1
 
 # inline plugin
 # enable rss feeds by default?
@@ -250,7 +252,7 @@ emailauth_sender: login@branchable.com
 
 # openid plugin
 # url pattern of openid realm (default is cgiurl)
-#openid_realm: ''
+openid_realm: http://*.branchable.com/
 # url to ikiwiki cgi to use for openid authentication (default is cgiurl)
 #openid_cgiurl: ''
 
@@ -324,8 +326,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -350,10 +352,6 @@ comments_pagename: comment_
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors
@@ -409,13 +407,17 @@ websetup_show_unsafe: 0
 
 # calendar plugin
 # base of the archives hierarchy
-#archivebase: archives
+archivebase: archives
 # PageSpec of pages to include in the archives, if option `calendar_autocreate` is true.
-#archive_pagespec: page(posts/*) and !*/Discussion
+archive_pagespec: '*'
 # autocreate new calendar pages?
-#calendar_autocreate: 1
+calendar_autocreate: ''
 # if set, when building calendar pages, also build pages of year and month when no pages were published (building empty calendars).
-#calendar_fill_gaps: 1
+calendar_fill_gaps: 1
+
+# img plugin
+# Image formats to process (jpeg, png, gif, svg, pdf or 'everything' to accept all)
+#img_allowed_formats: ''
 
 # listdirectives plugin
 # directory in srcdir that contains directive descriptions

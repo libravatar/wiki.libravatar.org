@@ -6,7 +6,7 @@ There is [documentation](https://help.launchpad.net/Translations/StartingToTrans
 
 ## Transifex
 
-If you already use Transifex to translate other projects, you can also find a [Libravatar project](https://www.transifex.net/projects/p/libravatar/) on there and submit your translations that way. We do however prefer that new translators use the Launchpad system.
+If you already use **Transifex** to translate other projects, you can also find a [Libravatar project](https://www.transifex.com/fmarier/libravatar/) on there and submit your translations that way. We do however prefer that new translators use the Launchpad system.
 
 # English speakers
 

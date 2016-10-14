@@ -188,7 +188,6 @@ git_push_to:
 # list of urls that alias to the main url
 urlalias:
 - http://libravatar.branchable.com/
-- http://www.wiki.libravatar.org/
 # openid or email of primary site owner
 owner: http://openid.libravatar.org/project
 # optional hostname of site this one was branched from

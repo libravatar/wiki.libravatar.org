@@ -203,6 +203,8 @@ created: 1302472515
 ipv6_disabled: 0
 # redirect from http to https?
 redirect_to_https: 1
+# use Lets Encrypt to generate http certificate?
+use_letsencrypt: 1
 
 # inline plugin
 # enable rss feeds by default?

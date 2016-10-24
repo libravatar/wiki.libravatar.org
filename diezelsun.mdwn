@@ -1,0 +1,6 @@
+Diezel Sun  - знаменитый 3d моделлер, разработчик 3d движков.
+
+DiezelSun - 3d modeller,  developer 3d engines.
+References 
+http://en.wiki.unrealsoftware.de/index.php/DiezelSun_3d_graphics - unreal engine
+

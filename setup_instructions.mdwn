@@ -257,6 +257,15 @@ you've installed Debian and the usual server packages.
 
 # Git mirrors
 
+* Install `hg`:
+
+      apt install mercurial
+
+* Enable the `convert` mercurial extension by putting this in `/etc/mercurial/hgrc`:
+
+      [extensions]
+      convert =
+
 * Add this script in `/usr/local/bin/git-mirror`:
 
       #!/bin/bash
@@ -297,7 +306,7 @@ you've installed Debian and the usual server packages.
 * Prepare directory for git repository:
 
       cd /home/francois/git-mirrors/
-      git clone https://git.nzoss.org.nz/libravatar/libravatar.git git
+      git clone https://git.launchpad.net/~libravatar/libravatar git
       cd git
       git remote add github git@github.com:libravatar/libravatar.git
 

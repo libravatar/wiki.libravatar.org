@@ -126,8 +126,22 @@ you've installed Debian and the usual server packages.
 
 # Web server
 
-* Install the required Apache modules:
+* Create a global TLS configuration in `/etc/apache2/conf-available/tls.conf`:
 
+      SSLProtocol             all -SSLv3 -TLSv1 -TLSv1.1
+      SSLCipherSuite          ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
+      SSLHonorCipherOrder     on
+      SSLCompression          off
+      
+      # OCSP Stapling, only in httpd 2.3.3 and later
+      SSLUseStapling          on
+      SSLStaplingResponderTimeout 5
+      SSLStaplingReturnResponderErrors off
+      SSLStaplingCache        shmcb:/var/run/ocsp(128000)
+
+* Enable TLS and mod_rewrite:
+
+      a2enconf tls
       a2enmod ssl
       a2enmod rewrite
 
@@ -143,11 +157,6 @@ you've installed Debian and the usual server packages.
 
         <VirtualHost *:443>
             SSLEngine on
-            SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
-            SSLHonorCipherOrder On
-            SSLCipherSuite ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
-            SSLCompression Off
-        
             SSLCertificateFile /etc/libravatar/www.crt
             SSLCertificateKeyFile /etc/libravatar/www.pem
             SSLCertificateChainFile /etc/libravatar/www-chain.pem
@@ -166,11 +175,6 @@ you've installed Debian and the usual server packages.
             Alias /favicon.ico /usr/share/libravatar/libravatar/favicon.ico
         
             SSLEngine on
-            SSLProtocol all -SSLv3 -TLSv1 -TLSv1.1
-            SSLHonorCipherOrder On
-            SSLCipherSuite ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
-            SSLCompression Off
-            
             SSLCertificateFile /etc/libravatar/stats.crt
             SSLCertificateKeyFile /etc/libravatar/stats.pem
             SSLCertificateChainFile /etc/libravatar/stats-chain.pem
@@ -189,6 +193,7 @@ you've installed Debian and the usual server packages.
 
 * Enable the new vhost:
 
+      a2ensite default-ssl
       a2ensite stats
 
 * Copy all SSL certs in `/etc/libravatar/` from the old server

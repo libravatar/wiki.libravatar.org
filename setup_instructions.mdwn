@@ -242,7 +242,7 @@ you've installed Debian and the usual server packages.
 * Install Libravatar packages
   * Add the Libravatar repository to `/etc/apt/sources.list`:
 
-        deb http://apt.libravatar.org/ wheezy main
+        deb http://apt.libravatar.org/ jessie main
 
   * Then install server packages:
  

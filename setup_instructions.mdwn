@@ -88,8 +88,8 @@ you've installed Debian and the usual server packages.
   * In `/etc/postgresql/*/main/pg_hba.conf`, change all local connections to `trust`
   * In `/etc/postgresql/*/main/postgresql.conf`, set these:
 
-        log_min_duration_statement =  400
-        ssl = false
+        log_min_duration_statement =  1000
+        ssl = off
 
   * Create postgres users:
 

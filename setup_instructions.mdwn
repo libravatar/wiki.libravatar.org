@@ -26,7 +26,7 @@ you've installed Debian and the usual server packages.
 
 # Firewall
 
-* In `/etc/network/iptables`, put the following:
+* In `/etc/network/iptables.up.rules`, put the following:
 
       # Set default policies
       *filter
@@ -46,7 +46,7 @@ you've installed Debian and the usual server packages.
       COMMIT
 
 * Enable the rules using `iptables-apply`
-* In `/etc/network/ip6tables`, put the following:
+* In `/etc/network/ip6tables.up.rules`, put the following:
 
       # Set default policies
       *filter
@@ -75,12 +75,12 @@ you've installed Debian and the usual server packages.
           address x.x.x.x
           netmask 255.255.255.0
           gateway x.x.x.x
-          pre-up iptables-restore /etc/network/iptables
+          pre-up iptables-restore /etc/network/iptables.up.rules
       iface eth0 inet6 static
           address x::x
           netmask 64
           gateway x::x
-          pre-up ip6tables-restore /etc/network/ip6tables
+          pre-up ip6tables-restore /etc/network/ip6tables.up.rules
 
 # Database
 

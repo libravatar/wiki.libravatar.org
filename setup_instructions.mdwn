@@ -170,11 +170,11 @@ you've installed Debian and the usual server packages.
             SSLHonorCipherOrder On
             SSLCipherSuite ECDHE-ECDSA-AES256-GCM-SHA384:ECDHE-RSA-AES256-GCM-SHA384:ECDHE-ECDSA-CHACHA20-POLY1305:ECDHE-RSA-CHACHA20-POLY1305:ECDHE-ECDSA-AES128-GCM-SHA256:ECDHE-RSA-AES128-GCM-SHA256:ECDHE-ECDSA-AES256-SHA384:ECDHE-RSA-AES256-SHA384:ECDHE-ECDSA-AES128-SHA256:ECDHE-RSA-AES128-SHA256
             SSLCompression Off
-          
-            SSLCertificateFile /etc/apache2/ssl/stats.libravatar.org.crt
-            SSLCertificateKeyFile /etc/apache2/ssl/stats.libravatar.org.pem
-            SSLCertificateChainFile /etc/apache2/ssl/cacert-chain.pem
-          
+            
+            SSLCertificateFile /etc/libravatar/stats.crt
+            SSLCertificateKeyFile /etc/libravatar/stats.pem
+            SSLCertificateChainFile /etc/libravatar/stats-chain.pem
+            
             Header add Strict-Transport-Security: "max-age=15768000"
           
             <Location />

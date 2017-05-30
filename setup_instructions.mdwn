@@ -187,6 +187,7 @@ you've installed Debian and the usual server packages.
                 Require valid-user
                 Order allow,deny
                 allow from all
+                Options +indexes
             </Location>
         </VirtualHost>
 

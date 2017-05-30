@@ -191,6 +191,8 @@ you've installed Debian and the usual server packages.
             </Location>
         </VirtualHost>
 
+* Copy the stats password file (`/etc/apache2/stats.passwd`).
+
 * Enable the new vhost:
 
       a2ensite default-ssl

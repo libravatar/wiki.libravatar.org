@@ -212,19 +212,30 @@ you've installed Debian and the usual server packages.
       pg_dump -Fc libravatar > $DUMP_FILE
       chmod 600 $DUMP_FILE
       
+      # Encrypt backup
+      gpg --recipient 007c98d1 --encrypt $DUMP_FILE
+      rm $DUMP_FILE
+      
       # Purge old backups
       find $DUMP_DIR -ctime +7 -delete
 
 * Create an empty `/var/backups/libravatar` directory
-* Add my duplicity backup script to `/home/francois/.backup/`
+* Install duplicity (`apt install duplicity`)
+* Add my duplicity backup script to `/home/francois/.backup/` and update:
+  * GPG passhrase
+  * Destination directory (which includes the hostname)
 * Create this cronjob in `/etc/cron.d/libravatar_backups`:
 
       # Local DB backups
       4 1,13 * * *       root    ionice -c3 nice -n10 /usr/local/sbin/libravatar_backups
       
       # Full backups to Amazon S3
-      6 14 * * *      root    /home/francois/.backup/backup-husavik
-      6 23 * * 3      root    /home/francois/.backup/backup-husavik --full
+      6 14 * * *      root    /home/francois/.backup/backup-selfoss
+      6 23 * * 3      root    /home/francois/.backup/backup-selfoss --full
+
+* Run an initial backup:
+
+      sudo /home/francois/.backup/backup-selfoss
 
 # Install application
 

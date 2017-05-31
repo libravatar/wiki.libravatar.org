@@ -97,7 +97,14 @@ you've installed Debian and the usual server packages.
         createuser -s root
         createuser -S -R -D djangouser
 
-* Install pgbouncer and turn it on in `/etc/default/pgbouncer`
+* Install pgbouncer
+
+      apt install pgbouncer
+
+  * Turn it on in `/etc/default/pgbouncer`
+
+        START=1
+
   * Put the following in `/etc/pgbouncer/pgbouncer.ini`:
 
         [databases]
@@ -106,10 +113,14 @@ you've installed Debian and the usual server packages.
         [pgbouncer]
         admin_users = postgres
 
-* Put the following in `/etc/pgbouncer/userlist.txt`:
+  * Put the following in `/etc/pgbouncer/userlist.txt`:
 
-      "djangouser" ""
-      "postgres" ""
+        "djangouser" ""
+        "postgres" ""
+
+  * Restart the daemon:
+
+        systemctl restart pgbouncer
 
 # TLS certificate
 

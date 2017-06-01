@@ -16,6 +16,7 @@ you've installed Debian and the usual server packages.
   * Run `newaliases` to update `/etc/aliases.db`
   * Test the aliases by running `mail root`
 
+* Ensure that the only entry for `localhost` in `/etc/hosts` is for `127.0.0.1` (if you leave the one for `::1`, [it will confuse gearman](https://feeding.cloud.geek.nz/posts/debugging-gearman-configuration/#comment-5980a879ebda9f23f70eee0ea7236bd2))
 * Copy the local logcheck rules from the old server and add the following to `/etc/logcheck/logcheck.logfiles`:
 
       /var/log/libravatar/error-cdn.log

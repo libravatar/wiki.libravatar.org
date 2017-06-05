@@ -16,6 +16,18 @@ Do this on the **slave**:
        apt update
        apt install libravatar-{common,cdn-common,cdn,seccdn,slave}
 
+1. put the following global TLS config in `/etc/apache2/conf-available/tls.conf`:
+
+       SSLHonorCipherOrder On
+       SSLCompression Off
+       SSLUseStapling on
+       SSLStaplingResponderTimeout 5
+       SSLStaplingReturnResponderErrors off
+       SSLStaplingCache shmcb:/var/run/ocsp(128000)
+
+1. enable the newly-added TLS config:
+
+       a2enconf tls
 
 1. reduce apache log retention to 10 days in `/etc/logrotate.d/apache` and enable the `removeip` apache module:
 

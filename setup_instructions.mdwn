@@ -3,7 +3,7 @@ you've installed Debian and the usual server packages.
 
 # Basic setup
 
-* Install Debian and [tweak a few things](http://feeding.cloud.geek.nz/posts/usual-server-setup/)
+* Install Debian and [tweak a few things](https://feeding.cloud.geek.nz/posts/usual-server-setup/)
 * Install rssh and uncomment `allowrsync` in `/etc/rssh.conf`
 * Setup appropriate mail aliases
   * Add these to `/etc/aliases`

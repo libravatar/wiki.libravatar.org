@@ -13,11 +13,13 @@ wikiname: Libravatar Wiki
 adminemail: admin@branchable.com
 # users who are wiki admins
 adminuser:
-- http://openid.libravatar.org/project
 - dev@libravatar.org
+- https://openid.libravatar.org/project
 # users who are banned from the wiki
 banned_users:
 - Pubbee1942
+- forma88
+- propertyofgodonly
 # where the source of the wiki is located
 srcdir: /home/b-libravatar/source
 # where to build the wiki
@@ -70,9 +72,9 @@ add_plugins:
 - txt
 - date
 - moderatedcomments
+- recentchanges
 # plugins to disable
 disable_plugins:
-- recentchanges
 - passwordauth
 # additional directory to search for template files
 templatedir: /usr/share/ikiwiki/templates
@@ -119,7 +121,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-libravatar/.ikiwiki
 # environment variables
-ENV: {}
+#ENV: ''
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -329,8 +331,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -355,10 +357,6 @@ comments_pagename: comment_
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors

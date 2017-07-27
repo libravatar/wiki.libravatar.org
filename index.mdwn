@@ -1,4 +1,4 @@
-<img src="https://seccdn.libravatar.org/nobody/256.png" align="right" width="256" height="256">
+<img src="https://seccdn.libravatar.org/nobody/256.png" align="right" width="256" height="256" alt="Libravatar Logo">
 
 [Libravatar](https://www.libravatar.org) (*"Libre Avatar"*) is a free service
 and an [[open specification|api]] for hosting profile images tied to email or OpenID

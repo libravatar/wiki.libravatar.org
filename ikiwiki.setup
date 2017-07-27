@@ -18,6 +18,7 @@ adminuser:
 # users who are banned from the wiki
 banned_users:
 - Pubbee1942
+- ThomasJones
 - forma88
 - propertyofgodonly
 # where the source of the wiki is located

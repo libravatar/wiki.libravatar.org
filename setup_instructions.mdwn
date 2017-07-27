@@ -286,7 +286,7 @@ you've installed Debian and the usual server packages.
   * Then install server packages:
  
         apt update
-        apt install libravatar{,-common,-cdn,-cdn-common,-www,-master}
+        apt install libravatar{,-common,-cdn,-cdn-common,-deployment,-www,-master}
 
   * Use `6432` for the database port number, otherwise accept all of the defaults
 

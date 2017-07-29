@@ -279,9 +279,10 @@ you've installed Debian and the usual server packages.
 # Install application
 
 * Install Libravatar packages
+  * Start by installing the `apt-transport-https` package
   * Add the Libravatar repository to `/etc/apt/sources.list`:
 
-        deb http://apt.libravatar.org/ jessie main
+        deb https://apt.libravatar.org/ jessie main
 
   * Then install server packages:
  

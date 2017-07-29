@@ -4,10 +4,10 @@ This will be of interest only to admins who run a Libravatar master server using
 
 Do this on the **slave**:
 
-1. make sure NTP is installed and running
+1. install the `apt-transport-https` package
 1. add the Libravatar apt repository:
 
-       echo "deb http://apt.libravatar.org/ jessie main" >> /etc/apt/sources.list
+       echo "deb https://apt.libravatar.org/ jessie main" >> /etc/apt/sources.list
        gpg --keyserver pgp.net.nz --recv 007c98d1
        gpg -a --export 007c98d1 | apt-key add -
 

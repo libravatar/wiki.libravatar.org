@@ -29,16 +29,10 @@ Do this on the **slave**:
 
        a2enconf tls
 
-1. reduce apache log retention to 10 days in `/etc/logrotate.d/apache` and enable the `removeip` apache module:
+2. reduce apache log retention to 10 days in `/etc/logrotate.d/apache` and enable the `removeip` apache module:
 
        a2enmod removeip
        systemctl restart apache2
-
-2. create SSL certificate placeholders:
-
-       touch /etc/libravatar/seccdn-chain.pem
-       touch /etc/libravatar/seccdn.pem
-       touch /etc/libravatar/seccdn.crt
 
 3. make sure cron errors go somewhere by adding this to `/etc/aliases`:
 

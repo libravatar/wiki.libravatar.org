@@ -375,5 +375,4 @@ If migrating from one server to another:
 
 * Copy the contents of `/var/lib/libravatar/` from the old server and fix the file permissions:
 
-      find /var/lib/libravatar/avatar/ -type f -exec chown libravatar-img:nogroup {} \;
-      find /var/lib/libravatar/user/ -type f -exec chown libravatar-img:nogroup {} \;
+      chown -R root:root /var/lib/libravatar/avatar/* /var/lib/libravatar/user/*

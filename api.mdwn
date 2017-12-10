@@ -50,7 +50,7 @@ The <tt>d</tt> or <tt>default</tt> parameter defaults to the Libravatar logo, bu
 
 * <tt>**404**</tt>: return a 404 error (file not found) instead of an image
 * <table><tr>
-  <td align="center">![mm](httsp://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=mm)
+  <td align="center">![mm](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=mm)
   <br><tt>**mm**</tt></td>
   <td align="center">![identicon](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=identicon)
   <br><tt>**identicon**</tt></td>

@@ -24,10 +24,10 @@ Here's an example in Python:
 
 which gives us a hash of <tt>40f8d096a3777232204cb3f796c577b7</tt> and therefore the following image tag:
 
-    <img src="http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7" alt="avatar of george@example.com"/>
+    <img src="https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7" alt="avatar of george@example.com"/>
 
 It will render as follows:
-![George@example.com](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7)
+![George@example.com](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7)
 
 
 # Options
@@ -50,15 +50,15 @@ The <tt>d</tt> or <tt>default</tt> parameter defaults to the Libravatar logo, bu
 
 * <tt>**404**</tt>: return a 404 error (file not found) instead of an image
 * <table><tr>
-  <td align="center">![mm](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=mm)
+  <td align="center">![mm](httsp://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=mm)
   <br><tt>**mm**</tt></td>
-  <td align="center">![identicon](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=identicon)
+  <td align="center">![identicon](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=identicon)
   <br><tt>**identicon**</tt></td>
-  <td align="center">![monsterid](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=monsterid)
+  <td align="center">![monsterid](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=monsterid)
   <br><tt>**monsterid**</tt></td>
-  <td align="center">![wavatar](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=wavatar)
+  <td align="center">![wavatar](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=wavatar)
   <br><tt>**wavatar**</tt></td>
-  <td align="center">![retro](http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=retro)
+  <td align="center">![retro](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=retro)
   <br><tt>**retro**</tt></td>
   </tr></table>
 

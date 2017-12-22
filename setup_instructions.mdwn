@@ -215,17 +215,17 @@ you've installed Debian and the usual server packages.
 
 * Enable the new vhost:
 
-      a2ensite default-ssl
+      mkdir /var/www/acme
       a2ensite acme
+      a2ensite default-ssl
       a2ensite stats
 
-* Install `certbot` and then create two separate certs:
+* Install `certbot` and then create a few certs:
 
-      systemctl stop apache2
-      certbot certonly -d www.libravatar.org -d libravatar.org -d selfoss.libravatar.org
+      certbot certonly --webroot -w /var/www/acme -d www.libravatar.org -d libravatar.org -d selfoss.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d stats.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d seccdn.libravatar.org
-      systemctl start apache2
+      systemctl restart apache2
 
 * Symlink the letsencrypt certs in the right place:
 
@@ -244,7 +244,7 @@ you've installed Debian and the usual server packages.
 
       #!/bin/bash
       
-      /usr/bin/certbot renew --quiet --pre-hook "/bin/systemctl stop apache2.service" --post-hook "/bin/systemctl start apache2.service"
+      /usr/bin/certbot renew --quiet --post-hook "/bin/systemctl restart apache2.service"
       
       pushd /etc/ > /dev/null
       /usr/bin/git add letsencrypt

@@ -144,14 +144,14 @@ you've installed Debian and the usual server packages.
       a2enmod rewrite
 
 * Setup some Apache vhosts:
-  * `/etc/apache2/sites-enabled/000-default`:
+  * `/etc/apache2/sites-enabled/000-default.conf`:
  
         <VirtualHost *:80>
             RewriteEngine On
             RewriteRule ^ https://www.libravatar.org [redirect=301,last]
         </VirtualHost>
 
-  * `/etc/apache2/sites-enabled/default-ssl`:
+  * `/etc/apache2/sites-enabled/default-ssl.conf`:
 
         <VirtualHost *:443>
             SSLEngine on
@@ -163,7 +163,7 @@ you've installed Debian and the usual server packages.
             RewriteRule ^ https://www.libravatar.org [redirect=301,last]
         </VirtualHost>
 
-  * `/etc/apache2/sites-available/stats`:
+  * `/etc/apache2/sites-available/stats.conf`:
  
         <VirtualHost *:443>
             ServerName stats.libravatar.org
@@ -189,26 +189,50 @@ you've installed Debian and the usual server packages.
                 Options +indexes
             </Location>
         </VirtualHost>
+        
+        <VirtualHost *:80>
+            ServerName stats.libravatar.org
+            ServerAdmin webmaster@libravatar.org
+            DocumentRoot /var/www/acme
+            <Directory /var/www/acme>
+                Options -Indexes
+            </Directory>
+        </VirtualHost>
+
+  * `/etc/apache2/sites-available/acme.conf`:
+ 
+        <VirtualHost *:80>
+            ServerName stats.libravatar.org
+            ServerAdmin webmaster@libravatar.org
+            DocumentRoot /var/www/acme
+            <Directory /var/www/acme>
+                Options -Indexes
+            </Directory>
+        </VirtualHost>
+
 
 * Copy the stats password file (`/etc/apache2/stats.passwd`).
 
 * Enable the new vhost:
 
       a2ensite default-ssl
+      a2ensite acme
       a2ensite stats
-
-* Copy seccdn SSL certs in `/etc/libravatar/` from the old server.
 
 * Install `certbot` and then create two separate certs:
 
       systemctl stop apache2
       certbot certonly -d www.libravatar.org -d libravatar.org -d selfoss.libravatar.org
-      certbot certonly -d stats.libravatar.org
+      certbot certonly --webroot -w /var/www/acme -d stats.libravatar.org
+      certbot certonly --webroot -w /var/www/acme -d seccdn.libravatar.org
       systemctl start apache2
 
 * Symlink the letsencrypt certs in the right place:
 
       cd /etc/libravatar/
+      ln -s ../letsencrypt/seccdn.libravatar.org/privkey.pem seccdn.pem
+      ln -s ../letsencrypt/seccdn.libravatar.org/cert.pem seccdn.crt
+      ln -s ../letsencrypt/seccdn.libravatar.org/chain.pem seccdn-chain.pem
       ln -s ../letsencrypt/stats.libravatar.org/privkey.pem stats.pem
       ln -s ../letsencrypt/stats.libravatar.org/cert.pem stats.crt
       ln -s ../letsencrypt/stats.libravatar.org/chain.pem stats-chain.pem

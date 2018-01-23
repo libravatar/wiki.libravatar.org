@@ -125,7 +125,7 @@ or, with global context
 There aren't many plugins available at the moment, but please [[suggest the ones|suggested plugins]] you'd like to have.
 
 * [Claws Mail](http://www.claws-mail.org/plugin.php?plugin=libravatar) (since version 3.10)
-* [Dotclear](https://open-time.net/post/2018/01/22/Plugin-Gravatars-07-pour-Dotclear)
+* [Dotclear](https://open-time.net/post/2018/01/23/Plugin-Gravatars-08-pour-Dotclear)
 * [Foswiki](http://foswiki.org/Extensions/AvatarPlugin)
 * [Friendica](https://github.com/friendica/friendica-addons/tree/master/libravatar)
 * [GNOME-shell-extension-timezone](https://github.com/jwendell/gnome-shell-extension-timezone)

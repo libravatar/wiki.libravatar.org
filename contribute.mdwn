@@ -15,15 +15,6 @@ Given that Libravatar is a community project without a big corporate sponsor, we
 
 If you can spare a bit of disk space and bandwidth, please [get in touch](mailto:mirrors@libravatar.org), we would love your help in building a world-wide mirror network.
 
-# Donate
-
-You can donate money to help us cover the project hosting-related overheads:
-
-* [Gratipay](https://gratipay.com/libravatar/)
-* [Bountysource](https://salt.bountysource.com/checkout/amount?team=libravatar)
-* [Flattr](https://flattr.com/thing/311293/Libravatar)
-* [Liberapay](https://liberapay.com/Libravatar/)
-
 # Advocacy
 
 If you don't fit into of the other categories, you are still more than welcome to join us:

@@ -1,3 +1,7 @@
 Here is a place where people who are interested in [taking over Libravatar](https://blog.libravatar.org/posts/Libravatar.org_is_shutting_down_on_2018-09-01/) can coordinate.
 
 Please leave some contact details so that others can reach out to you.
+
+---
+
+Can we get some statistics about the service now? Both in terms of the infrastructure (assuming infra support won't continue) and in terms of what is required to keep it going?  Do we know how many avatars are served? stored? etc? (bex@pobox.com)

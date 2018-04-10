@@ -40,3 +40,8 @@ The cost for the month of March 2018 was $70 USD:
 
 - Cloud Bandwidth: $13.50
 - Cloud Servers: $56.84
+
+--- 
+
+Basically I'm willing to help to keep this service up & running and would like to contribute a VM or some disk space and bandwidth by running a mirror. No Django experience though, but slightly able to read Python, but no programmer at all. 
+Contact me at ij@2017.bluespice.org or @ingoj on Twitter. 

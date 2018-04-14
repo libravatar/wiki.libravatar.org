@@ -19,7 +19,7 @@ The following instructions are about the official libravatar.org software.
 
 ## System requirements
 
-You can find the latest system requirements in the [installation instructions](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 7](http://www.debian.org/releases/wheezy/) (wheezy).
+You can find the latest system requirements in the [installation instructions](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 8](http://www.debian.org/releases/jessie/) (jessie).
 
 ## Getting the code
 

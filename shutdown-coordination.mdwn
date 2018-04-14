@@ -52,4 +52,10 @@ DO would be a good place to move this service.  A couple of $10 droplets could e
 
 https://blog.digitalocean.com/new-droplet-plans
 
+---
+
+DO also ( I believe ) will contribute resources to open source projects that request it.
+
+Has anyone formulated a plan at all to update Libravatar to Python 3 and migrate away from unsupported libraries?
+zach@mailcan.com
 

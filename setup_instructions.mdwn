@@ -1,6 +1,8 @@
 Here are some notes on how to setup the main `libravatar.org` server after
 you've installed Debian and the usual server packages.
 
+If you are migrating to a new server, you may be interested in the [server migration plan](https://feeding.cloud.geek.nz/posts/server-migration-plan/) that has been used for the last few server migrations.
+
 # Basic setup
 
 * Install Debian and [tweak a few things](https://feeding.cloud.geek.nz/posts/usual-server-setup/)

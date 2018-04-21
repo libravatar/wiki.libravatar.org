@@ -65,3 +65,6 @@ I have setup a new repo here: https://pagure.io/libravatar2 to modernize/rewrite
 
 clime@redhat.com
 
+---
+
+The email to reach out for potential DigitalOcean open source sponsorship is opensource@digitalocean.com

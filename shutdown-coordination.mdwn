@@ -68,3 +68,7 @@ clime@redhat.com
 ---
 
 The email to reach out for potential DigitalOcean open source sponsorship is opensource@digitalocean.com
+
+---
+
+I sent a message to Digital Ocean, will let you know if I receive a response.

@@ -71,4 +71,4 @@ The email to reach out for potential DigitalOcean open source sponsorship is ope
 
 ---
 
-I sent a message to Digital Ocean, will let you know if I receive a response.
+Got a response from DO, they offered $200 to host two droplets for one year.

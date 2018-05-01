@@ -60,9 +60,13 @@ Contact me at ij@2017.bluespice.org or @ingoj on Twitter.
 
 ---
 
-DO would be a good place to move this service.  A couple of $10 droplets could easily handle the load.  The question is who would you want to own the servers?
+# Digital Ocean
 
-https://blog.digitalocean.com/new-droplet-plans
+[DigitalOcean](https://digitalocean.com) would be a good place to move this service.  A couple of [$10 droplets](https://blog.digitalocean.com/new-droplet-plans) could easily handle the load.  The question is who would you want to own the servers?
+
+The email to reach out for potential DO open source sponsorship is opensource@digitalocean.com
+
+They offered $200 to host two droplets for one year.
 
 ---
 
@@ -76,17 +80,6 @@ zach@mailcan.com
 I have setup a new repo here: https://pagure.io/libravatar2 to modernize/rewrite libravatar to use the latest available tooling. Please concact me if you would like to help.
 
 clime@redhat.com
-
----
-
-The email to reach out for potential DigitalOcean open source sponsorship is opensource@digitalocean.com
-
----
-
-Got a response from DO, they offered $200 to host two droplets for one year.
-
-
-digitalocean.com
 
 ---
 

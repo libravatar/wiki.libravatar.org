@@ -48,9 +48,9 @@ The cost (currently covered by Rackspace through their OSS program) for the mont
 In addition to the domain names (libravatar.org and libravatar.com), the following accounts could be transferred to the new team:
 
 - [Blog](https://blog.libravatar.org) and [wiki](https://wiki.libravatar.org) (hosted for free by [Branchable](https://branchable.com))
-- [Laucnhpad project](https://launchpad.net/libravatar) (bug tracker, git repo, translations)
-- [Github project](https://github.com/libravatar) (read-only git mirror of the repos)
-- [Bitbucket project](https://bitbucket.org/libravatar/) (read-only mercurial mirror of the repo)
+- [Launchhpad project](https://launchpad.net/libravatar) (bug tracker, git repo, translations)
+- [GitHub project](https://github.com/libravatar) (read-only git mirror of the repos)
+- [BitBucket project](https://bitbucket.org/libravatar/) (read-only mercurial mirror of the repo)
 - [Transifex account](https://www.transifex.com/fmarier/libravatar/) (mostly unused alternative service for translations)
 
 --- 

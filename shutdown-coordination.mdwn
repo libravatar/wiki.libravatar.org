@@ -73,6 +73,9 @@ The email to reach out for potential DigitalOcean open source sponsorship is ope
 
 Got a response from DO, they offered $200 to host two droplets for one year.
 
-—
+
+digitalocean.com
+
+---
 
 I am here to help anyway I can, refactoring code, hosting. Please reach out sadin@fedoraproject.org

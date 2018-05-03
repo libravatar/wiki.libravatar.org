@@ -52,6 +52,8 @@ In addition to the domain names (libravatar.org and libravatar.com), the followi
 - [GitHub project](https://github.com/libravatar) (read-only git mirror of the repos)
 - [BitBucket project](https://bitbucket.org/libravatar/) (read-only mercurial mirror of the repo)
 - [Transifex account](https://www.transifex.com/fmarier/libravatar/) (mostly unused alternative service for translations)
+- [Twitter account](https://twitter.com/libravatar)
+- [Identi.ca account](https://identi.ca/libravatar)
 
 --- 
 

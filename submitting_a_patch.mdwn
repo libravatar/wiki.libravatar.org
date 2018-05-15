@@ -1,8 +1,35 @@
-There are three ways to submit your patch:
+The preferred way to submit a patch is via Launchpad merge requests.
+
+# Launchpad merge requests
+
+Once you have a [Launchpad account](https://launchpad.net/+login), here's how to clone the main repository and then push a personal branch to Launchpad:
+
+    git clone https://git.launchpad.net/~libravatar/libravatar
+    cd libravatar
+    git remote add francois git+ssh://git.launchpad.net/~fmarier/libravatar
+    git checkout -b test
+    (commit some changes)
+    git push -u francois test
+
+(In this example, my username is `fmarier`, my branch name is `test` and the git remote for my personal repo is `francois`.)
+
+Once you have done that, your repository will be shown in the list of [libravatar repositories](https://code.launchpad.net/libravatar) and clicking on it will take you to the [list of branches it contains](https://code.launchpad.net/~fmarier/libravatar/+git/libravatar).
+
+To submit a merge request, click on the [branch name](https://code.launchpad.net/~fmarier/libravatar/+git/libravatar/+ref/test) and then click the ["Propose for merging"](https://code.launchpad.net/~fmarier/libravatar/+git/libravatar/+ref/test/+register-merge) button.
+
+Enter the following information:
+
+- Target repository: `~libravatar/libravatar/+git/libravatar`
+- Target branch: `master`
+
+before clicking "Propose merge". This will take you to your newly-created [merge request](https://code.launchpad.net/~fmarier/libravatar/+git/libravatar/+merge/345611).
+
+# Other ways to submit a patch
+
+If the above doesn't work for you, here are other ways to contribute your patch:
 
 1. Attach it to the relevant bug on the [tracker](https://bugs.launchpad.net/libravatar) (create a [new bug](https://bugs.launchpad.net/libravatar/+filebug) if you need to)
-2. Submit a [merge request](https://git.nzoss.org.nz/libravatar/libravatar/merge_requests) on [Gitlab](https://git.nzoss.org.nz/libravatar/libravatar)
-3. Submit a [pull request](https://help.github.com/articles/using-pull-requests) on [Github](https://github.com/libravatar/libravatar)
+2. Submit a [pull request](https://help.github.com/articles/using-pull-requests) on [Github](https://github.com/libravatar/libravatar)
 
 Of course, if you need any help, [[give us a shout|talk to us]]!
 

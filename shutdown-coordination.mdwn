@@ -79,7 +79,7 @@ zach@mailcan.com
 
 ---
 
-I have setup a new repo here: https://pagure.io/libravatar2 to modernize/rewrite libravatar to use the latest available tooling. Please concact me if you would like to help.
+I have setup a new repo here: <https://pagure.io/libravatar2> to modernize/rewrite libravatar to use the latest available tooling. Please concact me if you would like to help.
 
 clime@redhat.com
 

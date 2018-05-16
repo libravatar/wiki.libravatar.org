@@ -86,3 +86,12 @@ clime@redhat.com
 ---
 
 I am here to help anyway I can, refactoring code, hosting. Please reach out sadin@fedoraproject.org
+
+---
+
+I published today a server-side implementation in C I started three years ago, available here: <https://github.com/Aversiste/libravatar.cgi>.
+It is a CGI program currently implementing the size, default and forcedefault flags with allowed default values of '404', 'mm' and 'blank'.
+
+This is not finished and not a suitable replacement for the current stack as it uses the file system directly but it is good enough for self-hosting. I use it at https://avatars.bouledef.eu/index
+
+I am available for any discussions related to the shutdown and the migration though - tleguern@bouledef.eu

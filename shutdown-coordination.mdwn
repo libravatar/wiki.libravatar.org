@@ -12,6 +12,7 @@ I second this.  I would like to see this service keep going if possible.  How ma
 
 I also would like to keep the service alive. I can offer hosting. I'm currently trying to deploy a private instance of the project using docker. libravatar@kumy.net
 
+I can offer free hosting for the service. smurf@debian.org
 ---
 
 # Stats

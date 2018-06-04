@@ -98,3 +98,7 @@ It is a CGI program currently implementing the size, default and forcedefault fl
 This is not finished and not a suitable replacement for the current stack as it uses the file system directly but it is good enough for self-hosting. I use it at https://avatars.bouledef.eu/index
 
 I am available for any discussions related to the shutdown and the migration though - tleguern@bouledef.eu
+
+---
+
+I want to keep this great project alive.I'm the developer of the Mastodon client Halcyon which I took over when the original developer quit his work and deleted his repository.I successfully made it popular again and added many new functions so far.I hope that I can archieve this goal a second time with Libravatar.I don't know the server side languages used here (I'm an PHP developer) but I can modernize the client side and with the support of a great community who will hopefully pay for the servers I can also manage the hosting.I want to keep things open and I think it's bad when everyone has to change to the closed source Gravatar.Instead I want to keep an open source avatar hoster which hopefully will some time in the future federated.I'm always here to help - Email: ni.pos@yandex.com Jabber: bw5rws@jabber.lima-city.de Matrix: @nipos:avareborn.de And I'm also in the #libravatar IRC Channel which could be helpful for coordinating the future of this project.

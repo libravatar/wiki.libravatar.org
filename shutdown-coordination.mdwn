@@ -10,7 +10,7 @@ I second this.  I would like to see this service keep going if possible.  How ma
 
 [Proxience](http://proxience.com) and I, [Frédéric Lehobey](https://wiki.debian.org/Fr%C3%A9d%C3%A9ricLehobey), are willing in helping keeping Libravatar running. Email contact is contact@proxience.com.
 
-I also would like to keep the service alive. I can offer hosting. I'm currently trying to deploy a private instance of the project using docker. libravatar@kumy.net
+I also would like to keep the service alive. I can offer free hosting, dedicated ipv4 and ipv6. I'm currently trying to deploy a private instance of the project using docker. libravatar@kumy.net
 
 I can offer free hosting for the service. smurf@debian.org
 ---

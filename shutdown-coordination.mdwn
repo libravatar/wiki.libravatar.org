@@ -109,4 +109,4 @@ I want to keep this great project alive.I'm the developer of the Mastodon client
 @all, but especially to @clime@redhat.com. I've created a local repo on my Gitlab for the moment, rewrote most of the code for Django 2 and deployed a first more or less working copy to OpenShift. Questions, please don't hesitate to contact me at: oliver@linux-kernel.at
 Regarding the question about libravatar and Python 3. I didn't touch the lib yet, but that will also happen, yes. I think the first, important move, was to upgrade the backend to Django 2. Next is to modernize the frontend (I'm thinking about Bootstrap... And no, no Angular, React, Vue, ...).
 I really hope that nobody else is working on this and is as far as I am already. :-)
-Source code: https://git.linux-kernel.at/oliver/ivatar
+Source code can be found [here](https://git.linux-kernel.at/oliver/ivatar).

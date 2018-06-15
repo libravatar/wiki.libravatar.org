@@ -4,6 +4,8 @@ Please leave some contact details so that others can reach out to you.
 
 ---
 
+I can offer hosting, domain, CDN for free. showfom@gmail.com
+
 Can we get some statistics about the service now? Both in terms of the infrastructure (assuming infra support won't continue) and in terms of what is required to keep it going?  Do we know how many avatars are served? stored? etc? (bex@pobox.com)
 
 I second this.  I would like to see this service keep going if possible.  How many servers are currently in production and what is the monthly cost to host them?  I have over 15 years experience as a server admin including time in the hosting industry and would love to contribute.  Email is wattersm@watters.ws 

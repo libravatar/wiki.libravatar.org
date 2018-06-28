@@ -121,3 +121,7 @@ I’d like to continue hosting of libavatar as I wouldn’t want it to break for
 I have experience with Python (and other languages), and system administration.
 
 Email: hello@techknowlogick.com
+
+---
+
+Catalyst Cloud would be happy to host a mirror.

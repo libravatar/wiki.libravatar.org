@@ -41,6 +41,14 @@ For the month of March 2018, the traffic looked like this:
   * Total hits: 11,191,373
   * Redirects (to Gravatar): 9,605,127
 
+# Current stack
+
+- OS: Debian 8.11 (jessie)
+- Framework: Django 1.7.11
+- Database: PostgreSQL 9.4
+- Webserver: Apache 2.4.10
+- Queue: Gearman 1.0.6
+
 # Cost
 
 The cost (currently covered by Rackspace through their OSS program) for the month of March 2018 was $70 USD:

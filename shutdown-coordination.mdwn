@@ -1,5 +1,18 @@
 Here is a place where people who are interested in [taking over Libravatar](https://blog.libravatar.org/posts/Libravatar.org_is_shutting_down_on_2018-09-01/) can coordinate.
 
+# Upcoming IRC meeting: 2018-07-29
+
+Everyone interested in keeping libravatar alive is welcome!
+
+* 2018-07-29, 7pm UTC
+* channel `#libravatar` at irc.freenode.net
+* Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+We want to discuss and coordinate about possible ways of keeping libravatar alive and healthy.
+
+
+# Contacts / Offers of Help
+
 Please leave some contact details so that others can reach out to you.
 
 ---

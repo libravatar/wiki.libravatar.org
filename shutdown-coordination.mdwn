@@ -133,16 +133,4 @@ Source code can be found [here](https://git.linux-kernel.at/oliver/ivatar).
 
 ---
 
-I am a maintainer of Gitea, which uses libravatar, and am a part of the federated code working group (originally called the “git-pub” working group). I also provide hosting for Gitea installs, and various other FOSS projects (such as PeerTube).
-
-I’d like to continue hosting of libravatar as I wouldn’t want it to break for any users of Gitea, or other services that use libravatar.
-
-I have experience with Python (and other languages), and system administration.
-
-Current status: I'm at 80% of a rewrite of libravatar in Go, and have ported several libraries (monsterID, wavatars, and others), so that if a hash isn't found for sha256 then they can be used as a fallback if requested.
-
-Email: hello@techknowlogick.com
-
----
-
 Catalyst Cloud would be happy to host a mirror - Andrew Ruthven, puck@catalystcloud.nz

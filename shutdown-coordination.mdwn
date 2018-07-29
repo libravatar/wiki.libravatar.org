@@ -1,14 +1,66 @@
 Here is a place where people who are interested in [taking over Libravatar](https://blog.libravatar.org/posts/Libravatar.org_is_shutting_down_on_2018-09-01/) can coordinate.
 
-# Upcoming IRC meeting: 2018-07-29
+[[!toc levels=2]]
 
-Everyone interested in keeping libravatar alive is welcome!
+# Your contribution is welcome!
 
-* 2018-07-29, 7pm UTC
+A group of people is working on continuing the libravatar development (code and service).
+
+Please join the communication channels:
+
+* [Mailing list](https://launchpad.net/~libravatar-fans)
+* `#libravatar` at irc.freenode.net
+
+
+# IRC meetings
+
+## 2018-08-05 (Upcoming)
+
+Everyone interested in supporting the libravatar project (code or service) is welcome!
+
+* 2018-08-05, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180805T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
 
-We want to discuss and coordinate about possible ways of keeping libravatar alive and healthy.
+We want to discuss and coordinate details about the migration to a new implementation, GDPR issues and a lot more.
+
+
+## 2018-07-29
+
+* Participants (IRC nicknames): clime, ij, fmarier, kumy, nipos, ofalk, sumpfralle, tleguern
+* Challenges of our endeavour:
+    * organize a new development group / process
+    * organize a new hosting setup / group
+* Software implementation options:
+    * A) improve the current implementation
+    * \B) Oliver's new Django-based implementation
+    * C) Matti's implementation in golang
+    * D) tleguern's C-based implementation (targetted at self-hosting people)
+    * Conclusion: we decided for B
+* Discussion topics:
+    * if/how to keep the data of existing users
+    * handling of GDPR issues when transferring the user's data to a new operator team
+    * different hosting options (long-term)
+    * future communication channels
+* Goals:
+    * Goal #1: Do we want to continue the service longer than September this year?
+        * everyone agrees
+    * Goal #2: Do we want to continue offering the service past September with the current dataset of users? (GDPR issues will have to be solved for that)
+        * majority agrees
+            * clime is concerned about the service downtime (avatars being available for all users at all times) during data migration
+* Migration plan: fmarier will help migrate the current setup (code + data) to a new VM and admits to operate that for up to two months longer (end of November). Meanwhile we are rushing to resolve GDRP issues and migrate the data to the new implementation and get that live as soon as possible. This will relieve fmarier from the service.
+* Actions:
+    * fmarier and ij will migrate the service as-is to a new VM
+    * ofalk will review potentially missing features of his implementation
+    * nipos will try to prepare something for the new web interface
+* Communication & Meetings:
+    * everyone interested should subscribe to the mailing list: https://launchpad.net/~libravatar-fans
+    * next IRC meeting: 2018-08-05, 19:00 UTC, #libravatar at freenode
+        * afterwards: biweekly meetings
+* Next issues to be discussed:
+    * GDPR: can we migrate the old data?
+    * Evaluate the state of the new implementation.
+    * Discuss the hosting options for the new implementation.
 
 
 # Contacts / Offers of Help
@@ -26,9 +78,10 @@ I second this.  I would like to see this service keep going if possible.  How ma
 I also would like to keep the service alive. I can offer free hosting on dedicated ipv4 and ipv6. I'm currently trying to deploy a private instance of the project using docker. libravatar@kumy.net
 
 I can offer free hosting for the service. smurf@debian.org
+
 ---
 
-# Stats
+## Stats
 
 As of 2018-04-03, the storage requirements are:
 
@@ -52,7 +105,7 @@ For the month of March 2018, the traffic looked like this:
   * Total hits: 11,191,373
   * Redirects (to Gravatar): 9,605,127
 
-# Current stack
+## Current stack
 
 - OS: Debian 8.11 (jessie)
 - Framework: Django 1.7.11
@@ -60,14 +113,14 @@ For the month of March 2018, the traffic looked like this:
 - Webserver: Apache 2.4.10
 - Queue: Gearman 1.0.6
 
-# Cost
+## Cost
 
 The cost (currently covered by Rackspace through their OSS program) for the month of March 2018 was $70 USD:
 
 - Cloud Bandwidth: $13.50
 - Cloud Servers: $56.84
 
-# External accounts
+## External accounts
 
 In addition to the domain names (libravatar.org and libravatar.com), the following accounts could be transferred to the new team:
 
@@ -86,7 +139,7 @@ Contact me at ij@2017.bluespice.org or @ingoj on Twitter.
 
 ---
 
-# Digital Ocean
+## Digital Ocean
 
 [DigitalOcean](https://digitalocean.com) would be a good place to move this service.  A couple of [$10 droplets](https://blog.digitalocean.com/new-droplet-plans) could easily handle the load.  The question is who would you want to own the servers?
 

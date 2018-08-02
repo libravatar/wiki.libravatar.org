@@ -75,17 +75,12 @@ and then lookup images using the [test tool](https://www.libravatar.org/tools/ch
 
 # Adding the new mirror to the DNS load-balancer
 
-1. Add these two DNS records in the <tt>libravatar.org</tt> zone:
+Add these two DNS records in the <tt>libravatar.org</tt> zone:
 
-       cdn      A    10   123.123.123.123
-       seccdn   A    10   123.123.123.123
-       cdn      AAAA 10   dead::beef
-       seccdn   AAAA 10   dead::beef
-
-2. Add the same records to the [JSON zone file](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/config/dns.json) and then use <tt>namecoind</tt> to update the <tt>libravatar.bit</tt> zone:
-
-       namecoind name_update d/libravatar "`xargs echo < config/dns.json`"
-
+    cdn      A    10   123.123.123.123
+    seccdn   A    10   123.123.123.123
+    cdn      AAAA 10   dead::beef
+    seccdn   AAAA 10   dead::beef
 
 # SSL testing
 

@@ -16,15 +16,86 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-08-05 (Upcoming)
+## 2018-08-19 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-08-05, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180805T19&p1=%3A))
+* 2018-08-19, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180819T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
 
-We want to discuss and coordinate details about the migration to a new implementation, GDPR issues and a lot more.
+
+## 2018-08-05
+
+* Participants: fmarier, ij, kumy, nipos, opal, sumpfralle, tklk, tleguern
+
+### Review
+
+What happened during the last week?
+
+* new mirror set up by Asako
+* new VM is up with double RAM (compared to the current one)
+    * fmarier has ssh access to the vm (root) - he will install the service and migrate data in the next days
+
+
+### GDPR
+What do we need to do with regards to handling of personal data. Can we migrate the old data?
+
+#### Which data is currently stored?
+
+* email adresses: for password resets - although emails can be hashed and still be used for this purpose (even though emails can be removed, this might not be great UX as users don't know which accounts they are assigning an avatar to)
+* username: for logging in
+* uploaded photos: obvious primary use of the service
+* linked OpenIDs
+* login cookie
+* we used to store ip addresses but it's all gone
+* IP adresses in server logs
+* On mirrors, `mod_removeip` is enabled -> no IPs are logged
+* On master access logs are stored for 10 days (currently with ips)
+* We do not store any IP address starting at 05/08/18 19:26 UTC - in 10 days, no IP remains in the logs
+
+#### Should / could we do something at the moment?
+
+* suggestion of mass email (no consent given by users to have mass emails, so I'm against this) to me this seems like a special case and falls under the category of "important email" in order to follow legislation
+* add checkbox for new accounts that they've accepted TOS/Privacy policy
+* add terms of use/privacy policy
+* We have support for data deletion and export since first release (as wanted by the GDPR).
+* We miss a "privacy policy" text.
+    * opal offered to write a text for libravatar.
+
+Summary: we think, we are currently complying with law requirements. We will take a closer look at the new implementation with regards to opt-in and privacy policy.
+
+### Evaluate the state of the new implementation
+
+Neither Oliver nor clime present, thus we skipped this topic.
+
+### Discuss the hosting options for the new implementation
+
+* Where does code hosting go? does it stay with launchpad (peferably pagure to move everything to fedora infra)
+* Domain transfer- where does it go? (preferably fedora, instead of individual to reduce bus factor)
+* DigitalOcean would probably sponsor something (for 1 year only?)
+* Where does code hosting go? (peferably pagure to move everything to fedora infra)
+* smurf offered hosting too
+* No final decisions were made. Maybe collect options and pros/cons in the wiki and via the mailing list?
+
+### Discuss about new design concept
+
+Nipos proposed a design concept: https://codepen.io/niklasposlovski/full/RByopx/
+
+* design is appreciated by all participants
+* license is fine
+* bootstrap v3: "compatible" older version is preferable over v4
+* we discussed a bit about the icon to be used
+  https://github.com/libravatar/libravatar/blob/7d3e069e18927df7d5e05bccdca7215210dd8063/static/img/libravatar_logo.svg
+* next step: nipos will fork https://git.linux-kernel.at/oliver/ivatar and integrate the new design
+
+### Various details
+
+* "Mirrors may not require SNI": https://wiki.libravatar.org/how_to_add_a_mirror_slave_to_the_mirror_master/
+    * probably we should lift this requirement? (only elinks seems to lack support for SNI)
+* Mirrors running in a Docker container for easier setup?
+* Mirrors are tied to the Debian package implementation (crons), what about other distros? (Alpine, Arch)
+* Drop HTTP support to HTTPS only - HSTS?
 
 
 ## 2018-07-29

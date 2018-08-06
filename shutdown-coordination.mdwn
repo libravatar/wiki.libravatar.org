@@ -74,24 +74,23 @@ Neither Oliver nor clime present, thus we skipped this topic.
 * Where does code hosting go? does it stay with launchpad (peferably pagure to move everything to fedora infra)
 * Domain transfer- where does it go? (preferably fedora, instead of individual to reduce bus factor)
 * DigitalOcean would probably sponsor something (for 1 year only?)
-* Where does code hosting go? (peferably pagure to move everything to fedora infra)
 * smurf offered hosting too
 * No final decisions were made. Maybe collect options and pros/cons in the wiki and via the mailing list?
 
 ### Discuss about new design concept
 
-Nipos proposed a design concept: https://codepen.io/niklasposlovski/full/RByopx/
+Nipos proposed a design concept: <https://codepen.io/niklasposlovski/full/RByopx/>
 
 * design is appreciated by all participants
 * license is fine
 * bootstrap v3: "compatible" older version is preferable over v4
 * we discussed a bit about the icon to be used
-  https://github.com/libravatar/libravatar/blob/7d3e069e18927df7d5e05bccdca7215210dd8063/static/img/libravatar_logo.svg
-* next step: nipos will fork https://git.linux-kernel.at/oliver/ivatar and integrate the new design
+  <https://github.com/libravatar/libravatar/blob/7d3e069e18927df7d5e05bccdca7215210dd8063/static/img/libravatar_logo.svg>
+* next step: nipos will fork <https://git.linux-kernel.at/oliver/ivatar> and integrate the new design
 
 ### Various details
 
-* "Mirrors may not require SNI": https://wiki.libravatar.org/how_to_add_a_mirror_slave_to_the_mirror_master/
+* "Mirrors may not require SNI": <https://wiki.libravatar.org/how_to_add_a_mirror_slave_to_the_mirror_master/>
     * probably we should lift this requirement? (only elinks seems to lack support for SNI)
 * Mirrors running in a Docker container for easier setup?
 * Mirrors are tied to the Debian package implementation (crons), what about other distros? (Alpine, Arch)
@@ -127,7 +126,7 @@ Nipos proposed a design concept: https://codepen.io/niklasposlovski/full/RByopx/
     * ofalk will review potentially missing features of his implementation
     * nipos will try to prepare something for the new web interface
 * Communication & Meetings:
-    * everyone interested should subscribe to the mailing list: https://launchpad.net/~libravatar-fans
+    * everyone interested should subscribe to the mailing list: <https://launchpad.net/~libravatar-fans>
     * next IRC meeting: 2018-08-05, 19:00 UTC, #libravatar at freenode
         * afterwards: biweekly meetings
 * Next issues to be discussed:

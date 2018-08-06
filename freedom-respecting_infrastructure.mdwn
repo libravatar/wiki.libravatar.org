@@ -1,6 +1,5 @@
 The Libravatar project is proud to support other [free-as-in-freedom](http://autonomo.us/2008/07/franklin-street-statement/) services:
 
 * [Branchable](http://www.branchable.com) ([blog](http://blog.libravatar.org) and [wiki](http://wiki.libravatar.org))
-* [Gitlab CE](https://gitlab.com/gitlab-org/gitlab-ce) ([code hosting](https://git.nzoss.org.nz/libravatar))
 * [Identica](http://identi.ca) ([micro-blogging](http://identi.ca/libravatar))
-* [Launchpad](https://launchpad.net) ([bug tracker](https://bugs.launchpad.net/libravatar), [translations](https://translations.launchpad.net/libravatar), [code mirror](https://code.launchpad.net/libravatar) and [mailing list](https://launchpad.net/~libravatar-fans))
+* [Launchpad](https://launchpad.net) ([code hosting](https://code.launchpad.net/~libravatar/libravatar/+git/libravatar), [bug tracker](https://bugs.launchpad.net/libravatar), [translations](https://translations.launchpad.net/libravatar), [code mirror](https://code.launchpad.net/libravatar) and [mailing list](https://launchpad.net/~libravatar-fans))

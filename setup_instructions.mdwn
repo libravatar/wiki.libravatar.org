@@ -27,6 +27,11 @@ If you are migrating to a new server, you may be interested in the [server migra
       /var/log/libravatar/workers.log
       /var/log/postgresql/postgresql-9.4-main.log
 
+* Create empty log files (for logcheck):
+
+      touch /var/log/libravatar/error-{cdn,seccdn,www}.log
+      chown www-data:www-data /var/log/libravatar/error-{cdn,seccdn,www}.log
+
 # Firewall
 
 * In `/etc/network/iptables.up.rules`, put the following:

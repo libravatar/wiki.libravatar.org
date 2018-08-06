@@ -285,7 +285,10 @@ If you are migrating to a new server, you may be interested in the [server migra
       find $DUMP_DIR -ctime +7 -delete
 
 * Create an empty `/var/backups/libravatar` directory
-* Install duplicity (`apt install duplicity`)
+* Install duplicity:
+
+      apt install duplicity python-boto
+
 * Add my duplicity backup script to `/home/francois/.backup/` and update:
   * GPG passhrase
   * Destination directory (which includes the hostname)

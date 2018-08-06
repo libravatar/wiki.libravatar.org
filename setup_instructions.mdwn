@@ -292,6 +292,23 @@ If you are migrating to a new server, you may be interested in the [server migra
 * Add my duplicity backup script to `/home/francois/.backup/` and update:
   * GPG passhrase
   * Destination directory (which includes the hostname)
+
+* Add the following to `/home/francois/.backup/exclude`:
+
+      /etc/.git
+      /home/francois/.cache
+      /home/francois/git-mirrors
+
+* Add the following to `/home/francois/.backup/include`:
+
+      /etc
+      /home/francois
+      /usr/local/bin
+      /usr/local/sbin
+      /var/backups/libravatar
+      /var/lib/libravatar
+      /var/log/libravatar
+
 * Create this cronjob in `/etc/cron.d/libravatar_backups`:
 
       # Local DB backups

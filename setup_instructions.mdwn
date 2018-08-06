@@ -405,6 +405,11 @@ If you are migrating to a new server, you may be interested in the [server migra
       cd git
       git remote add github git@github.com:libravatar/libravatar.git
 
+* Do a test run for each of them (as `francois`):
+
+      /usr/local/bin/git-mirror && echo success
+      /usr/local/bin/hg-mirror && echo success
+
 * Create the following cron jobs in `/etc/cron.d/libravatar_git-mirrors`:
 
       50 * * * *      francois        /usr/local/bin/git-mirror

@@ -396,10 +396,10 @@ If you are migrating to a new server, you may be interested in the [server migra
         IdentityFile ~/.ssh/repository_mirrors
         AddressFamily inet
 
-* Copy `repository_mirrors` ssh key from old server into `/home/francois/.ssh/`
-* Create directory for mercurial mirror: `mkdir -p /home/francois/git-mirrors/libravatar-hg`
-* Prepare directory for git repository:
+* Copy `repository_mirrors` ssh key from old server into `/home/francois/.ssh/` (make sure that the private key has **`600` permissions**)
+* Prepare directory for git and mercurial repositories:
 
+      mkdir -p /home/francois/git-mirrors/libravatar-hg
       cd /home/francois/git-mirrors/
       git clone https://git.launchpad.net/~libravatar/libravatar git
       cd git

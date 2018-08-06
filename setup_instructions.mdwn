@@ -264,6 +264,10 @@ If you are migrating to a new server, you may be interested in the [server migra
       LogType=W
       LogFormat=1
 
+* Reduce log retention to 10 days by setting the following in `/etc/logrotate.d/apache2`:
+
+      rotate 10
+
 # Backups
 
 * Add this script to `/usr/local/sbin/libravatar_backups`:

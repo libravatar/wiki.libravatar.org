@@ -344,7 +344,9 @@ If you are migrating to a new server, you may be interested in the [server migra
         apt update
         apt install libravatar{,-common,-cdn,-cdn-common,-deployment,-www,-master}
 
-  * Use `6432` for the database port number, otherwise accept all of the defaults
+  * Use the defaults for all of the debconf questions except:
+    * `6432` for the database port number
+    * a string from `pwgen -s 50` for the Django secret
 
 * Install `gearman-job-server`:
 

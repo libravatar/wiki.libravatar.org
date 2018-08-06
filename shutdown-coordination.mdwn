@@ -169,11 +169,11 @@ As of 2018-04-03, the storage requirements are:
 For the month of March 2018, the traffic looked like this:
 
 * Application server:
-  * Bandwidth: 328.31 MB
+  * Bandwidth: 328.31 MB in awstats (45 GB in Rackspace billing)
   * Hits: 43,823
 
 * Static image server:
-  * Bandwidth: 18.99 GB
+  * Bandwidth: 18.99 GB in awstats (68 GB in Rackspace billing)
   * Total hits: 11,191,373
   * Redirects (to Gravatar): 9,605,127
 

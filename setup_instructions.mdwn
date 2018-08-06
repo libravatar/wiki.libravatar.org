@@ -25,7 +25,7 @@ If you are migrating to a new server, you may be interested in the [server migra
       /var/log/libravatar/error-seccdn.log
       /var/log/libravatar/error-www.log
       /var/log/libravatar/workers.log
-      /var/log/postgresql/postgresql-8.4-main.log
+      /var/log/postgresql/postgresql-9.4-main.log
 
 # Firewall
 
@@ -153,7 +153,7 @@ If you are migrating to a new server, you may be interested in the [server migra
             RewriteRule ^ https://www.libravatar.org [redirect=301,last]
         </VirtualHost>
 
-  * `/etc/apache2/sites-enabled/default-ssl.conf`:
+  * `/etc/apache2/sites-available/default-ssl.conf`:
 
         <VirtualHost *:443>
             SSLEngine on

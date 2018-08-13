@@ -237,15 +237,15 @@ If you are migrating to a new server, you may be interested in the [server migra
 * Symlink the letsencrypt certs in the right place:
 
       cd /etc/libravatar/
-      ln -s ../letsencrypt/seccdn.libravatar.org/privkey.pem seccdn.pem
-      ln -s ../letsencrypt/seccdn.libravatar.org/cert.pem seccdn.crt
-      ln -s ../letsencrypt/seccdn.libravatar.org/chain.pem seccdn-chain.pem
-      ln -s ../letsencrypt/stats.libravatar.org/privkey.pem stats.pem
-      ln -s ../letsencrypt/stats.libravatar.org/cert.pem stats.crt
-      ln -s ../letsencrypt/stats.libravatar.org/chain.pem stats-chain.pem
-      ln -s ../letsencrypt/www.libravatar.org/privkey.pem www.pem
-      ln -s ../letsencrypt/www.libravatar.org/cert.pem www.crt
-      ln -s ../letsencrypt/www.libravatar.org/chain.pem www-chain.pem
+      ln -s ../letsencrypt/live/seccdn.libravatar.org/privkey.pem seccdn.pem
+      ln -s ../letsencrypt/live/seccdn.libravatar.org/cert.pem seccdn.crt
+      ln -s ../letsencrypt/live/seccdn.libravatar.org/chain.pem seccdn-chain.pem
+      ln -s ../letsencrypt/live/stats.libravatar.org/privkey.pem stats.pem
+      ln -s ../letsencrypt/live/stats.libravatar.org/cert.pem stats.crt
+      ln -s ../letsencrypt/live/stats.libravatar.org/chain.pem stats-chain.pem
+      ln -s ../letsencrypt/live/www.libravatar.org/privkey.pem www.pem
+      ln -s ../letsencrypt/live/www.libravatar.org/cert.pem www.crt
+      ln -s ../letsencrypt/live/www.libravatar.org/chain.pem www-chain.pem
 
 * Install a cronjob to [automatically renew these certs](https://feeding.cloud.geek.nz/posts/automatically-renewing-letsencrypt-certs-on-debian-using-certbot/) in `/etc/cron.daily/certbot-renew-libravatar`:
 

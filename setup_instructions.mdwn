@@ -209,7 +209,7 @@ If you are migrating to a new server, you may be interested in the [server migra
   * `/etc/apache2/sites-available/acme.conf`:
  
         <VirtualHost *:80>
-            ServerName stats.libravatar.org
+            ServerName acme.libravatar.org
             ServerAdmin webmaster@libravatar.org
             DocumentRoot /var/www/acme
             <Directory /var/www/acme>

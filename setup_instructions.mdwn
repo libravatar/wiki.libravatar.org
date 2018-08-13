@@ -360,6 +360,10 @@ If you are migrating to a new server, you may be interested in the [server migra
 
       apt install --no-install-recommends gearman-job-server
 
+* Add your username to the `libravatar-deployment` group:
+
+      adduser francois libravatar-deployment
+
 # Git mirrors
 
 * Install `hg`:

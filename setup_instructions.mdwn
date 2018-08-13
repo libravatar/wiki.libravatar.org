@@ -154,8 +154,16 @@ If you are migrating to a new server, you may be interested in the [server migra
   * `/etc/apache2/sites-enabled/000-default.conf`:
  
         <VirtualHost *:80>
-            RewriteEngine On
-            RewriteRule ^ https://www.libravatar.org [redirect=301,last]
+            ServerAdmin webmaster@libravatar.org
+            DocumentRoot /var/www/acme
+        
+            <Directory /var/www/acme>
+                Options -Indexes
+            </Directory>
+        
+            RewriteEngine on
+            RewriteCond "/var/www/acme%{REQUEST_URI}" !-f
+            RewriteRule ^(.*)$ https://www.libravatar.org/ [last,redirect=301]
         </VirtualHost>
 
   * `/etc/apache2/sites-available/default-ssl.conf`:

@@ -283,8 +283,7 @@ If you are migrating to a new server, you may be interested in the [server migra
 
 * Install `certbot` and then create a few certs:
 
-      certbot certonly --webroot -w /var/www/acme -d apt.libravatar.org
-      certbot certonly --webroot -w /var/www/acme -d www.libravatar.org -d libravatar.org -d selfoss.libravatar.org
+      certbot certonly --webroot -w /var/www/acme -d www.libravatar.org -d libravatar.org -d selfoss.libravatar.org -d apt.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d stats.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d seccdn.libravatar.org
       systemctl restart apache2
@@ -292,15 +291,15 @@ If you are migrating to a new server, you may be interested in the [server migra
 * Symlink the letsencrypt certs in the right place:
 
       cd /etc/libravatar/
-      ln -s ../letsencrypt/live/apt.libravatar.org/privkey.pem apt.pem
-      ln -s ../letsencrypt/live/apt.libravatar.org/cert.pem apt.crt
-      ln -s ../letsencrypt/live/apt.libravatar.org/chain.pem apt-chain.pem
       ln -s ../letsencrypt/live/seccdn.libravatar.org/privkey.pem seccdn.pem
       ln -s ../letsencrypt/live/seccdn.libravatar.org/cert.pem seccdn.crt
       ln -s ../letsencrypt/live/seccdn.libravatar.org/chain.pem seccdn-chain.pem
       ln -s ../letsencrypt/live/stats.libravatar.org/privkey.pem stats.pem
       ln -s ../letsencrypt/live/stats.libravatar.org/cert.pem stats.crt
       ln -s ../letsencrypt/live/stats.libravatar.org/chain.pem stats-chain.pem
+      ln -s ../letsencrypt/live/www.libravatar.org/privkey.pem apt.pem
+      ln -s ../letsencrypt/live/www.libravatar.org/cert.pem apt.crt
+      ln -s ../letsencrypt/live/www.libravatar.org/chain.pem apt-chain.pem
       ln -s ../letsencrypt/live/www.libravatar.org/privkey.pem www.pem
       ln -s ../letsencrypt/live/www.libravatar.org/cert.pem www.crt
       ln -s ../letsencrypt/live/www.libravatar.org/chain.pem www-chain.pem

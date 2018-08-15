@@ -225,18 +225,65 @@ If you are migrating to a new server, you may be interested in the [server migra
             </Directory>
         </VirtualHost>
 
+  * `/etc/apache2/sites-available/apt.conf`:
+
+        <VirtualHost *:443>
+                ServerName apt.libravatar.org
+                ServerAdmin webmaster@libravatar.org
+        
+                SSLEngine On
+                SSLCertificateFile /etc/libravatar/apt.crt
+                SSLCertificateKeyFile /etc/libravatar/apt.pem
+                SSLCertificateChainFile /etc/libravatar/apt-chain.pem
+        
+                DocumentRoot /var/www/apt
+                <Directory /var/www/apt>
+                        ForceType text/html
+                        Options -MultiViews -Indexes
+                        AllowOverride None
+                        Order allow,deny
+                        allow from all
+                </Directory>
+        
+                ErrorLog ${APACHE_LOG_DIR}/error.log
+        
+                # Possible values include: debug, info, notice, warn, error, crit,
+                # alert, emerg.
+                LogLevel warn
+        
+                CustomLog ${APACHE_LOG_DIR}/access.log combined
+        </VirtualHost>
+        
+        <VirtualHost *:80>
+            ServerName apt.libravatar.org
+            ServerAdmin webmaster@libravatar.org
+            DocumentRoot /var/www/acme
+            <Directory /var/www/acme>
+                Options -Indexes
+            </Directory>
+        </VirtualHost>
 
 * Copy the stats password file (`/etc/apache2/stats.passwd`).
 
-* Enable the new vhost:
+* Create the empty apt repo:
+
+      mkdir /var/www/apt
+      chown francois:francois /var/www/apt
+      cd /var/www/apt
+      ln -s /usr/share/libravatar/libravatar/favicon.ico .
+      touch index.html sitemap.xml robots.txt
+
+* Enable the new vhosts:
 
       mkdir /var/www/acme
       a2ensite acme
+      a2ensite apt
       a2ensite default-ssl
       a2ensite stats
 
 * Install `certbot` and then create a few certs:
 
+      certbot certonly --webroot -w /var/www/acme -d apt.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d www.libravatar.org -d libravatar.org -d selfoss.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d stats.libravatar.org
       certbot certonly --webroot -w /var/www/acme -d seccdn.libravatar.org
@@ -245,6 +292,9 @@ If you are migrating to a new server, you may be interested in the [server migra
 * Symlink the letsencrypt certs in the right place:
 
       cd /etc/libravatar/
+      ln -s ../letsencrypt/live/apt.libravatar.org/privkey.pem apt.pem
+      ln -s ../letsencrypt/live/apt.libravatar.org/cert.pem apt.crt
+      ln -s ../letsencrypt/live/apt.libravatar.org/chain.pem apt-chain.pem
       ln -s ../letsencrypt/live/seccdn.libravatar.org/privkey.pem seccdn.pem
       ln -s ../letsencrypt/live/seccdn.libravatar.org/cert.pem seccdn.crt
       ln -s ../letsencrypt/live/seccdn.libravatar.org/chain.pem seccdn-chain.pem

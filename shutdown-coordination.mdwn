@@ -35,7 +35,7 @@ What happened during the last two weeks?
 * fmarier moved the libravatar service the new VM provided by ij (2018-08-13)
 * nipos got the new libravatar code running (preparing his design work)
 
-### Hosting
+### Hosting the service on Fedora infrastructure
 
 * clime communicated with Fedora people
 * we will be able to host the libravatar on their infrastructure
@@ -49,6 +49,15 @@ What happened during the last two weeks?
     * trigger a final data migration from ij's VM and switch the DNS entries to the new IP of the Fedora host
 * clime will work on this
 * **Please note**: we were only three people discussing this, thus the plan currently does not rest on broad explicit acceptance. Please raise your voice, if you see problems with this strategy.
+
+### Hosting of git repositories
+
+We will probably use git repositories for hosting the code, the ansible playbook and maybe more.
+
+* clime suggested pagure.io
+* if we use the Fedora hosting, the ansible playbook would probably be part of https://infrastructure.fedoraproject.org/cgit/ansible.git
+    * sync with pagure.io should be no problem (for issue reporting and so on)
+* other hosting services (running on free software) would be acceptable, too
 
 
 ## 2018-08-05

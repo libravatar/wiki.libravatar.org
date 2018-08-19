@@ -16,13 +16,39 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-08-19 (Upcoming)
+## 2018-09-02 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-08-19, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180819T19&p1=%3A))
+* 2018-09-02, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180902T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2018-08-19
+
+* Participants: clime, nipos, sumpfralle
+
+### Review
+
+What happened during the last two weeks?
+
+* fmarier moved the libravatar service the new VM provided by ij (2018-08-13)
+* nipos got the new libravatar code running (preparing his design work)
+
+### Hosting
+
+* clime communicated with Fedora people
+* we will be able to host the libravatar on their infrastructure
+* the host will be managed by the Fedora infrastructure team
+* probably clime and oliver will have administrative access and will care for the hosting details of libravatar for the forseeable future
+    * administrative access by non-Fedora people is probably not trivial/possible (it is unclear, if there is demand for that)
+* The steps for the migration of the current hosting (with the old implementation) to Fedora infrastructure are the following:
+    * prepare an ansible playbook for setting up the system for the service
+    * run a one-time data migration from ij's VM
+    * do a bit of tests with the new deployment
+    * trigger a final data migration from ij's VM and switch the DNS entries to the new IP of the Fedora host
+* clime will work on this
+* **Please note**: we were only three people discussing this, thus the plan currently does not rest on broad explicit acceptance. Please raise your voice, if you see problems with this strategy.
 
 
 ## 2018-08-05

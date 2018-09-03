@@ -16,13 +16,55 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-09-02 (Upcoming)
+## 2018-09-16 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-09-02, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180902T19&p1=%3A))
+* 2018-09-16, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180916T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2018-09-02
+
+* participants: falko, fmarrier, nipos, sumpfralle, tleguern
+
+### Infrastructure
+* we will use the OpenStack infrastructure from Fedora (instead of OpenShift)
+
+### Current state of development =
+* Design:
+    * Two links in the header nav link to nowhere
+* image size issue (size=0 and size=) is fixed
+* structure is similar to the previous code
+* original pictures are stored in the database
+* resized variations are rendered on demand
+    * caching/something may follow (at the appropriate place)
+* the lack of a filesystem-based storage will be challenging for potential mirrors
+    * we will discuss this (and potential changes), after the new code is deployed
+
+### Data migration
+As soon as we think that the new implementation is ready, we can migrate the data.
+
+* prepare export and import scripts
+* migrate everything, except for the passwords
+    * remind people of the existence of libravatar :)
+    * improve password hash quality
+    * allow cleanup stale/unused accounts after a while
+
+### Migration process
+* send a mail in advance: inform about the change to a new platform and the new group of "us"
+* migrate the data; shutdown the original host (thanks, ij!)
+* send a mail requesting users to set a new password
+
+### Mail-Domain
+* sumpfralle offered to forward mails for the few @libravatar.org accounts to the respective people
+    * dev, tls, support, postmaster, ...
+* outgoing mail is handled by the server itself
+
+### Backup
+* currently fmarrier provides the backup space (< 10GB)
+* sumpfralle offered space with ssh access
+
 
 ## 2018-08-19
 

@@ -303,6 +303,7 @@ If you are migrating to a new server, you may be interested in the [server migra
       ln -s ../letsencrypt/live/www.libravatar.org/privkey.pem www.pem
       ln -s ../letsencrypt/live/www.libravatar.org/cert.pem www.crt
       ln -s ../letsencrypt/live/www.libravatar.org/chain.pem www-chain.pem
+      chmod a+rx /etc/letsencrypt/archive /etc/letsencrypt/live
 
 * Install a cronjob to [automatically renew these certs](https://feeding.cloud.geek.nz/posts/automatically-renewing-letsencrypt-certs-on-debian-using-certbot/) in `/etc/cron.daily/certbot-renew-libravatar`:
 

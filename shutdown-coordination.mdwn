@@ -16,13 +16,39 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-09-30 (Upcoming)
+## 2018-10-14 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-09-30, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20180930T19&p1=%3A))
+* 2018-10-14, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181014T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2018-09-30
+
+* participants: clime, ij, ofalk, sumpfralle, tleguern
+
+### Review of the last weeks
+* ofalk: some more progress with the code
+* clime: no significant progress with the deployment - this will change in the next week
+
+### Project name
+* ofalk raised the issue, that the fedora people (to be responsible for hosting the service) raised concerns regarding the licensing / trademark of the name "libravatar" and its logo
+    * details: https://pagure.io/design/issue/613
+* ofalk will open this discussion on the mailing list
+
+### Regular IRC meetings
+* we discussed, whether we want to continue having periodic IRC meetings
+* most people expressed their preference for keeping the biweekly IRC meetings
+    * no objections were raised
+* so we will continue to meet every two weeks on Sunday evening at 19 UTC
+
+### Who is "we"?
+* we discussed, whether a legal entity would be required for the project
+    * all participants preferred to avoid this
+    * ofalk would be willing to register the domain (and thus being the only publicly identifiable person responsible for the service)
+        * people expressed their willingness to share the related costs
+* proposed self description of the group:  `We are the group of people involved with developing the software and maintaining the service currently known as "libravatar". This entity does not have a legal status. We are just a group of people. We use a mailinglist and an IRC channel for discussions and decisions.`
 
 ## 2018-09-02
 

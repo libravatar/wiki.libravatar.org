@@ -365,6 +365,7 @@ If you are migrating to a new server, you may be interested in the [server migra
       /etc/.git
       /home/francois/.cache
       /home/francois/git-mirrors
+      /root/.cache
 
 * Add the following to `/home/francois/.backup/include`:
 
@@ -372,6 +373,7 @@ If you are migrating to a new server, you may be interested in the [server migra
       /home/francois
       /usr/local/bin
       /usr/local/sbin
+      /root
       /var/backups/libravatar
       /var/lib/libravatar
       /var/log/libravatar

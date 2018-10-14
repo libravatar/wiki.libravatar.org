@@ -354,11 +354,10 @@ If you are migrating to a new server, you may be interested in the [server migra
 * Create an empty `/var/backups/libravatar` directory
 * Install duplicity:
 
-      apt install duplicity python-boto
+      apt install duplicity python-paramiko
 
 * Add my duplicity backup script to `/home/francois/.backup/` and update:
   * GPG passhrase
-  * Destination directory (which includes the hostname)
 
 * Add the following to `/home/francois/.backup/exclude`:
 
@@ -383,7 +382,7 @@ If you are migrating to a new server, you may be interested in the [server migra
       # Local DB backups
       4 1,13 * * *       root    ionice -c3 nice -n10 /usr/local/sbin/libravatar_backups
       
-      # Full backups to Amazon S3
+      # Full backups to another server
       6 14 * * *      root    /home/francois/.backup/backup-selfoss
       6 23 * * 3      root    /home/francois/.backup/backup-selfoss --full
 
@@ -394,6 +393,10 @@ If you are migrating to a new server, you may be interested in the [server migra
 * Mark the key as **ultimately trusted** by using the `trust` command after typing:
 
       gpg --edit-key 16281F2E007C98D1
+
+* Copy the required `id_rsa` key into `/root/.ssh/`.
+
+* Configure the port, hostname and username in `/root/.ssh/config`.
 
 * Run an initial backup:
 

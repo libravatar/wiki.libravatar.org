@@ -402,6 +402,10 @@ If you are migrating to a new server, you may be interested in the [server migra
 
       sudo /home/francois/.backup/backup-selfoss
 
+* Ensure the expected files have been backed up:
+
+      sudo /home/francois/.backup/backup-selfoss --list-current-files > list.txt
+
 # Install application
 
 * Install Libravatar packages

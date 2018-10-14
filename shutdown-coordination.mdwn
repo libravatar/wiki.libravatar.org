@@ -16,13 +16,43 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-10-14 (Upcoming)
+## 2018-10-28 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-10-14, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181014T19&p1=%3A))
+* 2018-10-28, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181028T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+
+## 2018-10-14
+
+* participants: clime, fmarier, sumpfralle, tleguern
+
+### Review of the last weeks
+* clime: new implementation (for testing) is available on fedora infrastructure:
+    * http://libravatar.fedorainfracloud.org/
+    * http://libravatar-stg.fedorainfracloud.org/
+* fmarier & sumpfralle: mail and backup was moved
+
+### Data migration
+* before we can switch to the new implementation, we will need to migrate the existing data
+* this may partly be done via Django migrations (with some manual fiddling)
+* the current filesystem based storage (images?) need to be moved to the database
+* maybe ofalk or clime could do this, but volunteers are certainly welcome!
+* sumpfralle will send a request for activity / volunteers to the mailing list
+
+### Mail handling
+* the mail domain is now handled https://systemausfall.org/ (via sumpfralle)
+* existing forwards are put in place
+* we had a longer discussion about whether we want to allow private email addresses (john.doe@libravatar.org) fo contributors
+* there was a slight tendency towards *yes* (with some reluctance expressed by others)
+* sumpfralle will send a summary of the state and how to use it to the mailing list
+
+### Project name
+* we continued a bit on the discussion, whether a name change would be necessary/helpful for some reason
+* clime will take a look at the details and send a follow-up to the mailing list
+
 
 ## 2018-09-30
 

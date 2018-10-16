@@ -1,4 +1,4 @@
 The libravatar project uses different resources for running its services and related things.
 
 * [mail domain](mail_domain): handling of mails for the domain libravatar.org (including a list of available addresses)
-* [backup](): how and where do we store backups of the data
+* [backups](backups): how and where do we store backups of the data

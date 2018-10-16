@@ -1,0 +1,10 @@
+# Backups
+
+We do not want to loose the data of our users, thus we keep backups.
+
+
+# Locations
+
+The data is stored encrypted at the following locations (hosted by project members):
+
+* sumpfralle: daily backups via duplicity

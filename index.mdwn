@@ -23,9 +23,7 @@ specify the server that should host images for their organisation.
 
 # Community
 
-Because it is entirely powerered by [Free and Open Source
-Software](http://www.gnu.org/licenses/agpl.html), you are more than
-welcome to join the project and [[run your own instance|Running your own]].
+Because the libravatar service is entirely powered by [Free and Open Source Software](http://www.gnu.org/licenses/agpl.html), you are more than welcome to join the project and [[run your own instance|Running your own]].
 
 * [[Ways to contribute|contribute]]
 * [[Getting in touch with us|talk to us]]

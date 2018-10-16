@@ -38,9 +38,10 @@ postmaster | systemausfall.org
 [[!table  data="""
 local part | owner / destination
 clime | clime
+falko | ofalk
 fmarier | fmarier
 niklas.poslovski | nipos
-"""]]
+ofalk | ofalk"""]]
 
 
 # Personal mail addresses

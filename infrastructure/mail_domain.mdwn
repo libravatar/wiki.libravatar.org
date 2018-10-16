@@ -1,10 +1,61 @@
-# Backups
+[[!toc levels=2]]
 
-We do not want to loose the data of our users, thus we keep backups.
+# libravatar.org mail domain
+
+The hosting of the mail domain is kindly provided by the [systemausfall.org](https://systemausfall.org) project.
+
+Only mail forwarding is configured. There are no real mail boxes.
 
 
-# Locations
+# Existing mail addresses
 
-The data is stored encrypted at the following locations (hosted by project members):
+## Development / services
 
-* sumpfralle: daily backups via duplicity
+[[!table  data="""
+local part | destination
+accounts | dev@
+admin | dev@
+dev | fmarier
+dns | dev@
+mirrors | dev@
+security | dev@
+social | dev@
+support | dev@
+tls | dev@
+webmaster | dev@
+"""]]
+
+## Mail hosting
+
+[[!table  data="""
+local part | destination
+abuse | systemausfall.org
+postmaster | systemausfall.org
+"""]]
+
+## Personal addresses
+
+[[!table  data="""
+local part | owner / destination
+fmarier | fmarier
+niklas.poslovski | nipos
+"""]]
+
+
+# Personal mail addresses
+
+Members of the project may ask for a personal mail address within the libravatar.org domain.
+
+## How to request a mail address
+
+Please send a request to the [[mailinglist|talk_to_us]].
+
+Mail addresses are only used for forwarding mail to external addresses somewhere else. There are no real mail boxes configured for the domain.
+
+## How to send a mail
+
+If you are the recipient of a libravatar.org mail address, you may also went to send mails from this address.
+
+In this case you need to configure this mail address in you mail client and use your regular mail provider for submitting these mails.
+
+The SPF policy attached to the mail domain is relaxed, in order to allow submission via arbitrary mail exchangers.

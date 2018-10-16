@@ -1,0 +1,15 @@
+# libravatar.org project
+
+The *libravatar.org project* is the group of people involved with developing the software and maintaining the service currently known as "libravatar". This entity does not have a legal status. We are just a group of people. We use a [[mailinglist and an IRC channel|talk_to_us]] for discussions and decisions.
+
+
+# Documentation
+
+* [[infrastructure]]
+
+
+# History
+
+* July 2018: a group of people started to hold [regular IRC meetings](https://wiki.libravatar.org/shutdown-coordination/#index2h1) and decide to continue to run the service and to work on a new implementation; Francois Marier actively supports these efforts in various ways
+* April 2018: [Francois Marier announced the upcoming shutdown of the service](https://blog.libravatar.org/posts/Libravatar.org_is_shutting_down_on_2018-09-01/), [published a retrospective](https://feeding.cloud.geek.nz/posts/looking-back-on-starting-libravatar/) and prepared a [wiki page for people interested in continuing the service](https://wiki.libravatar.org/shutdown-coordination/)
+* 2011: [Francois Marier](https://fmarier.org/) started to develop the libravatar software and to maintain the libravatar.org instance

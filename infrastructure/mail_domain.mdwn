@@ -37,6 +37,7 @@ postmaster | systemausfall.org
 
 [[!table  data="""
 local part | owner / destination
+clime | clime
 fmarier | fmarier
 niklas.poslovski | nipos
 """]]

@@ -27,6 +27,7 @@ Because the libravatar service is entirely powered by [Free and Open Source Soft
 
 * [[Ways to contribute|contribute]]
 * [[Getting in touch with us|talk to us]]
+* [[About the project running libravatar.org|project]]
 
 # Freedom
 

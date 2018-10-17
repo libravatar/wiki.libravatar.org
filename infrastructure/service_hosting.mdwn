@@ -2,11 +2,11 @@
 
 The instance *libravatar.org* is providing the [[open specification|api]] called *libravatar*. It is run by the [[libravatar project|project]].
 
-The VM running the service is currently hosted by [ij](https://www.windfluechter.net/).
+The VM running the service is currently hosted by [Ingo Juergensmann](https://www.windfluechter.net/).
 
 
 # Timeline
 
-* since August 2018: hosted by [ij](https://www.windfluechter.net/)
+* since August 2018: hosted by [Ingo Juergensmann](https://www.windfluechter.net/)
 * 2013-2018: hosted by [Rackspace](http://www.rackspace.com/)
 * 2011-2013: hosted by [AppsAttic](http://appsattic.com/) (also thanks to [Andy Chilton](http://chilts.org/))

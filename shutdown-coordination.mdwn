@@ -16,14 +16,44 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-10-28 (Upcoming)
+## 2018-11-11 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-10-28, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181028T19&p1=%3A))
+* 2018-11-11, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181111T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
 
+## 2018-10-28
+
+* participants: clime, falko, fmarier, nipos, sumpfralle, tleguern
+
+### Review of the last weeks
+* falko: all names stay unchanged ("libravatar") - only the new software will be named "ivatar"
+* sumpfralle: added a bit of documentation for the [project](https://wiki.libravatar.org/project/) and [infrastructure](https://wiki.libravatar.org/infrastructure/)
+
+### Tests
+* tleguern created some [shell-based tests for the API](https://github.com/Aversiste/libravatar.cgi/blob/master/regress/regress.sh)
+    * it can probably be used for comparing the behaviour of the old and the new implementation
+
+### Automatic deployment
+* clime will prepare automatic deployment of code updates to the staging instance at <https://libravatar-stg.fedorainfracloud.org>
+
+### Design for wiki
+* nipos will take a look at the possible theming of the wiki instance (<https://wiki.libravatar.org>)
+
+### Backup
+* fmarier will add falko's gpg key to the backup encryption
+
+### Data migration
+* falko will take a look at the export of data from the current instance into the new staging instance
+* mail addresses will be mangled in order to prevent accidental mailings to real users
+    * the outgoing mail setup should also be disabled
+
+### Topics for the next meeting
+* should we keep the "fallback to gravatar" feature? (currently implemented within libravatar)
+    * fmarier argued for keeping it
+    * falko's opinion differs
 
 ## 2018-10-14
 

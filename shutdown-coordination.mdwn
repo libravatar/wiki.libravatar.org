@@ -16,13 +16,36 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-11-11 (Upcoming)
+## 2018-11-25 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-11-11, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181111T19&p1=%3A))
+* 2018-11-11, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181125T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2018-11-11 (Upcoming)
+
+* participants: clime, nipos, sumpfralle, tleguern
+
+### Review of the last week
+* falko: import of data from old implementation / instance works; needs more tests
+* clime: the staging instance now gets rebuild on every change (of the related ansible repository)
+* tleguern: worked on more tests and noticed a few details with the old and new implementation
+
+### Fallback to gravatar?
+
+During the last meeting the need for a discussion about the *fallback to gravatar* feature was apparent. But since fmarier and falko were not around today (both raised diverging opinions on this matter), we postponed the discussion to the next meeting.
+
+### .well-known/avatars
+
+We discussed a bit about the alternative to the DNS-SRV-based service discovery (more accessible for javascript frontend code, since DNS requests are not accessible). We will continue the discussion on the mailinglist.
+
+### Other things
+
+* tleguern mentioned differences between the API specification and the real implementations
+* unit193 appreciates the OpenID support of the new implementation
+
 
 ## 2018-10-28
 

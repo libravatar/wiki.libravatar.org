@@ -9,6 +9,8 @@ Name                                                | Description               
 libravatar                                          | The software that runs libravatar.org | web-based         | Python               | Email, OpenID | 404, mm, identicon, monsterid, wavatar, retro
 [Surrogator](https://sourceforge.net/p/surrogator/) | very simple avatar server             | command line only | PHP                  | Email, OpenID | 404, mm
 [Simple Libravatar service](http://pusling.com/blog/?p=274) | Quick hack to serve static files | command line only | Shell script         | Email         | none (always returns a static image)
+ivatar | The software that will run the next generation libravatar.org | web-based | Python | Email, OpenID | 404, mm (and its alias mp), blank, identicon, monsterid, retro
+libravatar.cgi | Simple CGI implementation | none | C | Email | 404, mm, blank
 """]]
 
 

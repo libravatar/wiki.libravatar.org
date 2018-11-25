@@ -16,19 +16,45 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-11-25 (Upcoming)
+## 2018-12-09 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-11-11, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181125T19&p1=%3A))
+* 2018-12-09, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181209T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
 
-## 2018-11-11 (Upcoming)
+## 2018-11-25
+
+* participants: clime, ofalk, nipos, sumpfralle
+
+### Review of the last weeks
+* falko: finished a script exporting the user data from an old implementation into separate xml files for each user
+    * the passwords are not exported (as discussed before)
+
+### Fallback to gravatar?
+* falko proposed the following:
+    * by default the API will proxy a request over to gravatar if the requested avatar is not known
+    * this default behaviour can be overridden via a query argument for every request
+        * thus the client implementation decides, whether the fallback is used
+    * it would be great (for improved privacy) if we could proxy these fallback requests (instead of sending a redirect)
+    * maybe the account settings of a libravatar user could also be taken into account for the fallback behaviour (exposed via session cookies)
+* opinions or thoughts are welcome in the [related issue #22](https://git.linux-kernel.at/oliver/ivatar/issues/22)
+
+### cdn.libravatar.org and seccdn.libravatar.org
+* these domains are used by the API clients (see the [api specification](https://wiki.libravatar.org/api/))
+* clime will configure these sub-domains on the fedora server
+
+### robohash
+* should we support [robohash](http://robohash.org/)?
+* please raise your voice (by up- or down-voting) in [issue #13](https://git.linux-kernel.at/oliver/ivatar/issues/13)
+
+
+## 2018-11-11
 
 * participants: clime, nipos, sumpfralle, tleguern
 
-### Review of the last week
+### Review of the last weeks
 * falko: import of data from old implementation / instance works; needs more tests
 * clime: the staging instance now gets rebuild on every change (of the related ansible repository)
 * tleguern: worked on more tests and noticed a few details with the old and new implementation

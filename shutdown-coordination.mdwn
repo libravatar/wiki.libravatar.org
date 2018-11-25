@@ -45,6 +45,11 @@ Everyone interested in supporting the libravatar project (code or service) is we
 * these domains are used by the API clients (see the [api specification](https://wiki.libravatar.org/api/))
 * clime will configure these sub-domains on the fedora server
 
+### wiki style
+* nipos took a deep look at the possibility to theme the wiki in the style of the future libravatar website
+* it does not seem to be possible :(
+* the participants of the meeting did not consider this to be a real problem (but it would have been nice!)
+
 ### robohash
 * should we support [robohash](http://robohash.org/)?
 * please raise your voice (by up- or down-voting) in [issue #13](https://git.linux-kernel.at/oliver/ivatar/issues/13)

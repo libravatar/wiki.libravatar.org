@@ -21,6 +21,7 @@ banned_users:
 - ThomasJones
 - forma88
 - propertyofgodonly
+- yourareacoder
 # where the source of the wiki is located
 srcdir: /home/b-libravatar/source
 # where to build the wiki
@@ -122,7 +123,7 @@ libdirs: []
 # extra library and plugin directory (searched after libdirs)
 libdir: /home/b-libravatar/.ikiwiki
 # environment variables
-ENV: {}
+#ENV: ''
 # time zone name
 timezone: GMT
 # regexp of normally excluded files to include
@@ -287,6 +288,10 @@ langdefdir: /usr/share/highlight/langDefs
 #multimarkdown: 0
 # disable use of markdown discount?
 #nodiscount: 0
+# enable footnotes in Markdown (where supported)?
+mdwn_footnotes: 1
+# interpret line like 'A. First item' as ordered list when using Discount?
+mdwn_alpha_lists: 0
 
 # po plugin
 # master language (non-PO files)
@@ -332,8 +337,8 @@ po_link_to: default
 
 ######################################################################
 # web plugins
-#   (404, attachment, comments, editdiff, edittemplate, getsource, google,
-#    goto, mirrorlist, remove, rename, repolist, search, theme, userlist,
+#   (404, attachment, comments, editdiff, edittemplate, google, goto,
+#    mirrorlist, remove, rename, repolist, search, theme, userlist,
 #    websetup, wmd)
 ######################################################################
 
@@ -358,10 +363,6 @@ comments_pagename: comment_
 comments_commit: 1
 # Restrict formats for comments to (no restriction if empty)
 comments_allowformats: ''
-
-# getsource plugin
-# Mime type for returned source.
-#getsource_mimetype: text/plain; charset=utf-8
 
 # mirrorlist plugin
 # list of mirrors

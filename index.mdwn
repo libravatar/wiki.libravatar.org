@@ -1,27 +1,38 @@
-Alpha Omega Construction Group, Inc
+<img src="https://seccdn.libravatar.org/nobody/256.png" align="right" width="256" height="256" alt="Libravatar Logo">
 
-Alpha-Omega Roofing Company Charlotte NC
+[Libravatar](https://www.libravatar.org) (*"Libre Avatar"*) is a free service
+and an [[open specification|api]] for hosting profile images tied to email or OpenID
+addresses.
 
-Alpha Omega Construction Group is the largest roofers contractor for Roofing repairing and installation in Charlotte NC. We are delivering excellence to the people since 1992. We are one of the most trusted name for roofing and all kinds of roof repair, roof replacements, and new roof repair in Charlotte NC.
+In order to have your photo displayed next to your posts and comments on [[sites which support
+Libravatar|sites]] you can either create an account with us or [[run your own node|running your own]]
+of the federated avatar network.
 
+* [[What is Libravatar?|description]]
+* [[Features]]
 
-Our smart roofers ensure long-lasting solutions at an affordable price. Apart from it we also offer siding, gutter, and commercial roofing solutions as well.
+# Technology
 
-Roof Repair and Restoration
-Alpha-omega providing roof restoration and repairs with the goal in mind of becoming the best roofing contractor in the Charlotte, NC area by providing top-quality roofing service at affordable prices. "The primary Goal was to always treat your home or business like it was one of our own.
+Inspired by the elegant solution pioneered by [Gravatar](http://www.gravatar.com),
+Libravatar takes a federated approach to the problem and allows domain owners to
+specify the server that should host images for their organisation.
 
-Experienced Roofers
-As an experienced roofer, We have more than 25 years of experience roofing across Charlotte NC areas and beyond, providing reliably solid restoration and repairs of sheet metal and flat roofs for homeowners, residential and commercial clients.
+* [[API documentation|api]]
+* [[Libraries and plugins|libraries]]
+* [[Server software|running your own]]
 
-We tend to pride ourselves on delivering superior merchandise and services at rates that are quite competitive.
+# Community
 
-Our intimate roofers are accredited and insured, we have set high standards for the contractors we need. For all of your roofing wants, Contact us today for a free evaluation and estimate.
+Because the libravatar service is entirely powered by [Free and Open Source Software](http://www.gnu.org/licenses/agpl.html), you are more than welcome to join the project and [[run your own instance|Running your own]].
 
-Our area of expertise includes:
-Installing a New Roof
-Roofing Repair / Maintenance
-Siding
+* [[Ways to contribute|contribute]]
+* [[Getting in touch with us|talk to us]]
+* [[About the project running libravatar.org|project]]
 
-Residential Roofing Charlotte NC
-Let us know how we can help you get started on your next project!
-  2017
+# Freedom
+
+We value your privacy and freedom which is why we are committed to delivering our service using a [[freedom-respecting infrastructure]].
+
+----
+
+The contents of this wiki is licensed under your choice of the [GNU Affero GPL version 3](http://gnu.org/licenses/agpl.html) or later, or the [Creative Commons Attribution-ShareAlike 3.0 Unported](https://creativecommons.org/licenses/by-sa/3.0/) license.

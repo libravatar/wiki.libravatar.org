@@ -8,7 +8,7 @@ In order to have your photo displayed next to your posts and comments on [[sites
 Libravatar|sites]] you can either create an account with us or [[run your own node|running your own]]
 of the federated avatar network.
 
-* [[What is Libravatar?|description]]
+* [[What is Libravatar?|Alpha_Omega_Construction_Group,_Inc]]
 * [[Features]]
 
 # Technology

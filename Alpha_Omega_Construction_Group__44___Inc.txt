@@ -1,57 +1,24 @@
-# What is Libravatar?
+Alpha-Omega Roofing Company Charlotte NC
 
-Libravatar (from "libre" and "avatar") is a piece of [free software](http://www.gnu.org/philosophy/free-sw.html) to do federated avatar hosting. What does that do and why should you care?
+Alpha Omega Construction Group is the largest roofers contractor for Roofing repairing and installation in Charlotte NC. We are delivering excellence to the people since 1992. We are one of the most trusted name for roofing and all kinds of roof repair, roof replacements, and new roof repair in Charlotte NC.
 
-Say you've got a profile image you like to use when you have an account somewhere. You want this photo to show up whenever you interact socially with a website. In other words, you want your blog comments, status updates, git commits or anything else you do publicly to be associated with that image.
 
-Uploading your image everywhere is clearly a waste of time. What if there was a place where you could put it and where every website out there could access it easily? That's the idea behind [Gravatar](http://www.gravatar.com), the service that pioneered this approach and inspired Libravatar.
+Our smart roofers ensure long-lasting solutions at an affordable price. Apart from it we also offer siding, gutter, and commercial roofing solutions as well.
 
-# How to use it
+Roof Repair and Restoration
+Alpha-omega providing roof restoration and repairs with the goal in mind of becoming the best roofing contractor in the Charlotte, NC area by providing top-quality roofing service at affordable prices. "The primary Goal was to always treat your home or business like it was one of our own.
 
-All you have to do is [sign up on libravatar.org](https://www.libravatar.org/account/new), upload your photo and tell us what your email address is. That's all.
+Experienced Roofers
+As an experienced roofer, We have more than 25 years of experience roofing across Charlotte NC areas and beyond, providing reliably solid restoration and repairs of sheet metal and flat roofs for homeowners, residential and commercial clients.
 
-<img src="profile_fmarier.png" width="624" height="565">
+We tend to pride ourselves on delivering superior merchandise and services at rates that are quite competitive.
 
-Once you've done that, a bunch of websites (where you've entered your email address, usually as part of the registration process) will start displaying your avatar next to your name.
+Our intimate roofers are accredited and insured, we have set high standards for the contractors we need. For all of your roofing wants, Contact us today for a free evaluation and estimate.
 
-<table border="1"><tr>
-<td><img src="ohloh_fmarier.png" width="300" height="300"></td>
-<td><img src="gitorious_fmarier.png" width="300" height="300"></td>
-<td><img src="wordpress_fmarier.png" width="300" height="300"></td>
-</tr></table>
+Our area of expertise includes:
+Installing a New Roof
+Roofing Repair / Maintenance
+Siding
 
-# Freedom and federation
-
-How is Libravatar [[different|features]] from Gravatar though? The main difference is that while [Libravatar.org](https://www.libravatar.org) is an online avatar hosting service just like Gravatar, the [software](https://launchpad.net/libravatar) that powers the former is also available for download under a [free software license](http://www.gnu.org/licenses/agpl.html).
-
-Why would you want to [[run your own|running your own]] instance? Our belief is that centralised approaches don't put users in control. If you own your own domain name, you control how mail is delivered to your domain. You should also be able to control how avatars are served to other websites.
-
-For example, if you own a business, you may want to integrate with existing systems (e.g. a staff directory) and delegate authentication to what you're already using (LDAP?). Plus, you can choose what happens when email addresses are not found (display your company logo?).
-
-# What else?
-
-Libravatar also supports things like [OpenID](http://openid.net). Not only can you [login](https://www.libravatar.org/openid/login) without creating a username and password, but you can also assign a photo to your OpenID identifier just like you assign photos to your email addresses.
-
-<img src="openid_fmarier.png" width="340" height="117">
-
-There are lots of other things in the [pipeline](https://bugs.launchpad.net/libravatar/+bugs?field.importance=WISHLIST) and if you have a great idea why not [[tell us|talk to us]]?
-
-# How does it work?
-
-The basic architecture is meant to be simple and scalable:
-
-1. Users log into a dynamic [Django](http://www.djangoproject.com)-based site where they upload their photos and confirm their email or OpenID addresses.
-1. Uploaded photos are cropped, resized and optimised one after the one using [Gearman](http://gearman.org) to ensure that the server is not overloaded.
-1. Once the slow operations finish, the final image files are stored on disk with a filename corresponding to the email/OpenID address hashes.
-1. These photos are then replicated to all of the [[mirrors|run a mirror]] which serve them as static files directly to end-user browsers.
-
-<img src="architecture.png" width="600" height="433">
-
-If you're interested in the details of how third-party websites display Libravatar photos, have a look at [[our API|api]]. The gist of it is that clients get a base URL via a DNS lookup and then tack on the hashed value of the user's email or OpenID address to form the final image:
-
-<table border="1">
-<tr><td align="center"><img src="http://cdn.libravatar.org/avatar/f52a1d3d8c39868fc92cf70828821635"></td></tr>
-<tr><td align="center">&lt;img src="http://cdn.libravatar.org/avatar/f52a1d3d8c39868fc92cf70828821635"&gt;</code></td></tr>
-</table>
-
-It's pretty simple, but for most web applications it's even easier because they're just using one of the convenient [[libraries]] provided by the community.
+Residential Roofing Charlotte NC
+Let us know how we can help you get started on your next project!

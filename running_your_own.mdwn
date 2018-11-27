@@ -11,7 +11,7 @@ libravatar                                          | The software that runs lib
 [Simple Libravatar service](http://pusling.com/blog/?p=274) | Quick hack to serve static files | command line only | Shell script         | Email         | none (always returns a static image)
 ivatar | The software that will run the next generation libravatar.org | web-based | Python | Email, OpenID | 404, mm (and its alias mp), identicon, monsterid, retro
 libravatar.cgi | Simple CGI implementation | none | C | Email | 404, mm (and its alias mp), blank
-[libravatarserv](https://schlomp.space/tastytea/libravatarserv) | Simple libravatar server | none | C++ | Email | 404, optionally returns a default image
+[libravatarserv](https://schlomp.space/tastytea/libravatarserv) | Simple libravatar server | none | C++ | Email | 404, mm (and its alias mp), identicon, URL; optionally returns a default image instead
 """]]
 
 

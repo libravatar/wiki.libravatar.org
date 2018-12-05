@@ -21,6 +21,7 @@ banned_users:
 - ThomasJones
 - forma88
 - propertyofgodonly
+- seo
 - yourareacoder
 # where the source of the wiki is located
 srcdir: /home/b-libravatar/source

@@ -16,13 +16,74 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-12-09 (Upcoming)
+## 2018-12-30 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-12-09, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181209T19&p1=%3A))
+* 2018-12-30, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181230T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+
+## 2018-12-09
+
+* participants: clime, fmarier, nipos, tleguern, sumpfralle
+
+### Review of the last weeks
+* nipos: small design improvements (not all being merged, yet)
+* clime: imported the existing dataset to the instance at [libravatar.fedorainfracloud.org](https://libravatar.fedorainfracloud.org/)
+* ofalk (who could not attend today) prepared a list of changes in the pad - we discussed these in the remainder of the meeting
+
+### Gravatar fallback
+* ofalk implemented this feature: [issue #22](https://git.linux-kernel.at/oliver/ivatar/issues/22)
+* requests are proxied via the `/gravatarproxy/` path
+* we exchanged a bit of thoughts, whether it is a good idea to use a vendor's name as a query argument name (not its value)
+* some proposed (wild and spontaneous) suggestions:
+    * `?allow_fallback=y&fallback_method=redirect&fallback_providers=gravatar,foobar,baz,acme`
+    * `?fallback=redirect&provider=gravatar`
+* we leave it up to ofalk to determine the proper approach
+
+### Export from original implementation / import into ivatar implementation
+* ofalk wrote an xml-based export for the original implementation
+    * one file per account
+    * code: [https://git.linux-kernel.at/oliver/ivatar/blob/libravatar_export/exportaccounts.py](https://git.linux-kernel.at/oliver/ivatar/blob/libravatar_export/exportaccounts.py)
+* the result tarball can be imported into ivatar
+    * code: [https://git.linux-kernel.at/oliver/ivatar/blob/master/import_libravatar.py](https://git.linux-kernel.at/oliver/ivatar/blob/master/import_libravatar.py)
+* we discussed the usefulness of the `ip_address` field of each *photo* object
+    * probably it can be discarded, since we do not want to store such data
+
+### Theme switching
+* ofalk implemented it: [issue #8](https://git.linux-kernel.at/oliver/ivatar/issues/8)
+* the *red* and the *green* themes work
+* Clime's theme: Upcoming
+
+### Retro avatars
+* ofalk implemented this feature
+* tleguern suggested, that we should document, which code ivatar uses
+* this would allow alternative implementations to provide a similar visualization
+* the current code: [https://git.linux-kernel.at/oliver/ivatar/blob/master/ivatar/views.py#L148](https://git.linux-kernel.at/oliver/ivatar/blob/master/ivatar/views.py#L148)
+* sumpfralle will add a bit of documentation
+
+### API documentation
+* ofalk listed some items that deserve improvements:
+    * state what to do in case of bad input
+    * clearly write the default value of the “default” option (ie: `d=http://cdn.libravatar.org/static/nobody/80.png`)
+    * add `default=blank` like Gratavar does?
+    * describe a mechanism to programmatically know which “default” values are accepted by a given implementation?
+* ofalk: "I think a lot of docs need to be written for the possible and especially the new options"
+* tleguern volunteered to work on the documentation
+
+### Robohash
+* ofalk implemented a first draft: [issue #13](https://git.linux-kernel.at/oliver/ivatar/issues/13)
+* we had fun exchanging our random robohash visualizations
+* nipos volunteered to add a bit of documentation for that feature (without duplicating robohash's documentation)
+
+### OpenID
+* ofalk briefly mentioned in his notes some progress (without details)
+
+### Next meeting
+* due to the proximity to Christmas, we will have our next meeting in *three* weeks (2018/12/30)
+
 
 ## 2018-11-25
 

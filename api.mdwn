@@ -18,17 +18,17 @@ A collection of [[libraries or plugins|libraries]] implementing these steps are 
 
 Here's an example in Python:
 
+    import dns.resolver
     import hashlib
     email = 'George@example.com'.encode('utf-8')
+    _, domain = email.split('@')
+    try:
+      answers = dns.resolver.query('_avatars._tcp.' + domain, 'SRV')
+      baseurl = 'http://' + str(answers[0].target) + '/avatar/'
+    except:
+      baseurl = http://cdn.libravatar.org/avatar/
     hash = hashlib.md5(email.strip().lower()).hexdigest()
-
-which gives us a hash of <tt>40f8d096a3777232204cb3f796c577b7</tt> and therefore the following image tag:
-
-    <img src="https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7" alt="avatar of george@example.com"/>
-
-It will render as follows:
-![George@example.com](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7)
-
+    print baseurl + hash
 
 # Options
 

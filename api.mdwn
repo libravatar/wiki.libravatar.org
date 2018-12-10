@@ -1,21 +1,21 @@
-You should probably just use one of the available [[libraries or plugins|libraries]], but here is a description of the API.
-
 # Simple API
 
-There are 4 steps for displaying Libravatar-hosted images into your application:
+There are 4 steps for displaying Libravatar-hosted images into an application:
 
 
-1. Create a hash from the user's email address:
-   a. Lowercase the email address.
+1. Create a hash from the user's email address:  
+   a. Lowercase the email address.  
    b. Compute a MD5 or SHA256 hash of it.
-2. Discover the avatar server base URL:
-   a. Use DNS-based server discovery as described in *Federated Servers*.
+2. Discover the avatar server base URL:  
+   a. Use DNS-based server discovery as described in the § Federated Servers section.  
    b. If no server was found, fall back to `cdn.libravatar.org` (or `seccdn.libravatar.org` for HTTPS).
 3. Create a URL like `http://BASEURL/avatar/HASH`.
 4. Put the URL into an `img` tag on your page.
 
+A collection of [[libraries or plugins|libraries]] implementing these steps are available.
 
 ## Python example
+
 Here's an example in Python:
 
     import hashlib
@@ -34,51 +34,77 @@ It will render as follows:
 
 ## Picture size
 
-The default size for images is **80x80** pixels, however you can change it by providing an extra parameter to the URL:
+The default size for images is 80x80 pixels, however it can be changed by providing the extra parameter **size** or **s** to the URL:
 
     http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=100
 
-The <tt>s</tt> or <tt>size</tt> is the size (height and width are the same) of the image in pixels. Acceptable values range from **1** to **512**.
+Acceptable values range from 1 to 512. Invalid input such as non-integer or out-of-range values will be ignored.
 
 ## Default URL for missing images
 
-If you would like to specify a default "missing image" picture for email addresses which are not found in the Libravatar database, you may specify the URL of an image to redirect to:
+When an image is requested for an email address without a Libravatar account a default is substituted. This behaviour can be overridden by providing the extra parameter **default** or **d** to the URL:
 
     http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=http://example.com/nobody.jpg
 
-The <tt>d</tt> or <tt>default</tt> parameter defaults to the Libravatar logo, but a few other special values are available:
+If no image exists for the hash <tt>40f8d096a3777232204cb3f796c577b7</tt> then a redirection is made toward <tt>http://example.com/nobody.jpg</tt>.
+
+The default value is <tt>http://cdn.libravatar.org/nobody.png</tt>.
+
+A few special values are also allowed:
 
 * <tt>**404**</tt>: return a 404 error (file not found) instead of an image
-* <table><tr>
+* <tt>**mm**</tt> or <tt>**mp**</tt>: return an image containing a simple, fixed silhouette of a person
+* <tt>**identicon**</tt>: return an image containing a random [geometric pattern](http://scott.sherrillmix.com/blog/blogger/wp_identicon/)
+* <tt>**monsterid**</tt>: return an image containing a random [monsterid](http://scott.sherrillmix.com/blog/blogger/wp_monsterid/)
+* <tt>**wavatar**</tt>: return an image containing a random [wavatar](http://www.shamusyoung.com/twentysidedtale/?p=1462)
+* <tt>**retro**</tt>: return an image containing a random retro-looking, 8-bits arcade style pixel-art
+* <tt>**robohash**</tt>: return an image containing a random [robohash](https://robohash.org/)
+
+Examples:
+
+  <table><tr>
   <td align="center">![mm](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=mm)
-  <br><tt>**mm**</tt></td>
+  <br><tt>mm</tt></td>
   <td align="center">![identicon](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=identicon)
-  <br><tt>**identicon**</tt></td>
+  <br><tt>identicon</tt></td>
   <td align="center">![monsterid](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=monsterid)
-  <br><tt>**monsterid**</tt></td>
+  <br><tt>monsterid</tt></td>
   <td align="center">![wavatar](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=wavatar)
-  <br><tt>**wavatar**</tt></td>
+  <br><tt>wavatar</tt></td>
   <td align="center">![retro](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=retro)
-  <br><tt>**retro**</tt></td>
+  <br><tt>retro</tt></td>
   </tr></table>
 
 Note that if an image is not found in the Libravatar database and the hash algorithm used was **MD5**, then Libravatar will first redirect to Gravatar in case the image exists there. Then it will honour the <tt>default</tt> parameter.
 
+### Sub-option for d=robohash
+
+If the **default** parameter is robohash then a special sub-option can be used to specify which set of images to use. This option is the parameter **robohash**. Accepted values are <tt>set1</tt>, <tt>set2</tt>
+ and <tt>set3</tt>. Any other value will be ignored. It can not be used in combination with another **default** value.
+
+## Force default
+
+It is sometimes interesting to test the **default** option, even for hashes with matching avatars. This behaviour can be triggered by providing the extra parameter **forcedefault** or **f** to the URL with a value of **y**:
+
+    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=retro&f=y
+
+Any other value will be ignored.
+
 # For Gravatar users
 
-As you can see, our API is heavily based on the [Gravatar API](http://en.gravatar.com/site/implement/). If your application or website already supports [Gravatar](http://www.gravatar.com) switching to the basic Libravatar service is just a matter or changing the base URL:
+This API mimics closely the [Gravatar API](http://en.gravatar.com/site/implement/). If an application or website already supports [Gravatar](http://www.gravatar.com) then switching to the basic Libravatar service is just a matter or changing the base URL:
 
     http://www.gravatar.com/avatar => http://cdn.libravatar.org/avatar
 
-or if you are using the HTTPS version of the service:
+or for HTTPS version of the service:
 
     https://secure.gravatar.com/avatar => https://seccdn.libravatar.org/avatar
 
-Note that Libravatar does **not** support the <tt>rating</tt> (or simply <tt>r</tt>) parameter since we require all images to be G-rated.
+Note that Libravatar does **not** support the <tt>rating</tt> (or simply <tt>r</tt>) parameter since it requires all images to be G-rated. If set, this parameter will be ignored.
 
 # Federated servers
 
-In order to support domain name owners who choose to [[run their own instances|running your own]] of Libravatar, you must perform a DNS query to lookup the appropriate base URL for each domain (the domain is extracted from email addresses or OpenID URLs).
+It is important to start with a DNS query to lookup the appropriate base URL for a domain instead of directly using Libravatar's base URL as it allows to support domain name owners who choose to [[run their own instances|running your own]].
 
 DNS host names:
 
@@ -88,23 +114,21 @@ DNS host names:
   * `SRV _avatars-sec._tcp._tcp.EMAILDOMAIN`
 
 
-You will probably want to use an [[existing library|libraries]] for this, but here's how to do that DNS lookup on a UNIX command line:
+Here's how to do that DNS lookup on a UNIX command line:
 
     $ dig +short SRV _avatars._tcp.example.com
     0 0 80 avatars.example.com.
 
-We also provide a [domain check tool](https://www.libravatar.org/tools/check_domain) to help in your testing.
-
 Notes for advanced users / library authors:
 
-* Libravatar clients only consider servers listed in the highest SRV priority.
-* They do however honour relative weights.
+* Libravatar clients MUST only consider servers listed in the highest SRV priority.
+* They MUST honour relative weights.
 * SRV records are cached for at least 1 day (or more if the TTL is greater than 1 day).
-* **Make sure you sanitize the results you get from the DNS resolver** (see [Perl](https://github.com/schwern/gravatar-url/commit/14b0c613f434d2513f8f4609a17aff4fe31c17ea) and [Python](http://bazaar.launchpad.net/~libravatar/pylibravatar/trunk/revision/5) examples).
+* Results returned by the DNS resolver MUST be sanitized (see [Perl](https://github.com/schwern/gravatar-url/commit/14b0c613f434d2513f8f4609a17aff4fe31c17ea) and [Python](http://bazaar.launchpad.net/~libravatar/pylibravatar/trunk/revision/5) examples).
 
 # HTTPS support
 
-If your application is delivered over a secure (HTTPS) connection, you may want to use our HTTPS image servers to avoid triggering browser warnings about mixed HTTP/HTTPS content.
+For applications using secure (HTTPS) connections it is preferable to use the HTTPS image servers to avoid triggering browser warnings about mixed HTTP/HTTPS content.
 
 To do so, simply use this base URL:
 
@@ -126,7 +150,7 @@ The same 5 steps apply:
 4. Turn the image into a URL by prefixing it with the Libravatar base URL.
 5. Put the image into an <tt>img</tt> tag on your page.
 
-Therefore, if you don't have an email address for some of your users but you do have OpenID URLs, here is sample Python code to produce a hash for them:
+Therefore, if the email address of some user is missing but his OpenID URLs is known then a hash can be generated:
 
     import hashlib
     from urlparse import urlsplit, urlunsplit
@@ -143,4 +167,4 @@ Therefore, if you don't have an email address for some of your users but you do 
 
 # Testing tool
 
-We provide a [check tool](https://www.libravatar.org/tools/check) to help developers test their implementations and compare their results.
+A [domain check tool](https://www.libravatar.org/tools/check_domain) is also available to help testing Libravatar integration or library development.

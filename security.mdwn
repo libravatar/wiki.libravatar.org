@@ -15,3 +15,4 @@ Also, please let us know if you are under any kind of publication deadline.
 *We would like to thank the following people who have helped make Libravatar more secure by reporting security issues to us.*
 
 * [Ahmed Adel Abdelfattah](https://www.facebook.com/00SystemError00) ([@00SystemError00](https://twitter.com/00SystemError00)): improvement to mail configuration on `libravatar.org` and `libravatar.com`
+* [Putra Adhari](https://www.facebook.com/BugHunterID): [server-side request forgery](https://bugs.launchpad.net/libravatar/+bug/1808720) in OpenID support

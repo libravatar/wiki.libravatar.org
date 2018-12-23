@@ -431,6 +431,32 @@ If you are migrating to a new server, you may be interested in the [server migra
 
       adduser francois libravatar-deployment
 
+# Squid proxy
+
+* Install `squid`:
+
+      apt install squid3
+
+* Restrict access and outgoing requests by putting the following in `/etc/squid3/squid.conf`:
+
+      acl SSL_ports port 443
+      acl Safe_ports port 80
+      acl Safe_ports port 443
+      acl CONNECT method CONNECT
+      http_access deny !Safe_ports
+      http_access deny CONNECT !SSL_ports
+      http_access deny manager
+      http_access deny to_localhost
+      http_access allow localhost
+      http_access deny all
+      http_port 127.0.0.1:3128
+
+* Force all outgoing connections from Django to go through the proxy by putting the following near the end of `/etc/libravatar/django.wsgi`:
+
+      os.environ['ftp_proxy'] = "http://127.0.0.1:3128"
+      os.environ['http_proxy'] = "http://127.0.0.1:3128"
+      os.environ['https_proxy'] = "http://127.0.0.1:3128"
+
 # Git mirrors
 
 * Install `hg`:

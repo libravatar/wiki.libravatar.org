@@ -439,6 +439,14 @@ If you are migrating to a new server, you may be interested in the [server migra
 
 * Restrict access and outgoing requests by putting the following in `/etc/squid3/squid.conf`:
 
+      acl to_localnet dst 0.0.0.1-0.255.255.255
+      acl to_localnet dst 10.0.0.0/8
+      acl to_localnet dst 100.64.0.0/10
+      acl to_localnet dst 169.254.0.0/16
+      acl to_localnet dst 172.16.0.0/12
+      acl to_localnet dst 192.168.0.0/16
+      acl to_localnet dst fc00::/7
+      acl to_localnet dst fe80::/10
       acl SSL_ports port 443
       acl Safe_ports port 80
       acl Safe_ports port 443
@@ -447,6 +455,7 @@ If you are migrating to a new server, you may be interested in the [server migra
       http_access deny CONNECT !SSL_ports
       http_access deny manager
       http_access deny to_localhost
+      http_access deny to_localnet
       http_access allow localhost
       http_access deny all
       http_port 127.0.0.1:3128

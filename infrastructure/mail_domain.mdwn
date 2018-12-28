@@ -15,7 +15,7 @@ Only mail forwarding is configured. There are no real mail boxes.
 local part | destination
 accounts | dev@
 admin | dev@
-dev | fmarier
+dev | fmarier, ofalk
 dns | dev@
 mirrors | dev@
 security | dev@

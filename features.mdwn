@@ -15,7 +15,6 @@ Customizable default image        | Yes                                         
 MPAA-style image ratings          | G-rated only                                         | Yes
 Text-based profile information    | &mdash;                                              | Yes
 **Federation** via DNS SRV records| Yes                                                  | &mdash;
-**Persona** authentication        | Yes                                                  | &mdash;
 **LDAP** authentication           | Yes                                                  | &mdash;
 **OpenID** authentication         | Yes                                                  | &mdash;
 Automatic photo **importers**     | [[Yes|photo importers]]                              | &mdash;

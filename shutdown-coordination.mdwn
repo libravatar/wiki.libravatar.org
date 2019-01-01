@@ -16,13 +16,22 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2018-12-30 (Upcoming)
+## 2019-01-13 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2018-12-30, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20181230T19&p1=%3A))
+* 2019-01-13, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190113T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+
+## 2018-12-30
+
+* participants: clime, nipos, sumpfralle
+
+### Review of the last weeks:
+* clime: collected a list of [open issues](https://git.linux-kernel.at/oliver/ivatar/issues?label_name%5B%5D=critical) to be resolved before switching to the new implementation
+* sumpfralle: postponed his task of adding documentation for using the retro avatar feature
 
 
 ## 2018-12-09

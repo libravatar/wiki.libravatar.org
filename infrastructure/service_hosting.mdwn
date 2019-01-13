@@ -2,7 +2,22 @@
 
 The instance *libravatar.org* is providing the [[open specification|api]] called *libravatar*. It is run by the [[libravatar project|project]].
 
+## Original implementation (up to the first quarter of 2019)
+
 The VM running the service is currently hosted by [Ingo Juergensmann](https://www.windfluechter.net/).
+
+*fmarier* has root access to the VM.
+
+
+## New 'ivatar' implementation (starting with the first quarter of 2019)
+
+The new VM is hosted on Fedora Infrastructure.
+
+The list of people (Fedora accounts) with root access to the VM can be found here:
+ * [production instance](https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/inventory/host_vars/libravatar.fedorainfracloud.org)
+ * [staging instance](https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/inventory/host_vars/libravatar-stg.fedorainfracloud.org)
+
+Clime (or the Fedora admins) can add more root account users.
 
 
 # Timeline

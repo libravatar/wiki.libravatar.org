@@ -1,0 +1,9 @@
+# DNS domains
+
+The project controls the following DNS domains:
+* libravatar.org
+* libravatar.com (redirect to .org)
+
+# Administration
+
+In January 2019 Francois Marrier transfers control of the domain to Clime and Falk.

@@ -13,7 +13,7 @@ The VM running the service is currently hosted by [Ingo Juergensmann](https://ww
 
 The new VM is hosted on Fedora Infrastructure.
 
-The list of people (Fedora accounts) with root access to the VM can be found here:
+The list of people (Fedora accounts) with root access to the VM can be found here (see `root_auth_users`):
 
 * [production instance](https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/inventory/host_vars/libravatar.fedorainfracloud.org)
 * [staging instance](https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/inventory/host_vars/libravatar-stg.fedorainfracloud.org)

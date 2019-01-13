@@ -1,6 +1,7 @@
 # DNS domains
 
 The project controls the following DNS domains:
+
 * libravatar.org
 * libravatar.com (redirect to .org)
 

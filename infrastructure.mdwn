@@ -1,5 +1,6 @@
 The [[libravatar project|project]] uses different resources for running its services and related things.
 
+* [DNS domain](DNS_domain): control of the DNS zone(s) related to the project
 * [mail domain](mail_domain): handling of mails for the domain libravatar.org (including a list of available addresses)
 * [backups](backups): how and where do we store backups of the data
 * [service hosting](service_hosting): where is the *libravatar.org* instance hosted

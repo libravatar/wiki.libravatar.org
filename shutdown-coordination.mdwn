@@ -16,13 +16,44 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2019-01-13 (Upcoming)
+## 2019-01-27 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2019-01-13, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190113T19&p1=%3A))
+* 2019-01-27, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190127T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2019-01-13
+
+* participants: clime, fmarier, nipos, sumpfralle, tleguern
+
+### Review of the last weeks:
+
+* the list of [open issues](https://git.linux-kernel.at/oliver/ivatar/issues?label_name%5B%5D=critical) went down to one item
+
+### Things to be considered for migrating to the new implementation?
+
+* SSL certificate for the new instance
+* people are invited to take a close look at the code with regard to security
+* we need a real plan
+    * to be discussed on the mailing list
+
+### Control over the DNS zone
+
+* a proper SSL certificate (e.g. via letsencrypt) will require DNS control (pointing a valid hostname to the new VM)
+* fmarier offered to hand over the domains
+    * libravatar.org and libravatar.com (just for redirects)
+* clime and ofalk were assumed to be good candidates for taking over the domain ownership
+* fmarier und clime/ofalk will sort out the transfer
+    * documented in the [wiki](infrastructure/DNS domain)
+
+
+### Administrative access to the new instance VM
+
+* clime shared root access to the new VM (via the ansible recipe of the VM) to nipos. tleguern and sumpfralle
+    * root access is not necessary for operation (since the system is built via ansible), but just for issue debugging
+    * current access is documented in the [wiki](infrastructure/hosting)
 
 
 ## 2018-12-30

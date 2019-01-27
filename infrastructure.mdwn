@@ -5,3 +5,4 @@ The [[libravatar project|project]] uses different resources for running its serv
 * [backups](backups): how and where do we store backups of the data
 * [service hosting](service_hosting): where is the *libravatar.org* instance hosted
 * [[setup instructions]] for the main instance
+* [wiki](wiki): access and administration of wiki.libravatar.org

@@ -16,7 +16,7 @@ local part | destination
 accounts | dev@
 admin | dev@
 dev | fmarier, ofalk
-dns | ofalk, sumpfralle, tleguern
+dns | clime, ofalk, sumpfralle, tleguern
 mirrors | dev@
 security | dev@
 social | dev@

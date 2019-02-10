@@ -19,7 +19,7 @@ dev | fmarier, ofalk
 dns | clime, ofalk, sumpfralle, tleguern
 mirrors | dev@
 security | dev@
-social | dev@
+social | clime, fmarier, ofalk
 support | dev@
 tls | dev@
 webmaster | dev@

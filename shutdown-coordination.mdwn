@@ -16,13 +16,36 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2019-01-27 (Upcoming)
+## 2019-02-10 (Upcoming)
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
-* 2019-01-27, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190127T19&p1=%3A))
+* 2019-02-10, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190210T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2019-01-27
+
+* participants: clime, fmarier, sumpfralle
+
+### Wiki Access
+
+* the wiki admin account is dev@libravatar.org - now this is documented in the [wiki](infrastructure/wiki)
+* just as a reminder for everyone: just click at *edit* and submit your email address in order to receive a one-time access token
+
+### Migration Plan
+
+* a few things will need to be taken care of:
+    * change of DNS
+    * early setup of the certificates for https
+* discussion about the date of migration and some more details
+
+### Mirrors
+
+* the current mirror setup will not work right from the start with ivatar
+* we will need to decide, whether we want to implement this feature again or maybe dismiss this feature
+    * it would be a nice feature and helpful for community building
+
 
 ## 2019-01-13
 

@@ -16,13 +16,17 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2019-02-10 (Upcoming)
+## 2019-02-17
 
 Everyone interested in supporting the libravatar project (code or service) is welcome!
 
 * 2019-02-10, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190210T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net
 * Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+## 2019-02-10
+
+!!!TO BE UPDATED!!!
 
 ## 2019-01-27
 

@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 This will be of interest only to admins who run a Libravatar master server using the <tt>libravatar-master</tt> package and who want to add a new slave.
 
 # Initial setup

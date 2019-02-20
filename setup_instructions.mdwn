@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 Here are some notes on how to setup the main `libravatar.org` server after
 you've installed Debian and the usual server packages.
 

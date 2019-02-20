@@ -9,12 +9,6 @@ There are a few more specific pages for particular profiles of contributors:
 
 as well as a few other ideas:
 
-# Hosting a [[mirror|run a mirror]]
-
-Given that Libravatar is a community project without a big corporate sponsor, we need help serving images.
-
-If you can spare a bit of disk space and bandwidth, please [get in touch](mailto:mirrors@libravatar.org), we would love your help in building a world-wide mirror network.
-
 # Advocacy
 
 If you don't fit into of the other categories, you are still more than welcome to join us:

@@ -74,7 +74,7 @@ Examples:
   <td align="center">![retro](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=retro)
   <br><tt>retro</tt></td>
   <td align="center">![robohash](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=robohash)
-  <br><tt>retro</tt></td>
+  <br><tt>robohash</tt></td>
   </tr></table>
 
 Note that if an image is not found in the Libravatar database and the hash algorithm used was **MD5**, then Libravatar will first redirect to Gravatar in case the image exists there. Then it will honour the <tt>default</tt> parameter.

@@ -1,3 +1,5 @@
+**TODO: what is this about?**
+
 [[!meta title="pages tagged person"]]
 
 [[!inline pages="tagged(person)" actions="no" archive="yes"

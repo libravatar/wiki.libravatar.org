@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 The Libravatar project is proud to support other [free-as-in-freedom](http://autonomo.us/2008/07/franklin-street-statement/) services:
 
 * [Branchable](http://www.branchable.com) ([blog](http://blog.libravatar.org) and [wiki](http://wiki.libravatar.org))

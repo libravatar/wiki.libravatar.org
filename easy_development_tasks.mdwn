@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 There are two places where we keep track of things to do in the project:
 
 * [Bug tracker](https://bugs.launchpad.net/libravatar): for bugs and suggested features in the code

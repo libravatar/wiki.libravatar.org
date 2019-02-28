@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 Depending on your interest and what programming languages you know, there are a few options to [[contribute]] to Libravatar:
 
 # Plugins / Libraries

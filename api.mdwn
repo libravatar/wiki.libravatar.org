@@ -59,6 +59,7 @@ A few special values are also allowed:
 * <tt>**wavatar**</tt>: return an image containing a random [wavatar](http://www.shamusyoung.com/twentysidedtale/?p=1462)
 * <tt>**retro**</tt>: return an image containing a random retro-looking, 8-bits arcade style pixel-art
 * <tt>**robohash**</tt>: return an image containing a random [robohash](https://robohash.org/)
+* <tt>**pagan**</tt>: return an image containing a random retro adventure game character using [pagan](https://github.com/daboth/pagan)
 
 Examples:
 
@@ -75,6 +76,8 @@ Examples:
   <br><tt>retro</tt></td>
   <td align="center">![robohash](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=robohash)
   <br><tt>robohash</tt></td>
+  <td align="center">![pagan](https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=80&d=pagan)
+  <br><tt>pagan</tt></td>
   </tr></table>
 
 Note that if an image is not found in the Libravatar database and the hash algorithm used was **MD5**, then Libravatar will first redirect to Gravatar in case the image exists there. Then it will honour the <tt>default</tt> parameter.
@@ -86,7 +89,7 @@ If the **default** parameter is robohash then a special sub-option can be used t
 
 ## Force default
 
-It is sometimes interesting to test the **default** option, even for hashes with matching avatars. This behaviour can be triggered by providing the extra parameter **forcedefault** or **f** to the URL with a value of **y**:
+It is sometimes interesting to test the **default** option, even for hashes with matching avatars. This behavior can be triggered by providing the extra parameter **forcedefault** or **f** to the URL with a value of **y**:
 
     http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=retro&f=y
 

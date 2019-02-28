@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 The following [[plugins|libraries]] have been suggested:
 
 * StatusNet

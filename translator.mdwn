@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 # Non-English speakers
 
 If you are fluent in another language than English, you can now make Libravatar speak your language through an [easy web interface](https://translations.launchpad.net/libravatar/trunk). No coding required!

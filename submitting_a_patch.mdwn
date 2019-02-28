@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 The preferred way to submit a patch is via Launchpad merge requests.
 
 # Launchpad merge requests

@@ -1,1 +1,3 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 [François Marier](https://fmarier.org), lead developer of Libravatar.

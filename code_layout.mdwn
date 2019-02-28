@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 Libravatar is a fairly simple [Django](http://www.djangoproject.org) application.
 
 Here's what you'll find in the [main repository](https://git.nzoss.org.nz/libravatar/libravatar):

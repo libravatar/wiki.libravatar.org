@@ -1,3 +1,5 @@
+**Needs updating: this refers to the pre-2019 service.**
+
 # Backups
 
 We do not want to loose the data of our users, thus we keep backups.

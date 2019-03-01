@@ -1,12 +1,8 @@
-**Obsolete: this page refers to the pre-2019 Libravatar service.**
-
 # Reporting security bugs
 
 If you discover a security issue in Libravatar, please report it to us privately so that we can push a fix to the main service before disclosing the problem publicly. We will credit you publicly (unless you don't want to) with this discovery.
 
-The best way to do that is to file a security bug on our [bug tracker](https://bugs.launchpad.net/libravatar/+filebug). Make sure you change the bug visibility (see "This bug contains information that is") to **Private Security**.
-
-Alternatively, you can talk to us at [security@libravatar.org](mailto:security@libravatar.org).
+To do so, talk to us at [security@libravatar.org](mailto:security@libravatar.org).
 
 We will do our best to respond to you within 24-48 hours.
 

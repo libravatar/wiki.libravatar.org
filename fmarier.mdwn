@@ -1,1 +1,3 @@
 [François Marier](https://fmarier.org), founder of the Libravatar project and former lead developer
+
+[[!tag person]]

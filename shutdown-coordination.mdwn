@@ -20,7 +20,7 @@ Everyone interested in supporting the libravatar project (code or service) is we
 
 ## 2019-03-03
 
-Topics:
+## Topics
 
 Raised by fmarier:
 
@@ -30,7 +30,7 @@ Raised by fmarier:
 
 clime will take care of the above next week.
 
-* Marketing
+### Marketing
 
 Blog post about new libravatar: https://public.etherpad-mozilla.org/p/libravatar-blog
 Will be a living document, until we agree on the final version via m/l.
@@ -38,7 +38,7 @@ Niklas[m]1 is going to start this.
 We should have this ready, latest, by end of next week.
 Niklas[m]1 will also create an account on Mastodon and will let clime and ofalk know the password.
 
-* Other
+### Other
 
 Feedback from Niklas[m]1: everything seems to work fine.
 

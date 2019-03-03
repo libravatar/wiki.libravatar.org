@@ -20,7 +20,7 @@ Everyone interested in supporting the libravatar project (code or service) is we
 
 ## 2019-03-03
 
-## Topics
+Topics
 
 Raised by fmarier:
 

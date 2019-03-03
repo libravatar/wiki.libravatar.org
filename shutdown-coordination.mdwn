@@ -20,9 +20,7 @@ Everyone interested in supporting the libravatar project (code or service) is we
 
 ## 2019-03-03
 
-Topics
-
-Raised by fmarier:
+### Topics raised by fmarier:
 
 * backups (DB + app)
 * automatic letsencrypt cert renewal

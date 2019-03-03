@@ -16,9 +16,17 @@ Please join the communication channels:
 
 # IRC meetings
 
-## 2019-02-17
-
 Everyone interested in supporting the libravatar project (code or service) is welcome!
+
+## 2019-03-03
+
+Topics:
+
+* backups (DB + app)
+* automatic letsencrypt cert renewal
+* domain transfer
+
+## 2019-02-17
 
 * 2019-02-10, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190210T19&p1=%3A))
 * channel `#libravatar` at irc.freenode.net

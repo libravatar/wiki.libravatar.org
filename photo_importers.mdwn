@@ -1,22 +1,10 @@
-**Obsolete: this page refers to the pre-2019 Libravatar service.**
-
 In addition to allowing users to upload their own photos, Libravatar can also import photos from other websites.
 
 # Automatic importers
 
-For websites which allow photo lookups based on an email address, Libravatar is able to automatically import these images at soon as a user confirm an email address.
+For websites which allow photo lookups based on an email address, Libravatar is able to automatically import these images as soon as a user confirm an email address.
 
 The following automatic importers are currently enabled:
 
 * [Gravatar](http://www.gravatar.com)
-* [Identica](http://identi.ca)
-
-# Manual importers
-
-There are also lots of websites which host photos for their users, but for which Libravatar cannot automatically guess the correct search key. In this case, users must provide some information to import their photos (e.g. a username).
-
-This is not yet implemented but will most likely be part of the upload photo screen.
-
-# Future importers
-
-Our bug tracker has a [list of importers](https://bugs.launchpad.net/libravatar/+bugs?field.tag=photoimporter) we are planning to add. Please feel free to add to this list by [filing a new bug](https://bugs.launchpad.net/libravatar/+filebug).
+* Other Libravatar instances

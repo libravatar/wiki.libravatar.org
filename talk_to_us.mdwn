@@ -12,15 +12,15 @@ Please keep in mind that you may live in a different timezone than most of the d
 
 If you have a question about a particular bug, or some feedback on it, the best thing to do is to comment on that bug itself.
 
-We use [Launchpad](https://bugs.launchpad.net/libravatar) as our bug tracker.
+We use [Gitlab](https://git.linux-kernel.at/oliver/ivatar/issues) as our bug tracker.
 
 # Mailing list
 
 If you've got a proposal to discuss or prefer to write to us, you can join [our developers mailing list](https://launchpad.net/~libravatar-fans#mailing-lists).
 
-# Identica / Twitter
+# Micro-blogging
 
-Finally, you can also put short notices to our attention on [Identica](http://identi.ca/libravatar) or [Twitter](http://twitter.com/libravatar).
+Finally, you can also put short notices to our attention on [Identica](http://identi.ca/libravatar), [Twitter](http://twitter.com/libravatar) or [Mastodon](https://photog.social/@libravatar).
 
 # Email
 

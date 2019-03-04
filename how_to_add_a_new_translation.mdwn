@@ -1,3 +1,5 @@
+**Obsolete: this page refers to the pre-2019 Libravatar service.**
+
 Here is the current list of steps required to add a new po-based translation to the Libravatar codebase:
 
 1. get the po file from the [Launchpad repo](https://code.launchpad.net/~libravatar/libravatar/libravatar-po)

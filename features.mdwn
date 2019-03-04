@@ -20,13 +20,13 @@ Text-based profile information    | &mdash;                                     
 **LDAP** authentication           | Yes                                                  | &mdash;
 **OpenID** authentication         | Yes                                                  | &mdash;
 Automatic photo **importers**     | [[Yes|photo importers]]                              | &mdash;
-Translated user interface         | [Yes](https://translations.launchpad.net/libravatar) | [Yes](http://en.gravatar.com/site/translations/)
+Translated user interface         | No                                                   | [Yes](http://en.gravatar.com/site/translations/)
 Account **export**                | Yes                                                  | &mdash;
 Account **deletion**              | Yes                                                  | [No](http://en.gravatar.com/site/faq/#answer-1-7)
 XMLRPC API                        | &mdash;                                              | Yes
 Libraries/plugins available       | [[Some|libraries]]                                   | [Lots](http://en.gravatar.com/site/implement/images/libraries/)
 **Free and Open Source software** | [Yes](http://www.gnu.org/licenses/agpl.html)         | [No](http://blog.gravatar.com/2010/05/31/gravatar-localization/#comment-8749)
-Distributed service               | [[Community mirrors|run a mirror]]                   | Commercial CDN
+Distributed service               | Yes                                                  | Commercial CDN
 Corporate owner                   | &mdash;                                              | [Automattic](http://automattic.com/)
 """]]
 

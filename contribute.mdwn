@@ -17,4 +17,4 @@ If you don't fit into of the other categories, you are still more than welcome t
 * subscribe to our [mailing list](http://libravatar.onlinegroups.net/groups/libravatar-devel)
 * blog about Libravatar
 
-And of course, feel free to [submit feature requests](https://bugs.launchpad.net/libravatar/+filebug) against your favourite applications to add support for Libravatar.
+And of course, feel free to against your favourite applications to add support for Libravatar.

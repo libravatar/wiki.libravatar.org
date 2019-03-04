@@ -1,0 +1,491 @@
+Everyone interested in the [libravatar project](libravatar) is kindly invited to join the periodic IRC meetings.
+
+The meetings are happening bi-weekly on Sundays at 19:00 UTC in the `#libravatar` channel on `irc.freenode.net`.
+
+[[!toc levels=1]]
+
+
+# 2019-03-03
+
+Participants: clime, Niklas[m]1, tleguern, ofalk (alias falko)
+
+## Topics raised by fmarier
+
+* backups (DB + app)
+* automatic letsencrypt cert renewal
+* domain transfer
+
+clime will take care of the above next week.
+
+## Marketing
+
+* Blog post about new libravatar: https://public.etherpad-mozilla.org/p/libravatar-blog
+* Will be a living document, until we agree on the final version via m/l.
+* Niklas[m]1 is going to start this.
+* We should have this ready, latest, by end of next week.
+* Niklas[m]1 will also create an account on Mastodon and will let clime and ofalk know the password.
+
+## Other
+
+Feedback from Niklas[m]1: everything seems to work fine.
+
+
+# 2019-02-17
+
+* 2019-02-10, 19:00 UTC (see [local times](https://www.timeanddate.com/worldclock/fixedtime.html?msg=Libravatar+Future&iso=20190210T19&p1=%3A))
+* channel `#libravatar` at irc.freenode.net
+* Preparation / Agenda: <https://pad.riseup.net/p/libravatar-future-irc> (please add your topics / proposals / ideas)
+
+# 2019-02-10
+
+!!!TO BE UPDATED!!!
+
+# 2019-01-27
+
+* participants: clime, fmarier, sumpfralle
+
+## Wiki Access
+
+* the wiki admin account is dev@libravatar.org - now this is documented in the [wiki](infrastructure/wiki)
+* just as a reminder for everyone: just click at *edit* and submit your email address in order to receive a one-time access token
+
+## Migration Plan
+
+* a few things will need to be taken care of:
+    * change of DNS
+    * early setup of the certificates for https
+* discussion about the date of migration and some more details
+
+## Mirrors
+
+* the current mirror setup will not work right from the start with ivatar
+* we will need to decide, whether we want to implement this feature again or maybe dismiss this feature
+    * it would be a nice feature and helpful for community building
+
+
+# 2019-01-13
+
+* participants: clime, fmarier, nipos, sumpfralle, tleguern
+
+## Review of the last weeks:
+
+* the list of [open issues](https://git.linux-kernel.at/oliver/ivatar/issues?label_name%5B%5D=critical) went down to one item
+
+## Things to be considered for migrating to the new implementation?
+
+* SSL certificate for the new instance
+* people are invited to take a close look at the code with regard to security
+* we need a real plan
+    * to be discussed on the mailing list
+
+## Control over the DNS zone
+
+* a proper SSL certificate (e.g. via letsencrypt) will require DNS control (pointing a valid hostname to the new VM)
+* fmarier offered to hand over the domains
+    * libravatar.org and libravatar.com (just for redirects)
+* clime and ofalk were assumed to be good candidates for taking over the domain ownership
+* fmarier und clime/ofalk will sort out the transfer
+    * documented in the [wiki](infrastructure/DNS domain)
+
+## Administrative access to the new instance VM
+
+* clime shared root access to the new VM (via the ansible recipe of the VM) to nipos. tleguern and sumpfralle
+    * root access is not necessary for operation (since the system is built via ansible), but just for issue debugging
+    * current access is documented in the [wiki](infrastructure/hosting)
+
+
+# 2018-12-30
+
+* participants: clime, nipos, sumpfralle
+
+## Review of the last weeks:
+* clime: collected a list of [open issues](https://git.linux-kernel.at/oliver/ivatar/issues?label_name%5B%5D=critical) to be resolved before switching to the new implementation
+* sumpfralle: postponed his task of adding documentation for using the retro avatar feature
+
+
+# 2018-12-09
+
+* participants: clime, fmarier, nipos, tleguern, sumpfralle
+
+## Review of the last weeks
+* nipos: small design improvements (not all being merged, yet)
+* clime: imported the existing dataset to the instance at [libravatar.fedorainfracloud.org](https://libravatar.fedorainfracloud.org/)
+* ofalk (who could not attend today) prepared a list of changes in the pad - we discussed these in the remainder of the meeting
+
+## Gravatar fallback
+* ofalk implemented this feature: [issue #22](https://git.linux-kernel.at/oliver/ivatar/issues/22)
+* requests are proxied via the `/gravatarproxy/` path
+* we exchanged a bit of thoughts, whether it is a good idea to use a vendor's name as a query argument name (not its value)
+* some proposed (wild and spontaneous) suggestions:
+    * `?allow_fallback=y&fallback_method=redirect&fallback_providers=gravatar,foobar,baz,acme`
+    * `?fallback=redirect&provider=gravatar`
+* we leave it up to ofalk to determine the proper approach
+
+## Export from original implementation / import into ivatar implementation
+* ofalk wrote an xml-based export for the original implementation
+    * one file per account
+    * code: [https://git.linux-kernel.at/oliver/ivatar/blob/libravatar_export/exportaccounts.py](https://git.linux-kernel.at/oliver/ivatar/blob/libravatar_export/exportaccounts.py)
+* the result tarball can be imported into ivatar
+    * code: [https://git.linux-kernel.at/oliver/ivatar/blob/master/import_libravatar.py](https://git.linux-kernel.at/oliver/ivatar/blob/master/import_libravatar.py)
+* we discussed the usefulness of the `ip_address` field of each *photo* object
+    * probably it can be discarded, since we do not want to store such data
+
+## Theme switching
+* ofalk implemented it: [issue #8](https://git.linux-kernel.at/oliver/ivatar/issues/8)
+* the *red* and the *green* themes work
+* Clime's theme: Upcoming
+
+## Retro avatars
+* ofalk implemented this feature
+* tleguern suggested, that we should document, which code ivatar uses
+* this would allow alternative implementations to provide a similar visualization
+* the current code: [https://git.linux-kernel.at/oliver/ivatar/blob/master/ivatar/views.py#L148](https://git.linux-kernel.at/oliver/ivatar/blob/master/ivatar/views.py#L148)
+* sumpfralle will add a bit of documentation
+
+## API documentation
+* ofalk listed some items that deserve improvements:
+    * state what to do in case of bad input
+    * clearly write the default value of the “default” option (ie: `d=http://cdn.libravatar.org/static/nobody/80.png`)
+    * add `default=blank` like Gratavar does?
+    * describe a mechanism to programmatically know which “default” values are accepted by a given implementation?
+* ofalk: "I think a lot of docs need to be written for the possible and especially the new options"
+* tleguern volunteered to work on the documentation
+
+## Robohash
+* ofalk implemented a first draft: [issue #13](https://git.linux-kernel.at/oliver/ivatar/issues/13)
+* we had fun exchanging our random robohash visualizations
+* nipos volunteered to add a bit of documentation for that feature (without duplicating robohash's documentation)
+
+## OpenID
+* ofalk briefly mentioned in his notes some progress (without details)
+
+## Next meeting
+* due to the proximity to Christmas, we will have our next meeting in *three* weeks (2018/12/30)
+
+
+# 2018-11-25
+
+* participants: clime, ofalk, nipos, sumpfralle
+
+## Review of the last weeks
+* falko: finished a script exporting the user data from an old implementation into separate xml files for each user
+    * the passwords are not exported (as discussed before)
+
+## Fallback to gravatar?
+* falko proposed the following:
+    * by default the API will proxy a request over to gravatar if the requested avatar is not known
+    * this default behaviour can be overridden via a query argument for every request
+        * thus the client implementation decides, whether the fallback is used
+    * it would be great (for improved privacy) if we could proxy these fallback requests (instead of sending a redirect)
+    * maybe the account settings of a libravatar user could also be taken into account for the fallback behaviour (exposed via session cookies)
+* opinions or thoughts are welcome in the [related issue #22](https://git.linux-kernel.at/oliver/ivatar/issues/22)
+
+## cdn.libravatar.org and seccdn.libravatar.org
+* these domains are used by the API clients (see the [api specification](https://wiki.libravatar.org/api/))
+* clime will configure these sub-domains on the fedora server
+
+## wiki style
+* nipos took a deep look at the possibility to theme the wiki in the style of the future libravatar website
+* it does not seem to be possible :(
+* the participants of the meeting did not consider this to be a real problem (but it would have been nice!)
+
+## robohash
+* should we support [robohash](http://robohash.org/)?
+* please raise your voice (by up- or down-voting) in [issue #13](https://git.linux-kernel.at/oliver/ivatar/issues/13)
+
+
+# 2018-11-11
+
+* participants: clime, nipos, sumpfralle, tleguern
+
+## Review of the last weeks
+* falko: import of data from old implementation / instance works; needs more tests
+* clime: the staging instance now gets rebuild on every change (of the related ansible repository)
+* tleguern: worked on more tests and noticed a few details with the old and new implementation
+
+## Fallback to gravatar?
+
+During the last meeting the need for a discussion about the *fallback to gravatar* feature was apparent. But since fmarier and falko were not around today (both raised diverging opinions on this matter), we postponed the discussion to the next meeting.
+
+## .well-known/avatars
+
+We discussed a bit about the alternative to the DNS-SRV-based service discovery (more accessible for javascript frontend code, since DNS requests are not accessible). We will continue the discussion on the mailinglist.
+
+## Other things
+
+* tleguern mentioned differences between the API specification and the real implementations
+* unit193 appreciates the OpenID support of the new implementation
+
+
+# 2018-10-28
+
+* participants: clime, falko, fmarier, nipos, sumpfralle, tleguern
+
+## Review of the last weeks
+* falko: all names stay unchanged ("libravatar") - only the new software will be named "ivatar"
+* sumpfralle: added a bit of documentation for the [project](https://wiki.libravatar.org/project/) and [infrastructure](https://wiki.libravatar.org/infrastructure/)
+
+## Tests
+* tleguern created some [shell-based tests for the API](https://github.com/Aversiste/libravatar.cgi/blob/master/regress/regress.sh)
+    * it can probably be used for comparing the behaviour of the old and the new implementation
+
+## Automatic deployment
+* clime will prepare automatic deployment of code updates to the staging instance at <https://libravatar-stg.fedorainfracloud.org>
+
+## Design for wiki
+* nipos will take a look at the possible theming of the wiki instance (<https://wiki.libravatar.org>)
+
+## Backup
+* fmarier will add falko's gpg key to the backup encryption
+
+## Data migration
+* falko will take a look at the export of data from the current instance into the new staging instance
+* mail addresses will be mangled in order to prevent accidental mailings to real users
+    * the outgoing mail setup should also be disabled
+
+## Topics for the next meeting
+* should we keep the "fallback to gravatar" feature? (currently implemented within libravatar)
+    * fmarier argued for keeping it
+    * falko's opinion differs
+
+# 2018-10-14
+
+* participants: clime, fmarier, sumpfralle, tleguern
+
+## Review of the last weeks
+* clime: new implementation (for testing) is available on fedora infrastructure:
+    * http://libravatar.fedorainfracloud.org/
+    * http://libravatar-stg.fedorainfracloud.org/
+* fmarier & sumpfralle: mail and backup was moved
+
+## Data migration
+* before we can switch to the new implementation, we will need to migrate the existing data
+* this may partly be done via Django migrations (with some manual fiddling)
+* the current filesystem based storage (images?) need to be moved to the database
+* maybe ofalk or clime could do this, but volunteers are certainly welcome!
+* sumpfralle will send a request for activity / volunteers to the mailing list
+
+## Mail handling
+* the mail domain is now handled https://systemausfall.org/ (via sumpfralle)
+* existing forwards are put in place
+* we had a longer discussion about whether we want to allow private email addresses (john.doe@libravatar.org) fo contributors
+* there was a slight tendency towards *yes* (with some reluctance expressed by others)
+* sumpfralle will send a summary of the state and how to use it to the mailing list
+
+## Project name
+* we continued a bit on the discussion, whether a name change would be necessary/helpful for some reason
+* clime will take a look at the details and send a follow-up to the mailing list
+
+
+# 2018-09-30
+
+* participants: clime, ij, ofalk, sumpfralle, tleguern
+
+## Review of the last weeks
+* ofalk: some more progress with the code
+* clime: no significant progress with the deployment - this will change in the next week
+
+## Project name
+* ofalk raised the issue, that the fedora people (to be responsible for hosting the service) raised concerns regarding the licensing / trademark of the name "libravatar" and its logo
+    * details: https://pagure.io/design/issue/613
+* ofalk will open this discussion on the mailing list
+
+## Regular IRC meetings
+* we discussed, whether we want to continue having periodic IRC meetings
+* most people expressed their preference for keeping the biweekly IRC meetings
+    * no objections were raised
+* so we will continue to meet every two weeks on Sunday evening at 19 UTC
+
+## Who is "we"?
+* we discussed, whether a legal entity would be required for the project
+    * all participants preferred to avoid this
+    * ofalk would be willing to register the domain (and thus being the only publicly identifiable person responsible for the service)
+        * people expressed their willingness to share the related costs
+* proposed self description of the group:  `We are the group of people involved with developing the software and maintaining the service currently known as "libravatar". This entity does not have a legal status. We are just a group of people. We use a mailinglist and an IRC channel for discussions and decisions.`
+
+# 2018-09-02
+
+* participants: falko, fmarrier, nipos, sumpfralle, tleguern
+
+## Infrastructure
+* we will use the OpenStack infrastructure from Fedora (instead of OpenShift)
+
+## Current state of development =
+* Design:
+    * Two links in the header nav link to nowhere
+* image size issue (size=0 and size=) is fixed
+* structure is similar to the previous code
+* original pictures are stored in the database
+* resized variations are rendered on demand
+    * caching/something may follow (at the appropriate place)
+* the lack of a filesystem-based storage will be challenging for potential mirrors
+    * we will discuss this (and potential changes), after the new code is deployed
+
+## Data migration
+As soon as we think that the new implementation is ready, we can migrate the data.
+
+* prepare export and import scripts
+* migrate everything, except for the passwords
+    * remind people of the existence of libravatar :)
+    * improve password hash quality
+    * allow cleanup stale/unused accounts after a while
+
+## Migration process
+* send a mail in advance: inform about the change to a new platform and the new group of "us"
+* migrate the data; shutdown the original host (thanks, ij!)
+* send a mail requesting users to set a new password
+
+## Mail-Domain
+* sumpfralle offered to forward mails for the few @libravatar.org accounts to the respective people
+    * dev, tls, support, postmaster, ...
+* outgoing mail is handled by the server itself
+
+## Backup
+* currently fmarrier provides the backup space (< 10GB)
+* sumpfralle offered space with ssh access
+
+
+# 2018-08-19
+
+* Participants: clime, nipos, sumpfralle
+
+## Review
+
+What happened during the last two weeks?
+
+* fmarier moved the libravatar service the new VM provided by ij (2018-08-13)
+* nipos got the new libravatar code running (preparing his design work)
+
+## Hosting the service on Fedora infrastructure
+
+* clime communicated with Fedora people
+* we will be able to host the libravatar on their infrastructure
+* the host will be managed by the Fedora infrastructure team
+* probably clime and oliver will have administrative access and will care for the hosting details of libravatar for the forseeable future
+    * administrative access by non-Fedora people is probably not trivial/possible (it is unclear, if there is demand for that)
+* The steps for the migration of the current hosting (with the old implementation) to Fedora infrastructure are the following:
+    * prepare an ansible playbook for setting up the system for the service
+    * run a one-time data migration from ij's VM
+    * do a bit of tests with the new deployment
+    * trigger a final data migration from ij's VM and switch the DNS entries to the new IP of the Fedora host
+* clime will work on this
+* **Please note**: we were only three people discussing this, thus the plan currently does not rest on broad explicit acceptance. Please raise your voice, if you see problems with this strategy.
+
+## Hosting of git repositories
+
+We will probably use git repositories for hosting the code, the ansible playbook and maybe more.
+
+* clime suggested pagure.io
+* if we use the Fedora hosting, the ansible playbook would probably be part of https://infrastructure.fedoraproject.org/cgit/ansible.git
+    * sync with pagure.io should be no problem (for issue reporting and so on)
+* other hosting services (running on free software) would be acceptable, too
+
+
+# 2018-08-05
+
+* Participants: fmarier, ij, kumy, nipos, opal, sumpfralle, tklk, tleguern
+
+## Review
+
+What happened during the last week?
+
+* new mirror set up by Asako
+* new VM is up with double RAM (compared to the current one)
+    * fmarier has ssh access to the vm (root) - he will install the service and migrate data in the next days
+
+
+## GDPR
+What do we need to do with regards to handling of personal data. Can we migrate the old data?
+
+### Which data is currently stored?
+
+* email adresses: for password resets - although emails can be hashed and still be used for this purpose (even though emails can be removed, this might not be great UX as users don't know which accounts they are assigning an avatar to)
+* username: for logging in
+* uploaded photos: obvious primary use of the service
+* linked OpenIDs
+* login cookie
+* we used to store ip addresses but it's all gone
+* IP adresses in server logs
+* On mirrors, `mod_removeip` is enabled -> no IPs are logged
+* On master access logs are stored for 10 days (currently with ips)
+* We do not store any IP address starting at 05/08/18 19:26 UTC - in 10 days, no IP remains in the logs
+
+### Should / could we do something at the moment?
+
+* suggestion of mass email (no consent given by users to have mass emails, so I'm against this) to me this seems like a special case and falls under the category of "important email" in order to follow legislation
+* add checkbox for new accounts that they've accepted TOS/Privacy policy
+* add terms of use/privacy policy
+* We have support for data deletion and export since first release (as wanted by the GDPR).
+* We miss a "privacy policy" text.
+    * opal offered to write a text for libravatar.
+
+Summary: we think, we are currently complying with law requirements. We will take a closer look at the new implementation with regards to opt-in and privacy policy.
+
+## Evaluate the state of the new implementation
+
+Neither Oliver nor clime present, thus we skipped this topic.
+
+## Discuss the hosting options for the new implementation
+
+* Where does code hosting go? does it stay with launchpad (peferably pagure to move everything to fedora infra)
+* Domain transfer- where does it go? (preferably fedora, instead of individual to reduce bus factor)
+* DigitalOcean would probably sponsor something (for 1 year only?)
+* smurf offered hosting too
+* No final decisions were made. Maybe collect options and pros/cons in the wiki and via the mailing list?
+
+## Discuss about new design concept
+
+Nipos proposed a design concept: <https://codepen.io/niklasposlovski/full/RByopx/>
+
+* design is appreciated by all participants
+* license is fine
+* bootstrap v3: "compatible" older version is preferable over v4
+* we discussed a bit about the icon to be used
+  <https://github.com/libravatar/libravatar/blob/7d3e069e18927df7d5e05bccdca7215210dd8063/static/img/libravatar_logo.svg>
+* next step: nipos will fork <https://git.linux-kernel.at/oliver/ivatar> and integrate the new design
+
+## Various details
+
+* "Mirrors may not require SNI": <https://wiki.libravatar.org/how_to_add_a_mirror_slave_to_the_mirror_master/>
+    * probably we should lift this requirement? (only elinks seems to lack support for SNI)
+* Mirrors running in a Docker container for easier setup?
+* Mirrors are tied to the Debian package implementation (crons), what about other distros? (Alpine, Arch)
+* Drop HTTP support to HTTPS only - HSTS?
+
+
+# 2018-07-29
+
+* Participants (IRC nicknames): clime, ij, fmarier, kumy, nipos, ofalk, sumpfralle, tleguern
+* Challenges of our endeavour:
+    * organize a new development group / process
+    * organize a new hosting setup / group
+* Software implementation options:
+    * A) improve the current implementation
+    * \B) Oliver's new Django-based implementation
+    * C) Matti's implementation in golang
+    * D) tleguern's C-based implementation (targetted at self-hosting people)
+    * Conclusion: we decided for B
+* Discussion topics:
+    * if/how to keep the data of existing users
+    * handling of GDPR issues when transferring the user's data to a new operator team
+    * different hosting options (long-term)
+    * future communication channels
+* Goals:
+    * Goal #1: Do we want to continue the service longer than September this year?
+        * everyone agrees
+    * Goal #2: Do we want to continue offering the service past September with the current dataset of users? (GDPR issues will have to be solved for that)
+        * majority agrees
+            * clime is concerned about the service downtime (avatars being available for all users at all times) during data migration
+* Migration plan: fmarier will help migrate the current setup (code + data) to a new VM and admits to operate that for up to two months longer (end of November). Meanwhile we are rushing to resolve GDRP issues and migrate the data to the new implementation and get that live as soon as possible. This will relieve fmarier from the service.
+* Actions:
+    * fmarier and ij will migrate the service as-is to a new VM
+    * ofalk will review potentially missing features of his implementation
+    * nipos will try to prepare something for the new web interface
+* Communication & Meetings:
+    * everyone interested should subscribe to the mailing list: <https://launchpad.net/~libravatar-fans>
+    * next IRC meeting: 2018-08-05, 19:00 UTC, #libravatar at freenode
+        * afterwards: biweekly meetings
+* Next issues to be discussed:
+    * GDPR: can we migrate the old data?
+    * Evaluate the state of the new implementation.
+    * Discuss the hosting options for the new implementation.

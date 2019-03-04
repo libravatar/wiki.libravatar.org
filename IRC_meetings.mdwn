@@ -7,7 +7,7 @@ The meetings are happening bi-weekly on Sundays at 19:00 UTC in the `#libravatar
 
 # 2019-03-03
 
-Participants: clime, Niklas[m]1, tleguern, ofalk (alias falko)
+Participants: clime, nipos, tleguern, ofalk (alias falko)
 
 ## Topics raised by fmarier
 
@@ -21,13 +21,13 @@ clime will take care of the above next week.
 
 * Blog post about new libravatar: https://public.etherpad-mozilla.org/p/libravatar-blog
 * Will be a living document, until we agree on the final version via m/l.
-* Niklas[m]1 is going to start this.
+* nipos is going to start this.
 * We should have this ready, latest, by end of next week.
-* Niklas[m]1 will also create an account on Mastodon and will let clime and ofalk know the password.
+* nipos will also create an account on Mastodon and will let clime and ofalk know the password.
 
 ## Other
 
-Feedback from Niklas[m]1: everything seems to work fine.
+Feedback from nipos: everything seems to work fine.
 
 
 # 2019-02-17

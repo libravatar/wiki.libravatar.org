@@ -15,11 +15,11 @@ Only mail forwarding is configured. There are no real mail boxes.
 local part | destination
 accounts | dev@
 admin | dev@
-dev | fmarier, ofalk
+dev | ofalk
 dns | clime, ofalk, sumpfralle, tleguern
 mirrors | dev@
 security | dev@
-social | clime, fmarier, nipos, ofalk
+social | clime, nipos, ofalk
 support | dev@
 tls | dev@
 webmaster | dev@

@@ -1,7 +1,8 @@
-**Obsolete: this page refers to the pre-2019 Libravatar service.**
-
 The Libravatar project is proud to support other [free-as-in-freedom](http://autonomo.us/2008/07/franklin-street-statement/) services:
 
 * [Branchable](http://www.branchable.com) ([blog](http://blog.libravatar.org) and [wiki](http://wiki.libravatar.org))
 * [Identica](http://identi.ca) ([micro-blogging](http://identi.ca/libravatar))
-* [Launchpad](https://launchpad.net) ([code hosting](https://code.launchpad.net/~libravatar/libravatar/+git/libravatar), [bug tracker](https://bugs.launchpad.net/libravatar), [translations](https://translations.launchpad.net/libravatar), [code mirror](https://code.launchpad.net/libravatar) and [mailing list](https://launchpad.net/~libravatar-fans))
+* [Mastodon](https://joinmastodon.org/) ([micro-blogging](https://photog.social/@libravatar))
+* [Gitlab](https://about.gitlab.com/) ([code hosting](https://git.linux-kernel.at/oliver/ivatar/), [bug tracker](https://git.linux-kernel.at/oliver/ivatar/issues))
+* [Freenode](https://freenode.net/) ([IRC channel](ircs://chat.freenode.net/#libravatar))
+* [Launchpad](https://launchpad.net) ([translations](https://translations.launchpad.net/libravatar) and [mailing list](https://launchpad.net/~libravatar-fans))

@@ -39,7 +39,7 @@ postmaster | systemausfall.org
 local part | owner / destination
 clime | clime
 falko | ofalk
-fmarier | fmarier
+francois | fmarier
 niklas.poslovski | nipos
 ofalk | ofalk"""]]
 

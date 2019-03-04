@@ -1,6 +1,6 @@
 # Wiki
 
-The wiki instance [wiki.libravatar.org](https://wiki.libravatar.org/) is kindly provided by [branchable.com](https://branchable.com/).
+The wiki instance [wiki.libravatar.org](https://wiki.libravatar.org/) is powered by [ikiwiki](https://ikiwiki.info/) and kindly provided by [branchable.com](https://branchable.com/).
 
 Editing is open for everyone.
 

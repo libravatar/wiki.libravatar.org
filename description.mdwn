@@ -41,11 +41,8 @@ There are lots of other things in the [pipeline](https://bugs.launchpad.net/libr
 The basic architecture is meant to be simple and scalable:
 
 1. Users log into a dynamic [Django](http://www.djangoproject.com)-based site where they upload their photos and confirm their email or OpenID addresses.
-1. Uploaded photos are cropped, resized and optimised one after the one using [Gearman](http://gearman.org) to ensure that the server is not overloaded.
-1. Once the slow operations finish, the final image files are stored on disk with a filename corresponding to the email/OpenID address hashes.
-1. These photos are then replicated to all of the [[mirrors|run a mirror]] which serve them as static files directly to end-user browsers.
-
-<img src="architecture.png" width="600" height="433">
+2. Pictures from Gravatar and other Libravatar instances are proposed for import.
+3. Et voilà!
 
 If you're interested in the details of how third-party websites display Libravatar photos, have a look at [[our API|api]]. The gist of it is that clients get a base URL via a DNS lookup and then tack on the hashed value of the user's email or OpenID address to form the final image:
 

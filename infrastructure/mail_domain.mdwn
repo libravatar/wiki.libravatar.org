@@ -15,7 +15,7 @@ Only mail forwarding is configured. There are no real mail boxes.
 local part | destination
 accounts | dev@
 admin | dev@
-dev | ofalk
+dev | clime, ofalk
 dns | clime, ofalk, sumpfralle, tleguern
 mirrors | dev@
 security | dev@

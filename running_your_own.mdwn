@@ -17,28 +17,21 @@ ivatar | The software that will run the next generation libravatar.org | web-bas
 """]]
 
 
-
 # libravatar.org
-The following instructions are about the official libravatar.org software.
 
+The following instructions are about the official libravatar.org software.
 
 ## System requirements
 
-You can find the latest system requirements in the [installation instructions](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/INSTALL.md) that come with the software, but Libravatar has been confirmed to work on [Debian 8](http://www.debian.org/releases/jessie/) (jessie).
-
-## Getting the code
-
-We are not currently doing regular releases of the code, but you can easily get the latest copy from our [git repository](https://git.nzoss.org.nz/libravatar/libravatar):
-
-    git clone https://git.nzoss.org.nz/libravatar/libravatar.git
+Libravatar needs a Python3 and a few python packages, so any modern operating system will do. It as been confirmed to work on CentOS and OpenBSD.
 
 ## Installation
 
-Once you've got a copy of the code, follow the instructions in the [INSTALL](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/INSTALL.md) file.
+Once you've got a copy of the code, follow the instructions in the [INSTALL](https://git.linux-kernel.at/oliver/ivatar/blob/master/INSTALL.md) file.
 
 ## Configuration
 
-A number of options can be customised in the libravatar/settings.py file. If there's anything that's unclear in there, please [file a bug](https://bugs.launchpad.net/libravatar/+filebug) against the project so that we know how to improve the documentation.
+XXX: To be defined.
 
 ## DNS setup
 
@@ -47,11 +40,13 @@ Once your instance is running on a publicly-accessible server (<tt>avatars.examp
     _avatars._tcp.example.com.     IN SRV 0 0 80  avatars.example.com
     _avatars-sec._tcp.example.com. IN SRV 0 0 443 avatars.example.com
 
-The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server whereas the second one (<tt>\_avatars-sec.\_tcp</tt>) is for an HTTPS server (if you have one).
+The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server whereas the second one (<tt>\_avatars-sec.\_tcp</tt>) is for an HTTPS server. Nowadays unencrypted HTTP traffic is frowned upon so feel free to redirect your http endpoints to the HTTPS one.
 
-Note that these servers do not have to be running [Libravatar](https://launchpad.net/libravatar) themselves, but they do have to implement the same [[protocol/API|API]]</a>.
+This step is the same with any other implementation of the [[protocol/API|API]].
 
 ### TTL
+
+XXX: Currently not true.
 
 The time-to-live (cache expiry) should be set to **at least 1 day** (86400 seconds).
 
@@ -74,4 +69,4 @@ You may however use weights to spread the load across more than one avatar serve
 
 ### Testing
 
-Once you have these records, have a look at the [domain check tool](https://www.libravatar.org/tools/check_domain) to make sure everything is working.
+Once you have these records, have a look at the [domain check tool](https://www.libravatar.org/tools/check) to make sure everything is working.

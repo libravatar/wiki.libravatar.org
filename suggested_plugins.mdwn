@@ -1,5 +1,3 @@
-**Obsolete: this page refers to the pre-2019 Libravatar service.**
-
 The following [[plugins|libraries]] have been suggested:
 
 * StatusNet
@@ -18,9 +16,5 @@ The following [[plugins|libraries]] have been suggested:
 * Pidgin
 * BuddyCloud
 * [Gitlab](https://gitlab.com/gitlab-org/gitlab-ce/issues/19511)
-
-If you'd like to **vote** for one of these, add a "+" sign at the end of the line.
-
-Of course, the most effective way to vote for one is to write it yourself ;-) We have a [blueprint](https://blueprints.launchpad.net/libravatar/+spec/plugins-development) to keep track of the plugin development that we know about.
 
 Feel free to [[talk to us]] if you have any questions.

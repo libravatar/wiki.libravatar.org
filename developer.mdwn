@@ -1,5 +1,3 @@
-**Obsolete: this page refers to the pre-2019 Libravatar service.**
-
 Depending on your interest and what programming languages you know, there are a few options to [[contribute]] to Libravatar:
 
 # Plugins / Libraries
@@ -14,9 +12,4 @@ Please consider writing a patch, plugin or extension for your favourite web appl
 
 # Core Application
 
-And of course, there is plenty of work to be done on the [main application](https://launchpad.net/libravatar). If you are a developer who wants to make a difference and work on a real Open Source project, we want to [[hear from you|talk to us]]!
-
-0. Find a [[bug or a feature|easy development tasks]] that interests you
-1. Set up your [[development environment]]
-2. [[Check the code out|code checkout]]
-3. [Profit!](http://www.ohloh.net/p/libravatar/contributors)
+And of course, there is plenty of work to be done on the [main application](https://git.linux-kernel.at/oliver/ivatar). If you are a developer who wants to make a difference and work on a real Open Source project, we want to [[hear from you|talk to us]]!

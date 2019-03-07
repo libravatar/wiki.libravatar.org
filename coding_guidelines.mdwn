@@ -1,7 +1,3 @@
 **Obsolete: this page refers to the pre-2019 Libravatar service.**
 
-The main Django application follows the usual the usual [PEP-8](http://www.python.org/dev/peps/pep-0008/) style.
-
-We also enforce some of this through [pylint](http://www.logilab.org/project/pylint) in the test suite (<tt>make test</tt>).
-
-(These guidelines are also included in the [HACKING.md](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/HACKING.md) file distributed with Libravatar.)
+Please look directly the [development repository](https://git.linux-kernel.at/oliver/ivatar).

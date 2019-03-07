@@ -15,7 +15,7 @@ As you can see, all of the hard bits are done in the [Libravatar::URL](http://se
 
 If you try to do it all yourself inside the web application, it's likely that you will be missing a few corner cases (e.g. federation may not be fully working). As you can see from the [[API]], having a complete implementation is not just a matter of changing the base URL.
 
-What should you do if a library is not available for your target language? Well, why not [[write one|writing a library]]? We'll be more than happy to help you in the process. Just come and [[talk to us]].
+What should you do if a library is not available for your target language? Well, why not [[write one|libraries#index3h1]]? We'll be more than happy to help you in the process. Just come and [[talk to us]].
 
 # Write a simple test page
 

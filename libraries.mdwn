@@ -79,7 +79,7 @@ The [pyLibravatar](http://pypi.python.org/pypi/pyLibravatar) module can be used 
 
 ## Qt5
 
-The source code for [Rawatar](http://pusling.com/blog/?p=329) can be found on [git.kde.org](http://quickgit.kde.org/?p=scratch%2Fsune%2Frawatar.git)
+The source code for [Rawatar](http://pusling.com/blog/?p=329) can be found on [git.kde.org](https://cgit.kde.org/scratch/sune/rawatar.git/)
 
 
 ## Ruby

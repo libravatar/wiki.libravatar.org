@@ -24,6 +24,12 @@ The [Libravatar](http://www.rel4tion.org/projects/libravatar/) library is mainta
     import Network.Libravatar
     myUrl = avatarUrl (Right "http://example.com/id/john") True Nothing (Just 100)
 
+## Java
+
+Alessandro Leite has created a [library](https://github.com/alessandroleite/libravatar-j) in Java.
+
+(!) The library does not support federation.
+
 ## node.js
 
 <img src="nodejs_logo.png" width="219" height="75" align="right">

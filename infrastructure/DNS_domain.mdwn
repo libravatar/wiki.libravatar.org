@@ -7,4 +7,4 @@ The project controls the following DNS domains:
 
 # Administration
 
-[[Francois Marier|fmarier]] to transfer control of the domain to Clime and OFalk.
+The zones are managed by the [[Libravatar project|https://wiki.libravatar.org/project/]] and sponsored by [Gandi.net](https://www.gandi.net/).

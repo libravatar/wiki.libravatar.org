@@ -4,10 +4,10 @@ The instance *libravatar.org* is providing the [[open specification|api]] called
 
 ## Original implementation (up to the first quarter of 2019)
 
-The VM running the service is currently hosted by [Ingo Juergensmann](https://www.windfluechter.net/).
-
-*fmarier* has root access to the VM.
-
+* 2010-2011: hosted by Braawi (thanks to [Lars Wirzenius](https://liw.fi/))
+* 2011-2013: hosted by [AppsAttic](https://appsattic.com/) (also thanks to [Andy Chilton](http://chilts.org/))
+* 2013-2018: hosted by [Rackspace](https://www.rackspace.com/)
+* 2018-2019: hosted by [Ingo Juergensmann](https://www.windfluechter.net/)
 
 ## New 'ivatar' implementation (starting with the first quarter of 2019)
 
@@ -19,11 +19,3 @@ The list of people (Fedora accounts) with root access to the VM can be found her
 * [staging instance](https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/inventory/host_vars/libravatar-stg.fedorainfracloud.org)
 
 Members of the [Fedora group *sysadmin-libravatar*](https://admin.fedoraproject.org/accounts/group/view/sysadmin-libravatar) (e.g. Clime) and the global Fedora admins can add more root account users.
-
-
-# Timeline
-
-* since August 2018: hosted by [Ingo Juergensmann](https://www.windfluechter.net/)
-* 2013-2018: hosted by [Rackspace](https://www.rackspace.com/)
-* 2011-2013: hosted by [AppsAttic](https://appsattic.com/) (also thanks to [Andy Chilton](http://chilts.org/))
-* 2010-2011: hosted by Braawi (thanks to [Lars Wirzenius](https://liw.fi/))

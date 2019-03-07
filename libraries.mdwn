@@ -110,6 +110,10 @@ The source code for [Rawatar](http://pusling.com/blog/?p=329) can be found on [g
 
 You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
 
+## Shell
+
+[Gravatarhash](https://github.com/Aversiste/gravatarhash) is a pure shell utility supporting Libravatar and Gravatar.
+
 ## Symfony
 
 Julien Fastré has a created a [Libravatar bundle](https://github.com/julienfastre/LibravatarBundle) for the PHP framework Symfony.

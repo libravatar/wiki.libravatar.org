@@ -19,6 +19,4 @@ What should you do if a library is not available for your target language? Well,
 
 # Write a simple test page
 
-As part of the main Libravatar [source code repository](https://git.nzoss.org.nz/libravatar/libravatar), we have a few [test pages](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/contrib/) for some of the libraries that have been contributed.
-
-Once you have made a new library available, we'll be happy to include a small test case from you.
+In the legacy Libravatar [source code repository](https://git.nzoss.org.nz/libravatar/libravatar) lies a few [test pages](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/contrib/) for some of the libraries that have been contributed.

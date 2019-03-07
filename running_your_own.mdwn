@@ -1,5 +1,3 @@
-**Obsolete: this page refers to the pre-2019 Libravatar service.**
-
 Libravatar was designed so that domain owners can choose to host themselves the profile pictures for their domain. For example, an organisation may want to have control over the pictures use for their employees.
 
 # Server implementations
@@ -16,34 +14,22 @@ ivatar | The software that runs the current libravatar.org | web-based | Python 
 [libravatarserv](https://schlomp.space/tastytea/libravatarserv) | Simple libravatar server | none | C++ | GPLv3 | Email | 404, mm (and its alias mp), identicon, URL; optionally returns a default image instead
 """]]
 
-# libravatar.org
+# Installation
 
-The following instructions are about the official libravatar.org software.
+Please refer to the README or INSTALL file of the implementation you want to use.
 
-## System requirements
-
-Libravatar needs a Python3 and a few python packages, so any modern operating system will do. It as been confirmed to work on CentOS and OpenBSD.
-
-## Installation
-
-Once you've got a copy of the code, follow the instructions in the [INSTALL](https://git.linux-kernel.at/oliver/ivatar/blob/master/INSTALL.md) file.
-
-## Configuration
-
-XXX: To be defined.
-
-## DNS setup
+# DNS setup
 
 Once your instance is running on a publicly-accessible server (<tt>avatars.example.com</tt> in this example), add the following records to your DNS zone file:
 
     _avatars._tcp.example.com.     IN SRV 0 0 80  avatars.example.com
     _avatars-sec._tcp.example.com. IN SRV 0 0 443 avatars.example.com
 
-The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server whereas the second one (<tt>\_avatars-sec.\_tcp</tt>) is for an HTTPS server. Nowadays unencrypted HTTP traffic is frowned upon so feel free to redirect your http endpoints to the HTTPS one.
+The first entry (<tt>\_avatars.\_tcp</tt>) should point to an HTTP server whereas the second one (<tt>\_avatars-sec.\_tcp</tt>) is for an HTTPS server. Nowadays unencrypted HTTP traffic is frowned upon so feel free to redirect your HTTP endpoints to the HTTPS one.
 
-This step is the same with any other implementation of the [[protocol/API|API]].
+This step is the same whatever the implementation.
 
-### TTL
+# TTL
 
 XXX: Currently not true.
 
@@ -51,7 +37,7 @@ The time-to-live (cache expiry) should be set to **at least 1 day** (86400 secon
 
 If you choose a TTL smaller than 1 day, Libravatar clients are allowed (and encouraged) to ignore it and cache your entry for a day.
 
-### Subdomains
+# Subdomains
 
 If you use full hostnames or subdomains in your email addresses, for example bob@foo.example.com and bob@bar.example.com, then you need to have a set of SRV records for each of them:
 
@@ -60,12 +46,12 @@ If you use full hostnames or subdomains in your email addresses, for example bob
     _avatars._tcp.bar.example.com.     IN SRV 0 0 80  avatars.example.com
     _avatars-sec._tcp.bar.example.com. IN SRV 0 0 443 avatars.example.com
 
-### SRV weights and priorities (optional)
+# SRV weights and priorities (optional)
 
 All SRV entries should have the same priority. Lower priority ones will be ignored by Libravatar clients.
 
 You may however use weights to spread the load across more than one avatar server.
 
-### Testing
+# Testing
 
 Once you have these records, have a look at the [domain check tool](https://www.libravatar.org/tools/check) to make sure everything is working.

@@ -31,7 +31,7 @@ This step is the same whatever the implementation.
 
 # TTL
 
-XXX: Currently not true.
+XXX: Currently not true, see [ivatar's issue #50](https://git.linux-kernel.at/oliver/ivatar/issues/50).
 
 The time-to-live (cache expiry) should be set to **at least 1 day** (86400 seconds).
 

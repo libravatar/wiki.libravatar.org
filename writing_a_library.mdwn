@@ -1,9 +1,1 @@
-Writing a library in your language of choice is not very hard but here are a few guidelines to help you produce a library that will be as complete as possible:
-
-* Read the [[API]] documentation carefully.
-* Make sure you normalize emails and OpenID URLs according to the rules.
-* Email hashes should default to MD5 (for the [Gravatar](http://www.gravatar.com) redirection to work) while SHA256 is the only hash allowed for OpenID hashes.
-* The base URL should be looked up in DNS to ensure that federation is possible.
-* SRV weight and priority handling is tricky. Have a look at [srv_hostname()](http://cpansearch.perl.org/src/FMARIER/Gravatar-URL-1.04/lib/Libravatar/URL.pm) to see how it's done in the CPAN module.
-
-If you have any questions or run into any problems, come [[talk to us]].
+**Obsolete: please take a look at [[libraries]].**

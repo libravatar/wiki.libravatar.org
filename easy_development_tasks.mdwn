@@ -1,13 +1,3 @@
 **Obsolete: this page refers to the pre-2019 Libravatar service.**
 
-There are two places where we keep track of things to do in the project:
-
-* [Bug tracker](https://bugs.launchpad.net/libravatar): for bugs and suggested features in the code
-* [TODO file](https://bazaar.launchpad.net/~libravatar/libravatar/master/view/head:/TODO.md): for project-wide or sysadmin tasks
-
-But if you are looking for an easy bug / feature to start with, you may want to:
-
-* Fix a [bite-sized bug](https://bugs.launchpad.net/libravatar/+bugs?field.tag=bite-sized)
-* Implement a new [photo importer](https://bugs.launchpad.net/libravatar/+bugs?field.tag=photoimporter)
-
-Of course, you can always [[talk to us]] if you have a better idea or need some guidance.
+Please look directly the [development repository](https://git.linux-kernel.at/oliver/ivatar).

@@ -30,6 +30,12 @@ Alessandro Leite has created a [library](https://github.com/alessandroleite/libr
 
 (!) The library does not support federation.
 
+## Nim
+
+A tiny Nim [library](https://github.com/juancarlospaco/nim-libravatar). Federation is not supported by design as DNS discovery is left to the user.
+
+(!) The library does not support federation.
+
 ## node.js
 
 <img src="nodejs_logo.png" width="219" height="75" align="right">

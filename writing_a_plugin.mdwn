@@ -3,11 +3,11 @@ Most of the time, writing a plugin or adding Libravatar support to an existing w
 For example, have a look at how it was done for these two Perl applications:
 
 * [Ikiwiki](http://ikiwiki.info)
- * <http://source.ikiwiki.branchable.com/?p=source.git;a=commit;h=7723e94218a8c526fc8d869086c05dd382268649>
- * <http://source.ikiwiki.branchable.com/?p=source.git;a=commit;h=e2e1b1cd20928e2b80871e5daffaea60738d054e>
+  * <http://source.ikiwiki.branchable.com/?p=source.git;a=commit;h=7723e94218a8c526fc8d869086c05dd382268649>
+  * <http://source.ikiwiki.branchable.com/?p=source.git;a=commit;h=e2e1b1cd20928e2b80871e5daffaea60738d054e>
 * [Koha](http://koha-community.org)
- * <http://git.koha-community.org/gitweb/?p=koha.git;a=commit;h=d3990031eda7f1c87d8b9f74d97625cf0c143eb3>
- * <http://git.koha-community.org/gitweb/?p=koha.git;a=commit;h=f44b674ed5a70663bc5e9808b6d0a41cec5497a0>
+  * <http://git.koha-community.org/gitweb/?p=koha.git;a=commit;h=d3990031eda7f1c87d8b9f74d97625cf0c143eb3>
+  * <http://git.koha-community.org/gitweb/?p=koha.git;a=commit;h=f44b674ed5a70663bc5e9808b6d0a41cec5497a0>
 
 As you can see, all of the hard bits are done in the [Libravatar::URL](http://search.cpan.org/~libravatar/Gravatar-URL-1.04/lib/Libravatar/URL.pm) CPAN module. Which brings us to the most important guideline...
 

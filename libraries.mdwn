@@ -94,6 +94,10 @@ The source code for [Rawatar](http://pusling.com/blog/?p=329) can be found on [g
 
 You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
 
+## Symfony
+
+Julien Fastré has a created a [Libravatar bundle](https://github.com/julienfastre/LibravatarBundle) for the PHP framework Symfony.
+
 ## Twisted
 
 <img src="twisted_logo.png" width="71" height="75" align="right">

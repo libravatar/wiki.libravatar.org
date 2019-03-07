@@ -15,6 +15,10 @@ If a library or plugin is not availble for your language or application, your be
 
 (!) The library does not support federation.
 
+## Common Lisp
+
+There is a [library](https://github.com/pinterface/clavatar) supporting both Gravatar, Libravatar and Unicornify.
+
 ## Haskell
 
 <img src="haskell_logo.png" width="128" height="87" align="right">

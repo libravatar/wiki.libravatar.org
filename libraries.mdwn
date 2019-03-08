@@ -166,6 +166,7 @@ There aren't many plugins available at the moment, but please [[suggest the ones
 * <s>[Weblate](http://weblate.org/) (part of core starting in 1.5, removed in 3.1)</s>
 * Wordpress: [Libravatar](http://wordpress.org/extend/plugins/libravatar/) and [Libravatar Replace](http://wordpress.org/plugins/libravatar-replace/)
 * [Zookeepr](http://zookeepr.org/) (part of core, starting with PyCon AU 2012)
+* [NIMWC - Nim Website Creator](https://github.com/ThomasTJdev/nim_websitecreator#features )
 
 # Contribute!
 

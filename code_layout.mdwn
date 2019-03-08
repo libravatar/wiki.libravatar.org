@@ -1,3 +1,20 @@
 **Obsolete: this page refers to the pre-2019 Libravatar service.**
 
-Please look directly the [development repository](https://git.linux-kernel.at/oliver/ivatar).
+Libravatar is a fairly simple [Django](http://www.djangoproject.org) application.
+
+Here's what you'll find in the [main repository](https://git.nzoss.org.nz/libravatar/libravatar):
+
+* [config/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/config): [Apache](http://httpd.apache.org/) configuration files
+* [contrib/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/contrib): contributed code related to the project but not needed by the main application
+* [debian/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/debian): installation scripts and cron jobs
+* [libravatar/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar): [Gearman](http://gearman.org/) workers and Django configuration
+ * [libravatar/account/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/account): main application (logged in)
+ * [libravatar/locale/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/locale): [translations](https://translations.launchpad.net/libravatar/trunk/+translations)
+ * [libravatar/public/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/public): public-facing website (logged out)
+ * [libravatar/schemas/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/schemas): XML schema used for account exports
+ * [libravatar/templates/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/templates): HTML templates
+ * [libravatar/tools/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/libravatar/tools): helpful interactive tools
+* [static/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/static): CSS stylesheets, Javascripts and images need by the Django application
+ * [static/cdn/](https://bazaar.launchpad.net/~libravatar/libravatar/master/files/head:/static/cdn): images needed by the avatar CDNs
+
+As far as getting your head around the Django-specific code, have a look at the [excellent manual](https://docs.djangoproject.com/en/1.2/) they provide.

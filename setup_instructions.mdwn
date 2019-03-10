@@ -1,4 +1,4 @@
-If you would like to setup libravatar in a cloud or just for development, please, you can take a look [here](https://git.linux-kernel.at/oliver/ivatar/blob/master/INSTALL.md).
+If you would like to setup libravatar in a cloud or just for development, please, take a look [here](https://git.linux-kernel.at/oliver/ivatar/blob/master/INSTALL.md).
 
 If you intend a non-cloud/self-made deployment that uses a webserver, please, take a look at [ansible playbooks](https://infrastructure.fedoraproject.org/cgit/ansible.git/tree/roles/libravatar)
 that describe deployment of the www.libravatar.org instance. These playbooks are not standalone - you can't use them to deploy libravatar on a target machine from scratch - but they should give you

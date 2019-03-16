@@ -6,3 +6,4 @@ The [[libravatar project|project]] uses different resources for running its serv
 * [service hosting](service_hosting): where is the *libravatar.org* instance hosted
 * [[setup instructions|ivatar_setup]] for the main instance
 * [wiki](wiki): access and administration of wiki.libravatar.org
+* [[external services]]: who controls the Libravatar accounts on various external services

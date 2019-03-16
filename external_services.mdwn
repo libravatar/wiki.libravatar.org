@@ -7,3 +7,4 @@
 - [Blog](https://blog.libravatar.org) and [wiki](https://wiki.libravatar.org) ([Branchable](https://branchable.com)): dev@libravatar.org and social@libravatar.org
 - [Launchpad project](https://launchpad.net/libravatar) ([translations](https://translations.launchpad.net/libravatar), [mailing list](https://launchpad.net/~libravatar-fans)): admins=<https://launchpad.net/~libravatar/+members>
 - [Freenode](https://freenode.net/) ([#libravatar](http://webchat.freenode.net/?channels=libravatar)): admin@libravatar.org, founders=fmarier,ofalk,clime,tleguern
+- [Have I Been Pwned](https://haveibeenpwned.com/DomainSearch): admin@libravatar.org

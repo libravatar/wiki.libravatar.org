@@ -4,6 +4,13 @@ The meetings are happening bi-weekly on Sundays at 19:00 UTC in the `#libravatar
 
 [[!toc levels=1]]
 
+# 2019-03-18
+
+Participants: clime, nipos
+
+## blog post about new libravatar
+* final tweaks
+* email for editing is either social@libravatar.org or dev@libravatar.org
 
 # 2019-03-03
 

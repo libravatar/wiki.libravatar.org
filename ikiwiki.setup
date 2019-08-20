@@ -14,6 +14,7 @@ adminemail: admin@branchable.com
 # users who are wiki admins
 adminuser:
 - dev@libravatar.org
+- oliver@linux-kernel.at
 - social@libravatar.org
 # users who are banned from the wiki
 banned_users:

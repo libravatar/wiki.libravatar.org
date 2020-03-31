@@ -102,13 +102,18 @@ The source code for [Rawatar](http://pusling.com/blog/?p=329) can be found on [g
 
 <img src="ruby_logo.png" width="75" height="75" align="right">
 
-[Kang-min Liu](http://gugod.org) has created a [Libravatar Ruby gem](http://rubygems.org/gems/libravatar).
+There is a Ruby library for Libravatar named [Vishnu](https://github.com/arokettu/vishnu), published as the Ruby gem `vishnu`. Example usage of Vishnu:
+
+    require 'vishnu'
+    Vishnu.new(email:  'someone@example.com').url   # get avatar for email
+    Vishnu.new(openid: 'https://example.com').url   # get avatar for OpenID URL
+
+Previously, [Kang-min Liu](http://gugod.org) created a Ruby library named [Libravatar](http://rubygems.org/gems/libravatar), published as the Ruby gem `libravatar`. As of 2020 the library appears to be unmaintained – it has some ignored [issues](https://github.com/gugod/libravatar/issues) and [pull requests](https://github.com/gugod/libravatar/pulls) that were created four years ago.
 
     require 'libravatar'
     avatar_url = Libravatar.new(:email => 'person@example.org')
+    # or avatar_url = Libravatar.new(:openid => 'https://example.com/id/person')
     print '<img src="', avatar_url, '">'
-
-You can also use <tt>:openid => 'https://example.com/id/person'</tt> instead of providing an email address.
 
 ## Shell
 

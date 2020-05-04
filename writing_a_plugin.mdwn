@@ -9,7 +9,7 @@ For example, have a look at how it was done for these two Perl applications:
   * <http://git.koha-community.org/gitweb/?p=koha.git;a=commit;h=d3990031eda7f1c87d8b9f74d97625cf0c143eb3>
   * <http://git.koha-community.org/gitweb/?p=koha.git;a=commit;h=f44b674ed5a70663bc5e9808b6d0a41cec5497a0>
 
-As you can see, all of the hard bits are done in the [Libravatar::URL](http://search.cpan.org/~libravatar/Gravatar-URL-1.04/lib/Libravatar/URL.pm) CPAN module. Which brings us to the most important guideline...
+As you can see, all of the hard bits are done in the [Libravatar::URL](https://metacpan.org/pod/Libravatar::URL) CPAN module. Which brings us to the most important guideline...
 
 # Use an existing [[library|libraries]]
 

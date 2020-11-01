@@ -116,7 +116,7 @@ DNS host names:
 * HTTP
   * `SRV _avatars._tcp.EMAILDOMAIN`
 * HTTPS
-  * `SRV _avatars-sec._tcp._tcp.EMAILDOMAIN`
+  * `SRV _avatars-sec._tcp.EMAILDOMAIN`
 
 
 Here's how to do that DNS lookup on a UNIX command line:

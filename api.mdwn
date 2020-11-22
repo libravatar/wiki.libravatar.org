@@ -26,7 +26,7 @@ Here's an example in Python:
       answers = dns.resolver.query('_avatars._tcp.' + domain, 'SRV')
       baseurl = 'http://' + str(answers[0].target) + '/avatar/'
     except:
-      baseurl = http://cdn.libravatar.org/avatar/
+      baseurl = 'http://cdn.libravatar.org/avatar/'
     hash = hashlib.md5(email.strip().lower()).hexdigest()
     print baseurl + hash
 

@@ -1,10 +1,10 @@
 There are a few ways to get in touch with the Libravatar developers:
 
-# IRC
+# Matrix or IRC
 
-If you have an IRC client already, you can join [#libravatar](irc://chat.freenode.net/%23libravatar) on chat.freenode.net.
+Join the [#libravatar room in Matrix](https://matrix.to/#/#freenode_#libravatar:matrix.org).  Once you have joined the room, you will be able to see the conversation history from that point forward, even if you don't stay online.
 
-Otherwise, you can use this [simple web interface](http://webchat.freenode.net/?channels=libravatar).
+IRC users can reach the same channel [on Freenode IRC](irc://chat.freenode.net/%23libravatar), or [in an IRC web interface](http://webchat.freenode.net/?channels=libravatar).
 
 Please keep in mind that you may live in a different timezone than most of the developers. So if you don't get a response, it's not because we're ignoring you, it's probably because we're sleeping :)
 

@@ -5,3 +5,4 @@ Websites known to support Libravatar (please add yours!):
 * [Mozilla Reps](https://reps.mozilla.org/)
 * [GitLab](https://git.ispconfig.org/help/administration/libravatar.md)
 * [Fedora Accounts](https://accounts.fedoraproject.org/)
+* [Keyoxide](https://codeberg.org/keyoxide/keyoxide-web/pulls/92)

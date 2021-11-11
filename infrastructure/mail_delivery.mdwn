@@ -1,0 +1,20 @@
+# Overview
+
+Mails are delivered in reponse to a variety of user interactions:
+
+* register an account
+* reset a password
+* *some kind of confirmation*?
+
+Such emails are delivered via the [mailgun](https://mailgun.com/) service.
+They originate from the `mg.libravatar.org` domain.
+
+All other mails relate to the main mail domain (`libravatar.org`), which is documented in [mail domain](/infrastructure/mail_domain)
+
+
+# Administration
+
+The following people have admin access for the `mg.libravatar.org` domain in mailgun:
+
+* ofalk
+* sumpfralle

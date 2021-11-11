@@ -6,6 +6,10 @@ The hosting of the mail domain is kindly provided by the [systemausfall.org](htt
 
 Only mail forwarding is configured. There are no real mail boxes.
 
+This mail domain (`libravatar.org`) is only used for administration within the project.
+
+In contrast, email handling related to libravatar user accounts originates from `mg.libravatar.org`, which is documented in [mail delivery](/infrastructure/mail_delivery).
+
 
 # Existing mail addresses
 

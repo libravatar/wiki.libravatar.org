@@ -2,7 +2,7 @@
 
 # libravatar.org mail domain
 
-The hosting of the mail domain is kindly provided by the [systemausfall.org](https://systemausfall.org) project.
+The hosting of the mail domain is kindly provided by the [systemausfall.org](https://systemausfall.org) project (contact: via sumpfralle).
 
 Only mail forwarding is configured. There are no real mail boxes.
 

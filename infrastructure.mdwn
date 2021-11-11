@@ -2,6 +2,7 @@ The [[libravatar project|project]] uses different resources for running its serv
 
 * [DNS domain](DNS_domain): control of the DNS zone(s) related to the project
 * [mail domain](mail_domain): handling of mails for the domain libravatar.org (including a list of available addresses)
+* [mail delivery](mail_delivery): we use the [mailgun](https://mailgun.com/) service for sending emails related to libravatar-accounts
 * [backups](backups): how and where do we store backups of the data
 * [service hosting](service_hosting): where is the *libravatar.org* instance hosted
 * [[setup instructions|ivatar_setup]] for the main instance

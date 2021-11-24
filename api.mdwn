@@ -50,9 +50,10 @@ Acceptable values range from 1 to 512. Invalid input such as non-integer or out-
 
 When an image is requested for an email address without a Libravatar account a default is substituted. This behaviour can be overridden by providing the extra parameter **default** or **d** to the URL:
 
-    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=http://example.com/nobody.jpg
+    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=/static/nobody.jpg
 
-If no image exists for the hash <tt>40f8d096a3777232204cb3f796c577b7</tt> then a redirection is made toward <tt>http://example.com/nobody.jpg</tt>.
+If no image exists for the hash <tt>40f8d096a3777232204cb3f796c577b7</tt> then a redirection is made toward <tt>/static/nobody.jpg</tt>.
+Please note that due to [CWE-601](https://cwe.mitre.org/data/definitions/601.html), redirection to external sites (eg. anything that starts with http[s]://) is prohibited. Only a few external sites are in the [list of trusted sites](https://git.linux-kernel.at/oliver/ivatar/-/blob/master/config.py#L213). If you want to be added, please [contact](https://www.libravatar.org/contact/) us and we will check if your request is feasible.
 
 The default value is <tt>http://cdn.libravatar.org/nobody.png</tt>.
 

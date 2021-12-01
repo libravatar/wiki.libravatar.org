@@ -9,8 +9,8 @@ There are 4 steps for displaying Libravatar-hosted images into an application:
 2. Discover the avatar server base URL:  
    a. Use DNS-based server discovery as described in the § Federated Servers section.  
    b. If no server was found, fall back to `cdn.libravatar.org` (or `seccdn.libravatar.org` for HTTPS).
-3. Create a URL like `http://BASEURL/avatar/HASH`.
-4. Put the URL into an `img` tag on your page.
+3. Create a URL like `https://BASEURL/avatar/HASH`.
+4. Put the URL into an `img` tag on your page. Eg. `<img src="https://seccdn.libravatar.org/avatar/HASH" referrerpolicy="no-referrer">`
 
 A collection of [[libraries or plugins|libraries]] implementing these steps are available.
 
@@ -32,7 +32,7 @@ Here's an example in Python:
       else:
         baseurl = 'http://' + hostname + ':' + port + '/avatar/'
     except:
-      baseurl = 'http://cdn.libravatar.org/avatar/'
+      baseurl = 'https://seccdn.libravatar.org/avatar/'
     hash = hashlib.md5(email.strip().lower()).hexdigest()
     print baseurl + hash
 
@@ -42,7 +42,7 @@ Here's an example in Python:
 
 The default size for images is 80x80 pixels, however it can be changed by providing the extra parameter **size** or **s** to the URL:
 
-    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=100
+    https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?s=100
 
 Acceptable values range from 1 to 512. Invalid input such as non-integer or out-of-range values will be ignored.
 
@@ -50,12 +50,12 @@ Acceptable values range from 1 to 512. Invalid input such as non-integer or out-
 
 When an image is requested for an email address without a Libravatar account a default is substituted. This behaviour can be overridden by providing the extra parameter **default** or **d** to the URL:
 
-    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=/static/nobody.jpg
+    https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=/static/nobody.jpg
 
 If no image exists for the hash <tt>40f8d096a3777232204cb3f796c577b7</tt> then a redirection is made toward <tt>/static/nobody.jpg</tt>.
 Please note that due to [CWE-601](https://cwe.mitre.org/data/definitions/601.html), redirection to external sites (eg. anything that starts with http[s]://) is prohibited. Only a few external sites are in the [list of trusted sites](https://git.linux-kernel.at/oliver/ivatar/-/blob/master/config.py#L213). If you want to be added, please [contact](https://www.libravatar.org/contact/) us and we will check if your request is feasible.
 
-The default value is <tt>http://cdn.libravatar.org/nobody.png</tt>.
+The default value is <tt>https://seccdn.libravatar.org/nobody.png</tt>.
 
 A few special values are also allowed:
 
@@ -98,7 +98,7 @@ If the **default** parameter is robohash then a special sub-option can be used t
 
 It is sometimes interesting to test the **default** option, even for hashes with matching avatars. This behavior can be triggered by providing the extra parameter **forcedefault** or **f** to the URL with a value of **y**:
 
-    http://cdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=retro&f=y
+    https://seccdn.libravatar.org/avatar/40f8d096a3777232204cb3f796c577b7?d=retro&f=y
 
 Any other value will be ignored.
 
@@ -106,7 +106,7 @@ Any other value will be ignored.
 
 This API mimics closely the [Gravatar API](http://en.gravatar.com/site/implement/). If an application or website already supports [Gravatar](http://www.gravatar.com) then switching to the basic Libravatar service is just a matter or changing the base URL:
 
-    http://www.gravatar.com/avatar => http://cdn.libravatar.org/avatar
+    http://www.gravatar.com/avatar => https://seccdn.libravatar.org/avatar
 
 or for HTTPS version of the service:
 
@@ -160,7 +160,7 @@ The same 5 steps apply:
 2. Convert the **protocol and hostname parts** of the URL to lowercase. e.g. HTTP://UserName:Password@EXAMPLE.COM/ID/Bob => http://UserName:Password@example.com/ID/Bob
 3. Compute the hash (using the **SHA256 hash algorithm only**).
 4. Turn the image into a URL by prefixing it with the Libravatar base URL.
-5. Put the image into an <tt>img</tt> tag on your page.
+5. Put the image into an <tt>img</tt> tag on your page. Eg. `<img src="https://seccdn.libravatar.org/avatar/HASH" referrerpolicy="no-referrer">`
 
 Therefore, if the email address of some user is missing but his OpenID URLs is known then a hash can be generated:
 
@@ -180,3 +180,7 @@ Therefore, if the email address of some user is missing but his OpenID URLs is k
 # Testing tool
 
 A [domain check tool](https://www.libravatar.org/tools/check_domain) is also available to help testing Libravatar integration or library development.
+
+# Secure versus non-secure requests
+
+All non-secure requests (`http://`) coming to libravatar are automatically redirected to SSL (`https://`). However, that of course puts a bit more load on the webserver and the redirect is also needed on the client side, which of course increases the page load time. Therefore it's highly recommended to always use SSL, even if your own page doesn't use SSL. The other way round anyway doesn't work, as this will throw a warning in most (all?) browsers.

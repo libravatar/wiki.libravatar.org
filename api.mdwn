@@ -64,7 +64,7 @@ A few special values are also allowed:
 * <tt>**identicon**</tt>: return an image containing a random [geometric pattern](http://scott.sherrillmix.com/blog/blogger/wp_identicon/)
 * <tt>**monsterid**</tt>: return an image containing a random [monsterid](http://scott.sherrillmix.com/blog/blogger/wp_monsterid/)
 * <tt>**wavatar**</tt>: return an image containing a random [wavatar](http://www.shamusyoung.com/twentysidedtale/?p=1462)
-* <tt>**retro**</tt>: return an image containing a random retro-looking, 8-bits arcade style pixel-art
+* <tt>**retro**</tt>: return an image containing a random retro-looking, 8-bit arcade style pixel-art
 * <tt>**robohash**</tt>: return an image containing a random [robohash](https://robohash.org/)
 * <tt>**pagan**</tt>: return an image containing a random retro adventure game character using [pagan](https://github.com/daboth/pagan)
 
